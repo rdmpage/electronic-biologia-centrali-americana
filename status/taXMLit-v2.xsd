@@ -1,0 +1,2604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Anna L Weitzman (Smithsonian Institute) -->
+<!--taXMLit schema for taxonomic literature.  Created by Anna L. Weitzman (National Museum of Natural History, Smithsonian Institution, Washington), and Christopher H. C. Lyal (The Natural History Museum, London).  Draft version for comment. -->
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Anna L. Weitzman (Smithsonian Institution Libraries) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://taxonomic-trial/namespace" targetNamespace="http://taxonomic-trial/namespace" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="TaxonomicPublication">
+		<xs:annotation>
+			<xs:documentation>Any kind of publication, including multivolume works, articles in journals and books. </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="IndividualPublication" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>The Publication, whether a voume in a series, fascicle, stand-alone publication etc. Unbounded to allow for more than one volume or fascicle within a publication.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PublicationFrontMatter">
+								<xs:annotation>
+									<xs:documentation>Items usually found before the main taxonomic text.  Some overlap with back matter because of the variablity of placment of these items.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:choice maxOccurs="unbounded">
+										<xs:element name="SeriesTitle" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Title of series of which the volume or fascicle is a part.</xs:documentation>
+											</xs:annotation>
+											<xs:complexType mixed="true">
+												<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="SeriesSubTitle" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Subtitle of series of which the volume or fascicle is a part.</xs:documentation>
+											</xs:annotation>
+											<xs:complexType mixed="true">
+												<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="VolumeOrFascicleNumber" minOccurs="0">
+											<xs:complexType mixed="true">
+												<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Title" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Full title of publication, volume or fascicle.</xs:documentation>
+											</xs:annotation>
+											<xs:complexType mixed="true">
+												<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Subtitle" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Any subtitle of the publication, volume or fascicle.</xs:documentation>
+											</xs:annotation>
+											<xs:complexType mixed="true">
+												<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="PublicationAuthors" type="PublicationContributorType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Author(s) of the publication (may differ from TreatmentAuthors below).  </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="PublicationEditors" type="PublicationContributorType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Editor(s) of the publication.  </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Publisher" minOccurs="0">
+											<xs:complexType mixed="true">
+												<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="PublicationDate" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Date of publication as cited on title page.</xs:documentation>
+											</xs:annotation>
+											<xs:complexType mixed="true">
+												<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="ISBN" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>ISBN Number.</xs:documentation>
+											</xs:annotation>
+											<xs:complexType mixed="true">
+												<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="IntroductorySection" type="IntroductoryType" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Any of several types of Introductory matter:  Introduction, Foreword, Preface, Dedication, etc.  Any of these may be by the author(s) of the work or a different author.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Frontispiece" type="FrontispieceType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>May include image and text. </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Abstract" type="AbstractType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>The contents of the abstract, if present.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="KeyWords" type="KeyWordsType" minOccurs="0"/>
+										<xs:element name="Contents" type="ContentsType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Formatted as a table.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Acknowledgements" type="AcknowledgementsType" minOccurs="0"/>
+										<xs:element name="Index" type="IndexType" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="Glossary" type="GlossaryType" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="Errata" type="ErrataType" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>May be formatted as a table.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="PublicationTaxonomicMatter" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>The main section of a taxonomic work, usually a single section, but sometimes repeats, for example when there is a separate supplement.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PublicationTaxonomicSubHead" type="PublicationSubHeadType" minOccurs="0"/>
+										<xs:element name="TaxonTreatment" type="TaxonTreatmentType" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Treatment of taxa within Publication.  Taxa at the same level can be treated as such, and taxa at lower hierarchical levels an be treated within each treatment. </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="PublicationBackMatter">
+								<xs:annotation>
+									<xs:documentation>Items usually found after the main taxonomic text.  Some overlap with front matter because of the variablity of placment of these items.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Acknowledgements" type="AcknowledgementsType" minOccurs="0"/>
+										<xs:element name="Index" type="IndexType" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="Appendix" type="AppendixType" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="Glossary" type="GlossaryType" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="Notes" type="NotesType" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="Errata" type="ErrataType" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>May be formatted as a table.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Postscript" type="PostscriptType" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="Bibliography" type="BibliographyType" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="Colophon" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>An inscription usually placed at the end of a publication, giving facts about its publication.  Att: ElementID</xs:documentation>
+											</xs:annotation>
+											<xs:complexType mixed="true">
+												<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="PublicationLanguage" type="xs:string" use="optional"/>
+						<xs:attribute name="IndPubID" type="xs:ID" use="optional"/>
+						<xs:attribute name="PublicationType" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="Individual Publication"/>
+									<xs:enumeration value="Volume or Fascicle in a series"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="TaxPubID" type="xs:ID" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="AbstractType">
+		<xs:annotation>
+			<xs:documentation>A section summarizing the important points of the publication.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AbstractTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the abstract, if present (usually 'Abstract').</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AbstractParagraph" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The text of the abstract in separate elements for each paragraph.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AcceptedOrValidTaxonNameType">
+		<xs:annotation>
+			<xs:documentation>Repeat of name in the TaxonHeading, along with other information cited, including author, publication, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="AcceptedOrValidTaxonNameParagraph" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Full text of paragraph, if present. If there is no paragraph for this (e.g., if the heading has all the elements or if the taxon is new) then the elements below should still be entered.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AcceptedTaxonName" type="TaxonNameType"/>
+			<xs:element name="TaxonAuthor" type="TaxonAuthorType" minOccurs="0"/>
+			<xs:element name="NameYear" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Year of publication as (if) given in heading.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="NewNameDesignation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Designation indicating that the author believes he/she is erecting a new name, new combination, or new status; e.g., "nom. nov.", "sp. nov.", "gen. nov.", "comb. nov.", "stat. nov." etc.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="NameAddendum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Any comment following the name other than the authors' comments regarding its status or certainty.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="NameComments" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>any level of certainty that the author attributes to name/rank combination, e.g., "cf." "aff.", "?"</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="PrimaryCitation" type="CitationType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The original place of validation/publication of the name (protologue).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OtherCitations" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="OtherCitationAuthors" type="OtherCitationAuthorsType" minOccurs="0"/>
+						<xs:element name="OtherCitation" type="CitationType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="AcknowledgementsType">
+		<xs:annotation>
+			<xs:documentation>A section giving credit to those the author(s) wish to credit in some way.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AcknowledgementsTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the acknowledgements, if any (usually 'Acknowledgements').</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AcknowledgementsParagraph" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The text of the acknowledgements in separate elements for each paragraph.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AppendixType">
+		<xs:annotation>
+			<xs:documentation>One or more sections, usually at the end of a publication, with supplementary material.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="AppendixTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the appendix, if any (usually 'Appendix').</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AppendixBody" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Appendices may be in the form of text or tables and may be broken into subsections.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="AppendixSubTitle" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>The title for any subsection of the Appendix.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="AppendixParagraph" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>The contents of a subsection of the Appendix.  Each subsection be a table or may be divided into paragraphs.  Each paragraph or table will be a repeat.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BibliographyType">
+		<xs:annotation>
+			<xs:documentation>A section listing the works cited in the publication, usually at the end of the publication.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="BibliographyTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Title of the bibliography (usually 'Bibliography').</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="BibliographyIntroduction" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Any introductory text, in separate elements for each paragraph.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="BibliographyCitation" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The text of the bibliography in separate elements for each citation.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Citation">
+							<xs:annotation>
+								<xs:documentation>The full bibliographic entry for a single citation, including author string, date, and other citation details.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Author" type="ContributorType">
+							<xs:annotation>
+								<xs:documentation>Names of author(s) as given in publication.  </xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Publication" type="PublicationDetailsType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CitationType">
+		<xs:annotation>
+			<xs:documentation>A grouping of elements needed to describe all kinds of reference citations.</xs:documentation>
+		</xs:annotation>
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="CitationPublicationDetails" type="PublicationDetailsType" minOccurs="0"/>
+			<xs:element name="CitationNomenclaturalComment" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nomenclatural comment attributed to author(s) of citation.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="TaxonCircumscriptionComment" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Any circumscription comment made in the primary citation, with its own citation.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="CircumscriptionPublicationComponents">
+							<xs:annotation>
+								<xs:documentation>Details of circumscription publication if referred to in Primary Citation.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="PublicationDetails" type="PublicationDetailsType"/>
+									<xs:element name="TaxonCircumscriptionAuthor" type="ContributorType">
+										<xs:annotation>
+											<xs:documentation>Author(s) to whom comments are attributed.</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="CircumscriptionComment">
+							<xs:annotation>
+								<xs:documentation>Circumscription comment as given in primary citation.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PublicationContentComment" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Information about the content of the publication cited which is attributed to author(s) of the current treatment.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="PublicationStatusComment" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Information about the status of the publication cited which is attributed to author(s) of the current treatment.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="NameStatusComment" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Information about the status of the name cited which is attributed to author(s) of the current treatment.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="NomenclaturalType" type="NomenclaturalTypeType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Information pertaining to type specimen or type taxon.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OtherSourceOfName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>e.g. 'ex collection', 'in herbarium' etc. - effectively a non-published source</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="ContentsType">
+		<xs:annotation>
+			<xs:documentation>A section, often in the form of a table, that lists the topics or headings in a publication, showing their order and the place where they may be found.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="ContentsTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the contents section, if any (usually 'Contents').</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ContentsIntroduction" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Any introductory text that explains the contents or its formatting, in separate elements for each paragraph.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ContentsBody" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Full text of the contents section, usually set out as a table, if not with separate entries in repeats of the element.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContributorType">
+		<xs:sequence>
+			<xs:element name="ContributorString">
+				<xs:annotation>
+					<xs:documentation>The complete string of names of contributors (e.g. author, collector, expedition) as given in publication, e.g., Tudor, Henry and Jane Seymour.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ContributorAtomised" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Name of each contributor, separated out; repeats for each individual; later in interpretation layer linked to to a list of standardized names.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="OrderOfContributors" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DescriptionsType">
+		<xs:annotation>
+			<xs:documentation>A section containing the descriptive characters of organisms.</xs:documentation>
+		</xs:annotation>
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="LatinDiagnosis" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Particularly in botanical works.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="LatinDiagnosisTitle" minOccurs="0">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="LatinDiagnosisParagraph" maxOccurs="unbounded">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="LatinDescription" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Particularly in botanical works. </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="LatinDescriptionTitle" minOccurs="0">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="LatinDescriptionParagraph" maxOccurs="unbounded">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SameLanguageDiagnosis" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Diagnosis in same language as rest of publication.  </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="SameLanguageDiagnosisTitle" minOccurs="0">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="SameLanguageDiagnosisParagraph" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SameLanguageDescription" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Description in same language as rest of publication. </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="SameLanguageDescriptionTitle" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation> Att: ElementID</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="SameLanguageDescriptonParagraphs" minOccurs="0">
+							<xs:complexType>
+								<xs:sequence maxOccurs="unbounded">
+									<xs:element name="SameLanguageDescriptionSubTitle" minOccurs="0">
+										<xs:complexType mixed="true">
+											<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="SameLanguageDescriptionParagraph" minOccurs="0" maxOccurs="unbounded">
+										<xs:complexType mixed="true">
+											<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="DiscussionsType">
+		<xs:annotation>
+			<xs:documentation>A section containing any discussions of the taxa treated.</xs:documentation>
+		</xs:annotation>
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="GeneralDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>General discussion of taxon.  Might include some or all of the discussion types below, and other unspecified elements.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MorphologyDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Discussion of morphological characteristics of taxon.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MaterialExaminedDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Any comments on specimens or other examples of taxon examined in the course of the treatment.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CircumscriptionDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Discussion related to the circumscription of the taxon in the treatment.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ComparisonBetweenTaxaDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Comparison between the taxon under consideration and other taxa.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="GeographicDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Discussion of the geographic range, biogeography etc of the taxon. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ConservationStatusDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Discussion of the conservation status of the taxon.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BiologyAndEcologyDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Discussion of the general biology or ecology of the taxon.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TypificationDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Discussion related to the type taxonor specimen of the taxon.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EconomicImportanceOrUsesDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Discussion of the known economic importance of the taxon.  Might subsequently be split  into various fields, such as users, use, location, culture, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RelatedTaxaDiscussion" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Comments on synecologically related taxa (e.g., symbiont, parasite, host etc.).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:sequence minOccurs="0">
+							<xs:element name="RelatedTaxaDiscussionParagraph" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Discussion of the known economic importance of the taxon.  Might subsequently be split  into various fields, such as users, use, location, culture, etc.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+						<xs:element name="RelatedTaxonInformation" type="RelatedTaxonInformationType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DerivationOfNameDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Etymology statement or discussion.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ReferencesToOtherWorksDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Discussion of other works relevant to the taxon.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="MolecularInformationDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Discussion of molecular information.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ClassificationDiscussion" type="DiscussionParagraphType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Discussion of classification of taxon, including taxa related phylogenetically or in the classification.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="DiscussionParagraphType">
+		<xs:annotation>
+			<xs:documentation>The discussion </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="DiscussionTitle" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DiscussionBody" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded">
+						<xs:element name="DiscussionSubTitle" minOccurs="0">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="DiscussionParagraph" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DistributionAndOrSpecimenType">
+		<xs:annotation>
+			<xs:documentation>A section containing specific distribution information and all/any specimen citations.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="DistributionAndOrSpecimenTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the distribution or specimen citations section, if present.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DistributionAndOrSpecimenParagraph" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The text of the distribution discussion section in separate elements for each paragraph.  One iteration should be required.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IndividualLocalities" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Locality" type="LocalityType" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Location at which gethering event took place.  Analagous to a subset of ABCD elements, but less rigidly defined.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Gathering" type="GatheringType" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ErrataType">
+		<xs:sequence>
+			<xs:element name="ErrataTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the errata section, if any (usually 'Errata').</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ErrataBody" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Full text of the Errata section, usually set out as a table, if not with separate entries in repeats of the element.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FrontispieceType">
+		<xs:annotation>
+			<xs:documentation>An ornamental figure or illustration that faces or preceeds the title page of a publication.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0">
+			<xs:element name="FrontispieceTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the frontispiece, if any (usually 'Frontispiece').</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="FrontispieceParagraph" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The text of the frontispiece in separate elements for each paragraph.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GatheringType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="CollectorOrExpeditionName" type="ContributorType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The person(s) or expedition responsible for the collection.  Equivalent to ABCD 'GatheringAgent'.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CollectorsOrStationNumber" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Number collector gave to specimen and/or station number of expedition.  Similar in concept to ABCD 'GatheringCode'.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GatheringDate" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date(s) of the gathering or observation event.  A subset of ABCD.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CommentsAboutEntireGathering" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Comments in text about collection of specimen(s) (e.g. all duplicates in Botany).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="RelatedTaxonInformation" type="RelatedTaxonInformationType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Similar to the 'Synecology' element of ABCD, although that has less detail and includes a broader concept of associated taxa.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Specimen" type="SpecimenType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="GlossaryType">
+		<xs:annotation>
+			<xs:documentation>A list of specialised or technical words or passages with their definitions, usually at the back of a publication.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="GlossaryTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the glossary, if any (usually 'Glossary').</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GlossaryIntroduction" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Any introductory text that explains the glossary or its formatting, in separate elements for each paragraph.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GlossaryBody" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Full text of the glossary, set out as a table, or text.  If the latter, with separate entries in repeats of the element.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ImageCaptionType">
+		<xs:sequence>
+			<xs:element name="Caption">
+				<xs:annotation>
+					<xs:documentation>Text of the image caption, including Figure number, name, description etc.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GlobalComponents" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Components in the caption that relate to the entire image.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ImageCrossReference" type="ImageCrossReferenceType" minOccurs="0"/>
+						<xs:element name="TaxonName" type="TaxonNameType" minOccurs="0"/>
+						<xs:element name="TaxonAuthor" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Taxon Author String, not broken down, may include year.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="OtherTextOrSymbol" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any other text or symbol in the image caption.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="ImageSpecimenCitation" type="DistributionAndOrSpecimenType" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SubelementComponents" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Components in the caption that relate to one or more portions of the image.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ImageCrossReference" type="ImageCrossReferenceType" minOccurs="0"/>
+						<xs:element name="TaxonName" type="TaxonNameType" minOccurs="0"/>
+						<xs:element name="TaxonAuthor" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Taxon Author String, not broken down, may include year.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="OtherTextOrSymbol" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any other text or symbol in the image caption.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="ImageSpecimenCitation" type="DistributionAndOrSpecimenType" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ImageCrossReferenceType">
+		<xs:sequence>
+			<xs:element name="ImageCrossReferenceString" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Full Reference text</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="TargetReference" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>ID of Target Image Element</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="PositionOfImage" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="InVolume"/>
+					<xs:enumeration value="InSeparateVolume"/>
+					<xs:enumeration value="OutsideWork"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="TreatmentOrCitation" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="InCurrentTreatment"/>
+					<xs:enumeration value="InCitedTreatment"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="IndexType">
+		<xs:annotation>
+			<xs:documentation>A section that serves as a guide or facilitates reference.  Usually a list of important subjects, names, places, etc. in a publication giving page or pages on which the item is used.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence minOccurs="0">
+			<xs:element name="IndexTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the index, if any (usually 'Index').</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IndexIntroduction" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Any introductory text that explains the index or its formatting, in separate elements for each paragraph. </xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IndexBody" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Full text of the index, set out as a table, or text.  If the latter, with separate entries in repeats of the element.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="IntroductoryType">
+		<xs:annotation>
+			<xs:documentation>Any of several types of Introductory matter:  Introduction, Foreward, Preface, Dedication, etc.  Any of these may be by the author(s) of the work or a different author.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="IntroductoryTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the introductory section if any.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IntroductoryParagraph" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The text of the Introductory section in separate elements for each paragraph.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IntroductoryAuthorPlaceDate" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The author(s), place and date of writing of the Introductory text, if given.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="IntroductoryAuthorPlaceDateParagraph">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="IntroductoryAuthors" type="ContributorType" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Author name(s). </xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="IntroductoryPlaceDate" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Place and date, if present.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="KeyDecisionNodeType">
+		<xs:annotation>
+			<xs:documentation>The section of a key where a choice must be made between competing statements (lugs). Att: NodeID; ParentNodeID; ParentKeyID</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="KeyLug" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Statement about taxa included, to be contrasted with other lugs.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="KeyLugString">
+							<xs:annotation>
+								<xs:documentation>Full text of Key Lug, including Lug identifier and key reference.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="DecisionNodeIdentifier" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>An identifier that can be used to connect all elements of a decision node (i.e., couplet in a dichotomous key).  May be a letter or a number.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="Explicit" use="required">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Explicit"/>
+											<xs:enumeration value="Implicit"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="LugIdentifier" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>An identifier that indicates an individual Lug.  May be a letter or a number, sometimes with a superscript added.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="Characters" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>One or more morphological characters (and sometimes other information such as geography or behaviour that may assist the user in identification).  Text given without the Lug Identifier or Key reference, may include reference(s) to Illustrations that may be cross-referenced.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="KeyReference" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Reference to name or subsequent key decision node led to from this lug.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="FollowingNumber" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>Number or letter used to link to another part of the key.</xs:documentation>
+										</xs:annotation>
+										<xs:complexType mixed="true"/>
+									</xs:element>
+									<xs:element name="TaxaReferedTo" minOccurs="0" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="TaxonName" type="TaxonNameType" minOccurs="0">
+													<xs:annotation>
+														<xs:documentation>Taxon Name identified from the lug.</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+												<xs:element name="TaxonAuthor" type="TaxonAuthorType" minOccurs="0">
+													<xs:annotation>
+														<xs:documentation>Author of lowest rank taxon identified from lug.</xs:documentation>
+													</xs:annotation>
+												</xs:element>
+												<xs:element name="KeyLugNameAddendum" minOccurs="0">
+													<xs:annotation>
+														<xs:documentation>Year or any other information included after the name string.</xs:documentation>
+													</xs:annotation>
+													<xs:complexType mixed="true"/>
+												</xs:element>
+												<xs:element name="IdentifyingNumber" minOccurs="0">
+													<xs:annotation>
+														<xs:documentation>Identifying number of taxon in the treatement.</xs:documentation>
+													</xs:annotation>
+													<xs:complexType mixed="true"/>
+												</xs:element>
+												<xs:element name="PageNumber" minOccurs="0">
+													<xs:annotation>
+														<xs:documentation>Page number of the taxon treatment, if cited in the key.</xs:documentation>
+													</xs:annotation>
+													<xs:complexType mixed="true"/>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="KeyDecisionNode" type="KeyDecisionNodeType" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="LugID" type="xs:ID" use="required"/>
+					<xs:attribute name="ParentLugID" type="xs:IDREF" use="optional"/>
+					<xs:attribute name="Language"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="NodeID" type="xs:ID" use="required"/>
+		<xs:attribute name="ParentNodeID" type="xs:IDREF" use="optional"/>
+		<xs:attribute name="ParentKeyID" type="xs:IDREF" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="KeyToTaxaType">
+		<xs:sequence>
+			<xs:element name="KeyTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Title, if any, of the key.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="KeyIntroductoryText" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Any introductory text to the key.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="KeyDecisionNode" type="KeyDecisionNodeType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The section of a key where a choice must be made between competing statements (lugs).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="KeyID" type="xs:ID" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="KeyWordsType">
+		<xs:annotation>
+			<xs:documentation>A list of words considered by the author, editor, or publisher to describe the most important points of a publication.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="KeyWordsTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Title for section, usually 'Key words' if present.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="KeyWordsBody" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Full text, not including heading.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="KeyWordsString" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Full key words string.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="KeyWordsAtomised" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Key words atomised</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LocalityType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="Level0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Will include continent or ocean level data.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Level0Text" type="xs:string"/>
+						<xs:element name="Level0Modifier" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any modifier included by the author, e.g. '?'.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Level1" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Will include political data at the level of Country or equivalent.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Level1Text" type="xs:string"/>
+						<xs:element name="Level1Modifier" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any modifier included by the author, e.g. '?'.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Level2" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Will include political data at the first level below Country, e.g., state, province, etc.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Level2Text" type="xs:string">
+							<xs:annotation>
+								<xs:documentation> </xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Level2Modifier" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any modifier included by the author, e.g. '?'.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Level3" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Will include political data at the second level below Country, e.g., county, province, district, etc</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Level3Text" type="xs:string">
+							<xs:annotation>
+								<xs:documentation> </xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Level3Modifier" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any modifier included by the author, e.g. '?'.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DetailedLocation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Any cited location other than the above, including altitude, depth etc.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:choice maxOccurs="unbounded">
+						<xs:element name="DetailedLocationText" type="xs:string"/>
+						<xs:element name="DetailedLocModifier" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any modifier included by the author, e.g. '?'.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Georeference" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Might include latitude and longitude, or other forms of georeference.  May need subsequent interpretation.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="GeoreferenceText" type="xs:string"/>
+						<xs:choice>
+							<xs:element name="GeoreferenceLatLong" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Latitude" type="xs:string"/>
+										<xs:element name="Longitude" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="GeoreferenceDecimalLatLong" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="DecimalLatitude" type="xs:string"/>
+										<xs:element name="DecimalLongitude" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="GeoreferenceOther" minOccurs="0">
+								<xs:complexType mixed="true"/>
+							</xs:element>
+							<xs:element name="AltitudeQualification" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Any qualification given, e.g. 'approximately', '?', 'ca.'.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType mixed="true"/>
+							</xs:element>
+						</xs:choice>
+					</xs:sequence>
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Altitude" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Distance above sea level of collecting site</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:choice maxOccurs="unbounded">
+						<xs:element name="AltitudeUnits" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Units in which altitude is measured in text (e.g. feet, meters etc)</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="AltitudeQualification" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any qualification given, e.g. 'approximately', '?', 'ca.'.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="AltitudeValue">
+							<xs:annotation>
+								<xs:documentation>Figure for altitude given, without qualification or units.  Might be a single figure or a range.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Depth" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Distance below ground datum, e.g. water level</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="DepthUnits" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Units in which depth is measured in text (e.g. feet, meters etc)</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="DepthQualification" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any qualification given, e.g. 'approximately', '?', 'ca.'.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="DepthValue">
+							<xs:annotation>
+								<xs:documentation>Figure for depth given, without qualification or units.  Might be a single figure or a range.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="NomenclaturalTypeType">
+		<xs:annotation>
+			<xs:documentation>Information pertaining to type specimen or type taxon.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="KindOfDesignation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Whether type specimen or type taxon.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TypeStatusComments" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Comments on the status by the author, such as "conserved", Not Avaiable etc.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="NomenclaturalTypeTaxon" type="NomenclaturalTypeTaxonType">
+					<xs:annotation>
+						<xs:documentation>Information pertaining to a the name that typifies a name at a rank above species as defined by the relevant code.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="NomenclaturalTypeSpecimen" type="NomenclaturalTypeSpecimenType" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Information pertaining to a type specimen or specimens, type illustration, or a reference to a previously published reference to a type.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="NomenclaturalTypeSpecimenType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="TypeStatus" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Statement from text on designation applying to either specimens or taxa  (e.g. monotypy, holotype, iconotype, combined description, Lectotype [in secondary citations] etc.).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Locality" type="LocalityType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Location at which gethering event took place.  Subset of ABCD elements.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Gathering" type="GatheringType" minOccurs="0"/>
+			<xs:element name="NomenclaturalTypeCitation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Information pertaining to a type which is an illustration or a reference to a previously published work.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="TypeCitationAuthors" type="OtherCitationAuthorsType"/>
+						<xs:element name="TypeCitation" type="PublicationDetailsType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="NomenclaturalTypeTaxonType">
+		<xs:annotation>
+			<xs:documentation>Information pertaining to a the name that typifies a name at a rank above species as defined by the relevant code.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="NomenclaturalTypeTaxonName">
+				<xs:annotation>
+					<xs:documentation>Name of the Taxon.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="TaxonName">
+							<xs:annotation>
+								<xs:documentation>The full name string text.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="GenusName" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Needed for genus and any rank below genus.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:sequence minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="InfraGenericName" minOccurs="0">
+								<xs:complexType mixed="true">
+									<xs:attribute name="Explicit" use="optional">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="Explicit"/>
+												<xs:enumeration value="Implicit"/>
+												<xs:enumeration value="Null"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="InfraGenericRank" minOccurs="0">
+								<xs:complexType mixed="true">
+									<xs:attribute name="Explicit" use="optional">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="Explicit"/>
+												<xs:enumeration value="Implicit"/>
+												<xs:enumeration value="Null"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:element name="SpeciesEpithet" minOccurs="0">
+							<xs:complexType mixed="true"/>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="NomenclaturalTypeTaxonAuthors" type="TaxonAuthorType" minOccurs="0"/>
+			<xs:element name="NomenclaturalTypePublication" type="PublicationDetailsType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="NotesType">
+		<xs:annotation>
+			<xs:documentation>A section containing comments or explanations in a publication.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="NotesTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the notes section, if any.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="NotesParagraph" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The text of the notes section in separate elements for each paragraph.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="OtherCitationAuthorsType">
+		<xs:sequence>
+			<xs:element name="OtherCitationAuthorString">
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="OtherCitationAuthorAtomised" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The attribute KindOfAuthor enables differentiation between 'Citation Author' vs. 'Article or Book Author'</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="OrderOfAuthors" type="xs:integer" use="required"/>
+					<xs:attribute name="KindOfAuthor" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PostscriptType">
+		<xs:annotation>
+			<xs:documentation>A section of text following the work.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="PostscriptTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The title of the postscript if any (usually 'Postscript').</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PostscriptParagraph" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The text of the postscript in separate elements for each paragraph.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PostscriptAuthorPlaceDate" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The author, place and date of writing of the postscript, if given.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="PostscriptAuthorPlaceDateParagraph">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="PostscriptAuthors" type="ContributorType" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Names of author(s) as given in publication.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="PostscriptPlaceDate" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Place and date, if present.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PublicationContributorType">
+		<xs:sequence>
+			<xs:element name="ContributorString">
+				<xs:annotation>
+					<xs:documentation>The complete string of names of author(s) or editor(s) as given in publication, e.g., Tudor, Henry and Jane Seymour.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ContributorAtomised" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Name of each author or editor, separated out; repeats for each individual; later in interpretation layer linked to to a list of standardized names.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="OrderOfContributors" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PublicationDetailsType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="ArticleTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The name of the title of the article in which the treatment was found, if present.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="BookSeriesJournalTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Place of publication (Journal, Book, or Book Series, etc).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Volume" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Volume letter or number in which the treatment was found.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Pagination" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Pages, figures and any other marker within volume (e.g. number or column) cited.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PublicationDateCited" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date of publication given in citation.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PublicationDateComment" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Any comment on Cited date by treatment author or other, including alternative publication date, if different from Cited Date.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ImageReference" type="ImageCrossReferenceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Image reference if required.  Might be stored under 'pagination' if desired.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="PublicationSubHeadType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="SubHeadTitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Full title of portion of taxonomic work (or fascicle).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SubHeadSubtitle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Any subtitle of the portion of the taxonomic work (or fascicle).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SubHeadNumber" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SubheadAuthors" type="PublicationContributorType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Author(s) of the publication (may differ from TreatmentAuthor below).  </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IntroductorySection" type="IntroductoryType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Frontispiece" type="FrontispieceType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>May include image and text. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="KeyWords" type="KeyWordsType" minOccurs="0"/>
+			<xs:element name="Contents" type="ContentsType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Formatted as a table.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Acknowledgements" type="AcknowledgementsType" minOccurs="0"/>
+			<xs:element name="Index" type="IndexType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Glossary" type="GlossaryType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Errata" type="ErrataType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>May be formatted as a table.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="RelatedSpecimenType">
+		<xs:sequence>
+			<xs:element name="GatheringSite" type="LocalityType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Will generally be the same as the specimen related to, but occasionally is different, when this element may be used.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Gathering" type="GatheringType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="RelatedSpecimenCitation" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="RelatedSpecimenCitationAuthor" type="OtherCitationAuthorsType" minOccurs="0"/>
+						<xs:element name="RelatedSpecimenCitationPublication" type="PublicationDetailsType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RelatedTaxonInformationType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="RelatedTaxonName">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="RelatedTaxonName" type="TaxonNameType"/>
+						<xs:element name="RelatedTaxonAuthor" type="TaxonAuthorType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SubjectRelationToOtherTaxon" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+								<xs:enumeration value="Null"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RelatedTaxonRelationToSubjectTaxon" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+								<xs:enumeration value="Null"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SubjectTaxonLocationOnRelatedTaxon" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+								<xs:enumeration value="Null"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RelatedTaxonLocationOnSubjectTaxon" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+								<xs:enumeration value="Null"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SubjectTaxonStage" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+								<xs:enumeration value="Null"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RelatedTaxonStage" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+								<xs:enumeration value="Null"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RelatedTaxonVernacularName" minOccurs="0">
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="RelatedTaxonVernacularNameLanguage" minOccurs="0">
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="GeographicLocationRelationshipObserved" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The geographical area in which the relationship has been observed.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+								<xs:enumeration value="Null"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="EnvironmentalLocationRelationshipObserved" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The environmental conditions associated with the relationship.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+								<xs:enumeration value="Null"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CommentsOnRelationship" minOccurs="0">
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="RelatedSpecimen" type="RelatedSpecimenType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="RelatedTaxonCitedIn" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="RelatedTaxonCitationAuthors" type="OtherCitationAuthorsType" minOccurs="0"/>
+						<xs:element name="RelatedTaxonCitationPublication" type="PublicationDetailsType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="SpecimenType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="CollectionRepository" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Repository of the specimen as cited.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="optional">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+								<xs:enumeration value="Null"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SpecimenCatalogueNumber" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Catalogue number given by cited repository to specimen.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="Sex" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Sex of specimen (botanical or zoological).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="Stage" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Stage of specimen (botanical or zoooglical).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="optional">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+								<xs:enumeration value="Null"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TypeStatus" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Explicit"/>
+								<xs:enumeration value="Implicit"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="CommentsOnTypeStatus" minOccurs="0">
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="FacsimileOrFragmentInformation" minOccurs="0">
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="OtherCommentsAboutSpecimen" minOccurs="0">
+				<xs:complexType mixed="true"/>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="SynonymCitationType">
+		<xs:sequence>
+			<xs:element name="SynonymCitationParagraph">
+				<xs:annotation>
+					<xs:documentation>Full synonym paragraph as cited in text.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SynonymSubsets" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Necessary to have unbounded element when multiple names or other components are included in a single synonym citation paragraph.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:choice maxOccurs="unbounded">
+						<xs:element name="KindOfSynonym" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>e.g. Basionym of Accepted Name, Original Name of Accepted Name, Synonym, Pro Parte Synonym.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="SynonymName" type="TaxonNameType"/>
+						<xs:element name="TaxonAuthor" type="TaxonAuthorType" minOccurs="0"/>
+						<xs:element name="NameYear" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Year of publication as (if) given in heading.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="NewSynonymDesignation" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>e.g. "syn.nov."</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="Explicit" use="required">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Explicit"/>
+											<xs:enumeration value="Implicit"/>
+											<xs:enumeration value="Null"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="NameAddendum" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any comment following the name other than the authors' comments regarding its status or certainty</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="NameComments" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>any level of certainty that the author attributes to the synonym</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="SynonymPrimaryCitation" type="CitationType" minOccurs="0"/>
+						<xs:element name="SynonymOtherCitations" minOccurs="0">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="SynonymOtherCitationAuthor" type="OtherCitationAuthorsType"/>
+									<xs:element name="SynonymOtherCitation" type="CitationType"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaxonAuthorType">
+		<xs:annotation>
+			<xs:documentation>Stated Taxon Author(s) as distinct from the Treatment author.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TaxonAuthorString">
+				<xs:annotation>
+					<xs:documentation>The attribute AppliesToRank indicates the rank the author string is applied to.  It is used only if multiple author strings are applied to a TaxonNameString.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+					<xs:attribute name="AppliesToRank" type="xs:string" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TaxonAuthorAtomised" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The atttibute KindOfAuthor has the values Basionym (Parenthetic) vs. Original or Combination Author(s) for each and, if applicable, "in", "manuscript", or "apud".</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="KindOfAuthor" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Combination"/>
+								<xs:enumeration value="CombinationIn"/>
+								<xs:enumeration value="CombinationMS"/>
+								<xs:enumeration value="CombinationApud"/>
+								<xs:enumeration value="Parenthetic"/>
+								<xs:enumeration value="ParentheticIn"/>
+								<xs:enumeration value="ParentheticMS"/>
+								<xs:enumeration value="ParentheticApud"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="OrderOfAuthors" type="xs:integer" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TaxonHeadingType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="TaxonHeadingBody">
+				<xs:annotation>
+					<xs:documentation>The full text of a taxon heading.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RankDesignation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The rank applied by the author to the name as stated in the text, which may be present in the original text (explicit) or not (implicit).  At times it may be a matter of opinion what the rank of a name is, in such cases, the information and its attribution belong in the Interpreted Layer.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TaxonIdentifier" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Any identification numeral or letter that identifies the taxon within the heading text.  Usually consecutive numbering for names with the same rank within the taxon of next higher rank.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="TaxonHeadingName" type="TaxonNameType">
+				<xs:annotation>
+					<xs:documentation>The complete name of the taxon in the header without any identifier or authorship.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TaxonAuthor" type="TaxonAuthorType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Stated Taxon Author(s) as distinct from the Treatment author(s).  Att: Explicit; AppliesToRank, for those cases in which more than one author string is included in a name string that applies to the name at more than one rank (e.g., species and variety).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NameYear" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Year of publication as (if) given in heading.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="NewNameDesignation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Designation indicating that the author believes he/she is erecting a new name, new combination, or new status; e.g., "nom. nov.", "sp. nov.", "gen. nov.", "comb. nov.", "stat. nov." etc. </xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="NameAddendum" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Any comment following the name other than the authors' comments regarding its status or certainty.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="NameComments" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Authors' comments regarding status or level of certainty attributed to name/rank combination, e.g., "cf." "aff.", "?"</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="ImageCrossReference" type="ImageCrossReferenceType" minOccurs="0"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="TaxonNameType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="TaxonName">
+				<xs:annotation>
+					<xs:documentation>The full name string text.   The Attribute InformalName is a flag indicating whether the name is purported to be a valid (Bot) or available (Zoo) name.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="InformalName" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:boolean"/>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GenusName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Genus name is required for any name of rank genus or below.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="InfraGenericGroup" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Grouped to allow for infrageneric names at different ranks.  Repeatable to allow for the rare occurence of multiple infrageneric names in a name string.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="InfraGenericName">
+							<xs:annotation>
+								<xs:documentation>Needed, when present, for ranks below genus.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="InfraGenericRank" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Usually subgenus.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="OrderOfNames" type="xs:integer" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SpeciesEpithet" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Species epithet is required  for any name of rank species or below.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="InfraSpecificGroup" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Grouped to allow for infraspecific names at different ranks.  Repeatable to allow for the occurence of multiple infraspecific names in a name string.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="InfraSpecificName">
+							<xs:annotation>
+								<xs:documentation>Needed, when present, for ranks below species.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="InfraSpecificRank" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Usually subspecies, especially in Zoology.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="OrderofNames" type="xs:integer" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="HybridOrChimaera" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Designation and atomisation of the elements needed for hybrid or graft-chimaera names or formulas.   Nnamed hybrids or graft-chimaera and hybrid formulas can both be accommodated.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="NamedHybridOrChimaera" minOccurs="0">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Rank">
+										<xs:annotation>
+											<xs:documentation>The rank at which the hybrid or graft-chimaera is noted.</xs:documentation>
+										</xs:annotation>
+										<xs:complexType mixed="true"/>
+									</xs:element>
+									<xs:element name="SymbolOrWord">
+										<xs:annotation>
+											<xs:documentation>The symbol, letter or word used to designate the hybrid or graft-chimaera, i.e., 'x', '+', 'notho-' or 'n-'.</xs:documentation>
+										</xs:annotation>
+										<xs:complexType mixed="true"/>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="HybridFormulaAtomisation" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Allows for hybrid or graft-chimaera parents' names to be atomised.  The first parent is taken to be the name in the main heading elements above.  Also allows for information about the sex of all parents to be captured.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="FirstParentSex" minOccurs="0">
+										<xs:complexType mixed="true"/>
+									</xs:element>
+									<xs:element name="AdditionalParentNames" maxOccurs="unbounded">
+										<xs:annotation>
+											<xs:documentation>The first parent is taken to be the name in the main heading elements above. The attribute OrderOfParent has a default of 2.</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="GenusName">
+													<xs:annotation>
+														<xs:documentation>Required if AdditionalParentNames is used.</xs:documentation>
+													</xs:annotation>
+													<xs:complexType mixed="true">
+														<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+													</xs:complexType>
+												</xs:element>
+												<xs:element name="InfraGenericGroup" minOccurs="0" maxOccurs="unbounded">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="InfraGenericName">
+																<xs:annotation>
+																	<xs:documentation>Needed, when present, for ranks below genus.</xs:documentation>
+																</xs:annotation>
+																<xs:complexType mixed="true">
+																	<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="InfraGenericRank" minOccurs="0">
+																<xs:annotation>
+																	<xs:documentation>Usually subgenus.</xs:documentation>
+																</xs:annotation>
+																<xs:complexType mixed="true">
+																	<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+																</xs:complexType>
+															</xs:element>
+														</xs:sequence>
+														<xs:attribute name="OrderOfNames" type="xs:integer" use="required"/>
+													</xs:complexType>
+												</xs:element>
+												<xs:element name="SpeciesEpithet" minOccurs="0">
+													<xs:annotation>
+														<xs:documentation>Needed for species and below.</xs:documentation>
+													</xs:annotation>
+													<xs:complexType mixed="true">
+														<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+													</xs:complexType>
+												</xs:element>
+												<xs:element name="InfraSpecificTaxon" minOccurs="0" maxOccurs="unbounded">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="InfraSpecificName">
+																<xs:complexType mixed="true">
+																	<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="InfraSpecificRank" minOccurs="0">
+																<xs:complexType mixed="true">
+																	<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+																</xs:complexType>
+															</xs:element>
+														</xs:sequence>
+														<xs:attribute name="OrderofNames" type="xs:integer" use="optional"/>
+													</xs:complexType>
+												</xs:element>
+												<xs:element name="AdditionalParentSex" minOccurs="0">
+													<xs:complexType mixed="true"/>
+												</xs:element>
+											</xs:sequence>
+											<xs:attribute name="OrderOfParent" type="xs:integer" use="required"/>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="HybridStatus" type="xs:boolean" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="InformalName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Full informal name string; an informal name may be a variety of things, but the simplest definition is 'any kind of name that does adhere to the ICBN or ICZN  rules of nomenclature'.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="CultivatedPlantNameElements" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Horticultural and trade name elements for plants in cultivation, according to the International Code of Nomenclature for Cultivated Plants (ICNCP).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="CultivarGroupName" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>A cultivar group name according to the ICNCP (assemblages of two or more similar, named cultivars within a genus, species, nothogenus, nothospecies or other denomination class).</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="CultivarName" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Cultivar name according to the ICNCP.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="TradeDesignationName" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Trade name(s) for a specific cultivar according to the ICNCP (a trade designation is used in place of the accepted cultivar epithet when the accepted epithet is considered unsuitable for marketing purposes).</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Breed" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Name of the breed of an animal.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+			<xs:element name="NamedIndividual" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Name of an individual animal.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true"/>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="TaxonTreatmentType">
+		<xs:annotation>
+			<xs:documentation>The taxon treatment element is used for each and every taxon included in a taxonomic publication.  This is the basic recursive unit within the Schema. Att: TaxonID; ParentNodeID; SiblingNodePreviousID; SiblingNodeNextID; RecognizedInTreatment; TreatmentLanguage</xs:documentation>
+		</xs:annotation>
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="TreatmentAuthors">
+				<xs:annotation>
+					<xs:documentation>Text string listing the author(s) of the treatment.  Understood, unless otherwise stated, that this listing applies to all Taxa included within Treatment. </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="TreatmentAuthorString">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="optional"/>
+								<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="TreatmentAuthorAtomised" maxOccurs="unbounded">
+							<xs:complexType mixed="true">
+								<xs:attribute name="OrderOfAuthors" type="xs:integer" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TreatmentDate" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Publication date of the taxon treatment according to information in the publication.  This may differ from the date on the title page of the publication as should reflect the entire publication which may have been published in parts over a span of time.  Multiple dates may be entered, giving the alternatives for a subject specialist to chose between in the interpretive layer to assign validity/availability according to the relevant Code.  If there is no date present, then this information will have to be elsewhere, i.e., in an interpretive layer.  For the BCA this is found as fascicle dates at the foot of some pages.  If a treatment spans fascicles, dates of both fascicles.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="DateReference" type="xs:IDREF" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TaxonHierarchyAbove" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A place to store information about the author(s)' included classification above the rank of the actual treated taxa.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="HierarchyBody">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="RankDesignation" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>The rank applied by the author to the name as stated in the text, which may be present in the original text (explicit) or not (implicit).  At times it may be a matter of opinion what the rank of a name is, in such cases, the information and its attribution belong in the Interpreted Layer.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true">
+								<xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="TaxonHeadingName" type="TaxonNameType">
+							<xs:annotation>
+								<xs:documentation>The complete name of the taxon in the header without any identifier or authorship.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="TaxonHeading" type="TaxonHeadingType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The Heading line(s) for a Taxon treatment.  </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TaxonCitationGroup" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Group for accepted/valid name and all synonyms cited</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AcceptedOrValidTaxonName" type="AcceptedOrValidTaxonNameType" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Repeat of name in the TaxonHeading above, along with other information cited, including author, publication, etc. Entire paragraph of text. </xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="SynonymCitation" type="SynonymCitationType" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Paragraphs giving citations of synonym(s)</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="KeyToTaxa" type="KeyToTaxaType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Key or keys within the treatment.  May be on many different forms, and either in a single block or partitioned through the text.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Descriptions" type="DescriptionsType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Descriptions and/or diagnoses wither in Latin or the language of the treatment, if different.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Discussions" type="DiscussionsType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Covers different types of discussions, although these are not broken down beyond general types in this schema.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Distribution" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Notes on the distribution of the taxon.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="DistributionTitle" minOccurs="0">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="DistributionParagraph" maxOccurs="unbounded">
+							<xs:complexType mixed="true">
+								<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DistributionAndOrSpecimenCitations" type="DistributionAndOrSpecimenType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="VernacularName" type="VernacularNameType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Vernacular names used for the taxon; could be mltiple repeats of the group.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ImageCrossReference" type="ImageCrossReferenceType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The attribute PositionOfImage has values of 'in volume', 'in separate volume', or 'outside work'.  The attribute  TreatmentOrCitation refers to whether the image is in the current treatment or in a cited treatment.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ImageCaption" type="ImageCaptionType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TaxonTreatment" type="TaxonTreatmentType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="TaxonID" type="xs:ID" use="required"/>
+		<xs:attribute name="ParentNodeID" type="xs:IDREF" use="optional"/>
+		<xs:attribute name="SiblingNodePreviousID" type="xs:IDREF" use="optional"/>
+		<xs:attribute name="SiblingNodeNextID" type="xs:IDREF" use="optional"/>
+		<xs:attribute name="RecognizedInTreatment" type="xs:boolean" use="required"/>
+		<xs:attribute name="TreatmentLanguage" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="VernacularNameType">
+		<xs:sequence>
+			<xs:element name="VernacularNameParagraph">
+				<xs:annotation>
+					<xs:documentation>Full text string as it appears in text.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="true">
+					<xs:attribute name="ElementID" type="xs:ID" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="VernacularName" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>An element for each vernacular name and associated information.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="VernacularName" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>The vernacular name as it appears in the text.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="VernacularNameLanguage" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Language of vernacular name.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="GeographicLocationOfVernacularNameUse" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Geographic location or area in which the name is used.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="VernacularNameComments" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Any other information about the vernacular name in the text.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType mixed="true"/>
+						</xs:element>
+						<xs:element name="SourceOfVernacularName" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Source(s) of a vernacular name, includes Publications, specimens, and other sources.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Publication" minOccurs="0" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="VernacularNameAuthor" type="OtherCitationAuthorsType" minOccurs="0"/>
+												<xs:element name="PublicationDetails" type="PublicationDetailsType"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="OtherSource" minOccurs="0" maxOccurs="unbounded">
+										<xs:annotation>
+											<xs:documentation>Other, unpublished, source of vernacular name.</xs:documentation>
+										</xs:annotation>
+										<xs:complexType mixed="true"/>
+									</xs:element>
+									<xs:element name="DistributionAndOrSpecimen" type="DistributionAndOrSpecimenType" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+								<xs:attribute name="Explicit" use="optional">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Explicit"/>
+											<xs:enumeration value="Implicit"/>
+											<xs:enumeration value="Null"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="ElementID" type="xs:integer" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

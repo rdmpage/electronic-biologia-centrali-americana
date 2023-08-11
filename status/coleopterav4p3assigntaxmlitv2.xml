@@ -1,0 +1,3120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Anna Weitzman (Smithsonian Institute) -->
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Anna L. Weitzman (Smithsonian Institution Libraries) -->
+<!DOCTYPE TaxonomicPublication SYSTEM "C:\AnnaAll\BCA\taXMLit\TEIXLITE.DTD">
+<TaxonomicPublication xmlns="http://taxonomic-trial/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://taxonomic-trial/namespace
+taXMLit-v8-8.xsd">
+	<IndividualPublication PublicationType="Volume or Fascicle in a series">
+		<PublicationFrontMatter>
+			<SeriesTitle ElementID="colv4p3-1">
+				<pb id="coleoptera-v4p3-i" n="[i]"/>BIOLOGIA<lb/>CENTRALI-AMERICANA.<lb/>
+			</SeriesTitle>
+			<SeriesSubTitle ElementID="colv4p3-2">INSECTA.<lb/>COLEOPTERA.</SeriesSubTitle>
+			<VolumeOrFascicleNumber ElementID="colv4p3-3">VOL. IV. PART 3.<lb/>
+			</VolumeOrFascicleNumber>
+			<Title ElementID="colv4p3-4">
+				<hi rend="italic">RHYNCHOPHORA. </hi>
+				<lb/>CURCULIONID&AElig;.<lb/>ATTELABIN&AElig;, PTEROCOLIN&AElig;, ALLOCORYNIN&AElig;, APIONIN&AElig;, THECESTERNIN&AElig;, OTIORHYNCHIN&AElig;</Title>
+			<PublicationAuthors>
+				<ContributorString ElementID="colv4p3-5" Explicit="true">BY<lb/>DAVID SHARP, F.R.S.,<lb/>AND<lb/>G. C. CHAMPION, F.Z.S.</ContributorString>
+				<ContributorAtomised OrderOfContributors="1">David Sharp</ContributorAtomised>
+				<ContributorAtomised OrderOfContributors="2">G. C. Champion</ContributorAtomised>
+			</PublicationAuthors>
+			<PublicationDate ElementID="colv4p3-6">1889&ndash;1911<pb id="coleoptera-v4p3-ii" n="[ii]"/>
+				<pb id="coleoptera-v4p3-iii" n="[iii]"/>
+			</PublicationDate>
+			<Contents>
+				<ContentsTitle ElementID="colv4p3-7">
+					<hi rend="bold">CONTENTS.</hi>
+					<lb/>
+				</ContentsTitle>
+				<ContentsBody ElementID="colv4p3-8">
+					<table>
+						<row>
+							<cell/>
+							<cell/>
+							<cell>Page</cell>
+						</row>
+						<row>
+							<cell>INTRODUCTION</cell>
+							<cell/>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.1">v</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>ERRATA</cell>
+							<cell/>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.2">vi</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>Subfam. ATTELABIN&AElig;</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.3">1</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>Subfam. PTEROCOLIN&AElig;</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.4">43</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>Subfam. ALLOCORYNIN&AElig;</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.5">45</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>Subfam. APIONIN&AElig;</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.6">47</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>Subfam. THECESTERNIN&AElig;</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.7">86</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>Subfam. OTIORHYNCHIN&AElig;</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.8">87</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;Otiorhynchin&aelig; Apter&aelig;</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.8a">87</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Ophryastina</cell>
+							<cell>
+								<name>D. SHARP </name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.9">87</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Epic&aelig;rina</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.10">101</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Sciaphilina</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.11">167</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Peritelina</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.12">177</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Trachyphl&aelig;ina</cell>
+							<cell>
+								<name>D. SHARP</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.13">177</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;Otiorhynchin&aelig; Alat&aelig;</cell>
+							<cell>
+								<name>G. C. CHAMPION</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.13a">178</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Tanymecina</cell>
+							<cell>
+								<name>G. C. CHAMPION</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.14">178</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Polydrosina</cell>
+							<cell>
+								<name>G. C. CHAMPION</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.15">208</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Anypotactina</cell>
+							<cell>
+								<name>G. C. CHAMPION</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.16">215</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Cyphina</cell>
+							<cell>
+								<name>G. C. CHAMPION</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.17">221</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Exophthalmina</cell>
+							<cell>
+								<name>G. C. CHAMPION</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.18">247</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Platyomina</cell>
+							<cell>
+								<name>G. C. CHAMPION</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.19">282</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>&emsp;&emsp;Eutimina</cell>
+							<cell>
+								<name>G. C. CHAMPION</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.20">300</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>SUPPLEMENT TO THE THECESTERNIN&AElig; AND <lb/>OTIORHYNCHIN&AElig;</cell>
+							<cell>
+								<name>G. C. CHAMPION</name>
+							</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.21">317</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>INDEX</cell>
+							<cell/>
+							<cell>
+								<ref target="coleoptera-v4p3-text.target.22">345</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>PLATES.</cell>
+							<cell/>
+							<cell/>
+						</row>
+					</table>
+					<hi rend="bold">a2</hi>
+					<pb id="coleoptera-v4p3-iv" n="[iv]"/>
+					<pb id="coleoptera-v4p3-v" n="[v]"/>
+				</ContentsBody>
+			</Contents>
+			<IntroductorySection>
+				<IntroductoryTitle ElementID="colv4p3-9">
+					<ref id="coleoptera-v4p3-text.target.1"/>
+					<hi rend="bold">INTRODUCTION.</hi>
+				</IntroductoryTitle>
+				<IntroductoryParagraph ElementID="colv4p3-10">THIS Volume, one of five required for the enumeration of the Rhynchophora, was commenced by Dr. Sharp in 1889 and is now concluded by myself. The study of the &ldquo;Otiorhynchin&aelig; Alat&aelig;&rdquo; has unfortunately been delayed for many years, during the publication of Vol. IV. parts 4, 5, and 7, all of which are devoted to the Family Curculionid&aelig;. The present Volume, IV. part 3, includes the Subfamilies Attelabin&aelig;, Pterocolin&aelig;, Allocorynin&aelig;, Apionin&aelig;, Thecesternin&aelig;e, and Otiorhynchin&aelig;. The Attelabin&aelig; are represented by 104 (88 new), the Pterocolin&aelig; by three (all new), the Allocorynin&aelig; (a new subfamily) and Thecesternin&aelig; each by one, the Apionin&aelig; by 88 (84 new), and the Otiorhynchin&aelig; by 419 (340 new) species respectively; the total number for the six subfamilies being 616 species, with 516 new, and forty new genera. Amongst the 419 Otiorhynchin&aelig;, the apterous and winged forms are almost equal in number, there being a preponderance of apterous terrestrial species (<hi rend="italic">Eupagoderes</hi>, <hi rend="italic">Epicaerus</hi>, <hi rend="italic">Epagriopsis</hi>, &amp;c.) in the arid portions of Mexico and the winged forms (<hi rend="italic">Exophthalmus</hi>, &amp;c.) becoming relatively more numerous in the forest regions southward. Taking the Curculionid&aelig; as a whole&mdash;the subfamilies Curculionin&aelig; and Calandrin&aelig; in addition to those worked out in the present Volume&mdash;the number of species enumerated altogether from Central America is as follows:&mdash; Vol. IV. part 3, 616; IV. part 4, 1365; IV. part 5, 908; IV. part 7, 344: total 3233. The three other families of Rhynchophora&mdash;the Brenthid&aelig;, Scolytid&aelig;, and Anthribid&aelig;, &mdash;dealt with in Vol. IV. part 6, number 615 species, thus bringing the total for the whole of the weevils up to 3848. The Rhynchophora, therefore, as anticipated (though not to the extent roughly estimated by myself in the Introduction to Vol. IV. part 4 of this series), greatly outnumber the Phytophaga (2619, including the Hispid&aelig; and Cassidid&aelig;) within our limits.<pb id="coleoptera-v4p3-vi" n="vi"/>
+				</IntroductoryParagraph>
+				<IntroductoryParagraph ElementID="colv4p3-11">The Otiorhynchid material examined by me includes that belonging to the U.S. National Museum, to whom we are indebted for co-types of all the species here described from their collection, as well as for many N.-American forms for comparison. From Costa Rica we have received during recent years numerous interesting species, both from Pittier and Biolley. Mr. Wickham, too, during his visit to Mexico in 1909, secured various Otiorhynchids, and, as usual, has kindly allowed us to retain any of these specimens that we required. Signor A. Solari, again, has also permitted us to keep for the British Museum the types of such species as have been described by me from his collection, which includes a portion of that of Jekel. The &ldquo;Sommer collection&rdquo; of Curculionids (including various types of Boheman, &amp;c.) having been recently acquired by Prof. Poulton for the Oxford University Museum, we have been enabled to verify the names of certain species left unidentified by Dr. Sharp, and this involves some slight corrections to the synonymy of the "Otiorhynchin&aelig; Apter&aelig;," which are noted in the Supplement.</IntroductoryParagraph>
+				<IntroductoryParagraph ElementID="colv4p3-12">As stated in a footnote on p. 317, various Apionin&aelig; left undetermined by Dr. Sharp for want of sufficient material, with such forms that have since come to hand, have been handed over to the specialist Herr Hans Wagner for study, and his descriptions of the new forms will be published elsewhere.</IntroductoryParagraph>
+				<IntroductoryParagraph ElementID="colv4p3-13">Of the fifteen coloured Plates issued, the first six were drawn by Mr. Purkiss, the others by Mr. E. Wilson of Cambridge.</IntroductoryParagraph>
+				<IntroductoryParagraph ElementID="colv4p3-14">It will not be out of place to note here that the enumeration of the Coleoptera, commenced in 1879, is now completed, bringing the total number of species to 18,039, for which eighteen Volumes have been required.</IntroductoryParagraph>
+				<IntroductoryAuthorPlaceDate>
+					<IntroductoryAuthorPlaceDateParagraph ElementID="colv4p3-15">G. C. C.<lb/>December 1911.<lb/>
+					</IntroductoryAuthorPlaceDateParagraph>
+					<IntroductoryAuthors>
+						<ContributorString Explicit="true">G. C. C.</ContributorString>
+						<ContributorAtomised OrderOfContributors="1">G. C. Champion</ContributorAtomised>
+					</IntroductoryAuthors>
+					<IntroductoryPlaceDate>December 1911.</IntroductoryPlaceDate>
+				</IntroductoryAuthorPlaceDate>
+			</IntroductorySection>
+			<Errata>
+				<ErrataTitle ElementID="colv4p3-16">
+					<ref id="coleoptera-v4p3-text.target.2"/>ERRATA.</ErrataTitle>
+				<ErrataBody ElementID="colv4p3-17">
+					<table>
+						<head/>
+						<row>
+							<cell>Page</cell>
+							<cell>Line</cell>
+							<cell/>
+						</row>
+						<row>
+							<cell>211</cell>
+							<cell>17</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-errata-1">for <hi rend="italic">pterygonalis</hi> read <hi rend="italic">pterygomalis</hi>.</ref>
+							</cell>
+						</row>
+						<row>
+							<cell>223</cell>
+							<cell>2</cell>
+							<cell>
+								<ref target="coleoptera-v4p3-errata-2">for <hi rend="italic">conicus</hi> read <hi rend="italic">conicollis</hi>.</ref>
+							</cell>
+						</row>
+					</table>
+				</ErrataBody>
+			</Errata>
+		</PublicationFrontMatter>
+		<PublicationTaxonomicMatter>
+			<PublicationTaxonomicSubHead>
+				<SubHeadTitle ElementID="colv4p3-18">
+					<pb id="coleoptera-v4p3-1" n="[1]"/>
+					<hi rend="bold">BIOLOGIA CENTRALI-AMERICANA.</hi>
+				</SubHeadTitle>
+				<SubHeadSubtitle ElementID="colv4p3-18a">
+					<hi rend="bold">ZOOLOGIA.</hi>
+				</SubHeadSubtitle>
+			</PublicationTaxonomicSubHead>
+			<TaxonTreatment TaxonID="colv4p3-t1" RecognizedInTreatment="true" TreatmentLanguage="English" SiblingNodeNextID="colv4p3-t40">
+				<TreatmentAuthors>
+					<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+					<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+				</TreatmentAuthors>
+				<TreatmentDate>April 1889</TreatmentDate>
+				<TaxonHierarchyAbove>
+					<HierarchyBody ElementID="colv4p3-19">
+						<hi rend="bold">Class INSECTA.</hi>
+					</HierarchyBody>
+					<RankDesignation Explicit="true">Class</RankDesignation>
+					<TaxonHeadingName>
+						<TaxonName InformalName="false">Insecta</TaxonName>
+					</TaxonHeadingName>
+				</TaxonHierarchyAbove>
+				<TaxonHierarchyAbove>
+					<HierarchyBody ElementID="colv4p3-20">
+						<hi rend="bold">Order COLEOPTERA.</hi>
+					</HierarchyBody>
+					<RankDesignation Explicit="true">Order</RankDesignation>
+					<TaxonHeadingName>
+						<TaxonName InformalName="false">Coleoptera</TaxonName>
+					</TaxonHeadingName>
+				</TaxonHierarchyAbove>
+				<TaxonHierarchyAbove>
+					<HierarchyBody ElementID="colv4p3-21">
+						<hi rend="bold">Tribe RHYNCHOPHORA.</hi>
+					</HierarchyBody>
+					<RankDesignation Explicit="true">Tribe</RankDesignation>
+					<TaxonHeadingName>
+						<TaxonName InformalName="false">Rhynchophora</TaxonName>
+					</TaxonHeadingName>
+				</TaxonHierarchyAbove>
+				<TaxonHierarchyAbove>
+					<HierarchyBody ElementID="colv4p3-22">
+						<hi rend="bold">Fam. CURCULIONID&AElig;.</hi>
+					</HierarchyBody>
+					<RankDesignation Explicit="true">Family</RankDesignation>
+					<TaxonHeadingName>
+						<TaxonName InformalName="false">Curculionid&aelig;</TaxonName>
+					</TaxonHeadingName>
+				</TaxonHierarchyAbove>
+				<TaxonHeading>
+					<TaxonHeadingBody ElementID="colv4p3-23" Explicit="true">
+						<hi rend="italic">Subfam. ATTELABIN&AElig;.</hi>
+					</TaxonHeadingBody>
+					<RankDesignation Explicit="true">Subfamily</RankDesignation>
+					<TaxonHeadingName>
+						<TaxonName InformalName="false">Attelabin&aelig;</TaxonName>
+					</TaxonHeadingName>
+				</TaxonHeading>
+				<TaxonCitationGroup>
+					<AcceptedOrValidTaxonName>
+						<AcceptedTaxonName>
+							<TaxonName InformalName="false">Attelabin&aelig;</TaxonName>
+						</AcceptedTaxonName>
+					</AcceptedOrValidTaxonName>
+				</TaxonCitationGroup>
+				<TaxonTreatment TaxonID="colv4p3-t2" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t1">
+					<TreatmentAuthors>
+						<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+						<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+					</TreatmentAuthors>
+					<TreatmentDate>April 1889</TreatmentDate>
+					<TaxonHeading>
+						<TaxonHeadingBody ElementID="colv4p3-24" Explicit="true">ATTELABUS.</TaxonHeadingBody>
+						<RankDesignation Explicit="false">genus</RankDesignation>
+						<TaxonHeadingName>
+							<TaxonName InformalName="false">Attelabus</TaxonName>
+						</TaxonHeadingName>
+					</TaxonHeading>
+					<TaxonCitationGroup>
+						<AcceptedOrValidTaxonName>
+							<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-25">
+								<hi rend="italic">Attelabus</hi>, Linn&aelig;us, Syst. Nat. ed. xii. 1, p. 619 (1767); Olivier, Ent. v. p. 5.</AcceptedOrValidTaxonNameParagraph>
+							<AcceptedTaxonName>
+								<TaxonName InformalName="false">Attelabus</TaxonName>
+							</AcceptedTaxonName>
+							<TaxonAuthor>
+								<TaxonAuthorString Explicit="true" AppliesToRank="Genus">Linn&aelig;us</TaxonAuthorString>
+								<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Linn&aelig;us</TaxonAuthorAtomised>
+							</TaxonAuthor>
+							<PrimaryCitation>
+								<CitationPublicationDetails>
+									<BookSeriesJournalTitle Explicit="true">Syst. Nat. ed. xii</BookSeriesJournalTitle>
+									<Volume Explicit="true">1</Volume>
+									<Pagination Explicit="true">619</Pagination>
+									<PublicationDateCited Explicit="true">1767</PublicationDateCited>
+								</CitationPublicationDetails>
+							</PrimaryCitation>
+							<OtherCitations>
+								<OtherCitationAuthors>
+									<OtherCitationAuthorString Explicit="true">Olivier</OtherCitationAuthorString>
+									<OtherCitationAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Treatment">Olivier</OtherCitationAuthorAtomised>
+								</OtherCitationAuthors>
+								<OtherCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="true">Ent.</BookSeriesJournalTitle>
+										<Volume Explicit="true">v</Volume>
+										<Pagination Explicit="true">5</Pagination>
+									</CitationPublicationDetails>
+								</OtherCitation>
+							</OtherCitations>
+						</AcceptedOrValidTaxonName>
+						<SynonymCitation>
+							<SynonymCitationParagraph ElementID="colv4p3-26">
+								<hi rend="italic">Chyphus</hi>, Thunberg, Act. Ups. vii. p. 110.</SynonymCitationParagraph>
+							<SynonymSubsets>
+								<SynonymName>
+									<TaxonName InformalName="false">Chyphus</TaxonName>
+								</SynonymName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="true" AppliesToRank="genus">Thunberg</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Thunberg</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<SynonymPrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="true">Act. Ups.</BookSeriesJournalTitle>
+										<Volume Explicit="true">vii</Volume>
+										<Pagination Explicit="true">110</Pagination>
+									</CitationPublicationDetails>
+								</SynonymPrimaryCitation>
+							</SynonymSubsets>
+						</SynonymCitation>
+						<SynonymCitation>
+							<SynonymCitationParagraph ElementID="colv4p3-27">
+								<hi rend="italic">Cyphus</hi>, Bedel, Faune Col. Seine, vi. pt. 2, p. 23.<hi rend="superscript">
+									<note id="coleoptera-v4p3-taxft-1a">1</note>
+								</hi>
+							</SynonymCitationParagraph>
+							<SynonymSubsets>
+								<SynonymName>
+									<TaxonName InformalName="false">Cyphus</TaxonName>
+								</SynonymName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="true" AppliesToRank="genus">Bedel</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">
+										<Author>Bedel</Author>
+									</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<SynonymPrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="true">Faune Col. Seine</BookSeriesJournalTitle>
+										<Volume Explicit="true">vi. pt. 2</Volume>
+										<Pagination Explicit="true">23</Pagination>
+									</CitationPublicationDetails>
+								</SynonymPrimaryCitation>
+							</SynonymSubsets>
+						</SynonymCitation>
+					</TaxonCitationGroup>
+					<Discussions>
+						<GeneralDiscussion>
+							<DiscussionBody>
+								<DiscussionParagraph ElementID="colv4p3-28">
+									<hi rend="italic">Attelabus</hi> is at present a genus of more than 100 species, distributed over the continental regions of the world, and no doubt numerous in the tropics, as there are many undescribed species extant in collections. South America and the Antilles have yielded at present the larger proportion of its representatives.
+								</DiscussionParagraph>
+								<DiscussionParagraph ElementID="colv4p3-29">Bedel<hi rend="superscript">
+										<ref target="coleoptera-v4p3-taxft-1a">1</ref>
+									</hi> has recently proposed to transfer the name <hi rend="italic">Attelabus</hi> to the allied genus <hi rend="italic">Apoderus</hi>, on the ground that in the tenth edition of the &lsquo;Systema Natur&aelig;&rsquo; an insect now referred to <hi rend="italic">Apoderus</hi>
+ was the representative of <hi rend="italic">Attelabus</hi>. In the Munich Catalogue, which I here follow, the origin of the genus is assigned to the twelfth edition of the &lsquo;Systema Natur&aelig;&rsquo;; or the genus may be credited to Olivier, whose work really inaugurated the modern arrangement of the genus and its allies. Either course appears sufficiently satisfactory, and enables us to avoid the confusion caused by Bedel&apos;s proceeding &lsqb;which involves the alteration of some hundreds of names of species of Curculionid&aelig;&mdash;<hi rend="italic">Apoderus</hi> being called <hi rend="italic">Attelabus, Attelabus Chyphus</hi> (emended to <hi rend="italic">Cyphus</hi>), and <hi rend="italic">Cyphus Neocyphus</hi>&rsqb;, so that I have no doubt the course I now adopt will receive the sanction of Coleopterists.
+								</DiscussionParagraph>
+								<DiscussionParagraph ElementID="colv4p3-30">Attempts have been made in a more or less distinct manner to subdivide the genus;<lb/>
+									<milestone unit="full signature"/>BIOL. CENTR.-AMER., Coleopt., Vol. IV. Pt. 3, <hi rend="italic">April</hi> 1889. <hi rend="bold">BB</hi>
+									<pb id="coleoptera-v4p3-2"/>
+but the divisions have not proved satisfactory, and I follow Lacordaire and the Munich Catalogue in using the name in its more extended sense.
+								</DiscussionParagraph>
+							</DiscussionBody>
+						</GeneralDiscussion>
+					</Discussions>
+					<KeyToTaxa KeyID="colv4p3-k1">
+						<KeyDecisionNode NodeID="colv4p3-kn1.1" ParentKeyID="colv4p3-k1">
+							<KeyLug LugID="colv4p3-kl1.1.1">
+								<KeyLugString ElementID="colv4p3-31">I. <hi rend="italic">Anterior femora without teeth or spines.</hi> (Attelabus, <hi rend="italic">auct.</hi>)</KeyLugString>
+								<LugIdentifier>I</LugIdentifier>
+								<Characters>Anterior femora without teeth or spines.</Characters>
+								<KeyReference>
+									<TaxaReferedTo>
+										<TaxonName>
+											<TaxonName InformalName="false">Attelabus</TaxonName>
+										</TaxonName>
+										<KeyLugNameAddendum>auct.</KeyLugNameAddendum>
+									</TaxaReferedTo>
+									<KeyDecisionNode NodeID="colv4p3-kn1.2" ParentKeyID="colv4p3-k1">
+										<KeyLug LugID="colv4p3-kl1.2.1" ParentLugID="colv4p3-kl1.1.1">
+											<KeyLugString ElementID="colv4p3-32">A. <hi rend="italic">Eyes very widely separated, the space between them not carinate; spurs of the anterior tib&aelig; of the female placed one in front of the other.</hi> (Pilolabus, <hi rend="italic">Jekel.</hi>)</KeyLugString>
+											<LugIdentifier>A</LugIdentifier>
+											<Characters>Eyes very widely separated, the space between them not carinate; spurs of the anterior tib&aelig; of the female placed one in front of the other.</Characters>
+											<KeyReference>
+												<TaxaReferedTo>
+													<TaxonName>
+														<TaxonName InformalName="false">Pilolabus</TaxonName>
+													</TaxonName>
+													<TaxonAuthor>
+														<TaxonAuthorString Explicit="true" AppliesToRank="genus">Jekel</TaxonAuthorString>
+														<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Jekel</TaxonAuthorAtomised>
+													</TaxonAuthor>
+												</TaxaReferedTo>
+											</KeyReference>
+										</KeyLug>
+										<KeyLug LugID="colv4p3-kl1.2.2" ParentLugID="colv4p3-kl1.1.1">
+											<KeyLugString ElementID="colv4p3-71">B. <hi rend="italic">Eyes only moderately distant, the space between them carinate; surface pubescent; spurs of the anterior tibi&aelig; of the female placed one above the other.</hi> (Himatolabus, <hi rend="italic">Jekel.</hi>)</KeyLugString>
+											<LugIdentifier>B</LugIdentifier>
+											<Characters>Eyes only moderately distant, the space between them carinate; surface pubescent; spurs of the anterior tibi&aelig; of the female placed one above the other.</Characters>
+											<KeyReference>
+												<TaxaReferedTo>
+													<TaxonName>
+														<TaxonName InformalName="false">Himatolabus</TaxonName>
+													</TaxonName>
+													<TaxonAuthor>
+														<TaxonAuthorString Explicit="true" AppliesToRank="genus">Jekel</TaxonAuthorString>
+														<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Jekel</TaxonAuthorAtomised>
+													</TaxonAuthor>
+												</TaxaReferedTo>
+											</KeyReference>
+										</KeyLug>
+										<KeyLug LugID="colv4p3-kl1.2.3" ParentLugID="colv4p3-kl1.1.1">
+											<KeyLugString ElementID="colv4p3-94">C. <hi rend="italic">Eyes but little separated, the space between them sulcate or carinate; surface without pubescence.</hi>  (Xestolabus, <hi rend="italic">Jekel.</hi>)</KeyLugString>
+											<LugIdentifier>C</LugIdentifier>
+											<Characters>Eyes but little separated, the space between them sulcate or carinate; surface without pubescence.</Characters>
+											<KeyReference>
+												<TaxaReferedTo>
+													<TaxonName>
+														<TaxonName InformalName="false">Xestolabus</TaxonName>
+													</TaxonName>
+													<TaxonAuthor>
+														<TaxonAuthorString Explicit="true" AppliesToRank="genus">Jekel</TaxonAuthorString>
+														<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Jekel</TaxonAuthorAtomised>
+													</TaxonAuthor>
+												</TaxaReferedTo>
+											</KeyReference>
+										</KeyLug>
+									</KeyDecisionNode>
+								</KeyReference>
+							</KeyLug>
+							<KeyLug LugID="colv4p3-kl1.1.2">
+								<KeyLugString ElementID="colv4p3-168">II. <hi rend="italic">Anterior femora irregularly serrate; form extremely short and broad.</hi> (Hylolabus, <hi rend="italic">Jekel.</hi>)</KeyLugString>
+								<LugIdentifier>II</LugIdentifier>
+								<Characters>Anterior femora irregularly serrate; form extremely short and broad.</Characters>
+								<KeyReference>
+									<TaxaReferedTo>
+										<TaxonName>
+											<TaxonName InformalName="false">Hylolabus</TaxonName>
+										</TaxonName>
+										<TaxonAuthor>
+											<TaxonAuthorString Explicit="true" AppliesToRank="genus">Jekel</TaxonAuthorString>
+											<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Jekel</TaxonAuthorAtomised>
+										</TaxonAuthor>
+									</TaxaReferedTo>
+								</KeyReference>
+							</KeyLug>
+							<KeyLug LugID="colv4p3-kl1.1.3">
+								<KeyLugString ElementID="colv4p3-178">III.  <hi rend="italic">Anterior femora unidentate or bidentate.</hi>  (Euscelus, <hi rend="italic">Germ.</hi>)</KeyLugString>
+								<LugIdentifier>III</LugIdentifier>
+								<Characters>Anterior femora unidentate or bidentate.</Characters>
+								<KeyReference>
+									<TaxaReferedTo>
+										<TaxonName>
+											<TaxonName InformalName="false">Euscelus</TaxonName>
+										</TaxonName>
+										<TaxonAuthor>
+											<TaxonAuthorString Explicit="true" AppliesToRank="genus">Germ.</TaxonAuthorString>
+											<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Germ.</TaxonAuthorAtomised>
+										</TaxonAuthor>
+									</TaxaReferedTo>
+									<KeyDecisionNode NodeID="colv4p3-kn1.3" ParentKeyID="colv4p3-k1">
+										<KeyLug LugID="colv4p3-kl1.3.1" ParentLugID="colv4p3-kl1.1.3">
+											<KeyLugString ElementID="colv4p3-179">A. <hi rend="italic">Thorax without constriction behind front margin.</hi>
+											</KeyLugString>
+											<LugIdentifier>A</LugIdentifier>
+											<Characters>Thorax without constriction behind front margin.</Characters>
+										</KeyLug>
+										<KeyLug LugID="colv4p3-kl1.3.2" ParentLugID="colv4p3-kl1.1.3">
+											<KeyLugString ElementID="colv4p3-196">B. <hi rend="italic">Thorax with constriction behind front margin.</hi>
+											</KeyLugString>
+											<LugIdentifier>B</LugIdentifier>
+											<Characters>Thorax with constriction behind front margin.</Characters>
+										</KeyLug>
+									</KeyDecisionNode>
+								</KeyReference>
+							</KeyLug>
+						</KeyDecisionNode>
+					</KeyToTaxa>
+					<TaxonTreatment TaxonID="colv4p3-t3" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t2" SiblingNodeNextID="colv4p3-t4">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-33" Explicit="true">1. <hi rend="bold">Attelabus sumptuosus</hi>.</TaxonHeadingBody>
+							<RankDesignation Explicit="false">species</RankDesignation>
+							<TaxonIdentifier>1</TaxonIdentifier>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Attelabus sumptuosus</TaxonName>
+								<GenusName Explicit="true">Attelabus</GenusName>
+								<SpeciesEpithet Explicit="true">sumptuosus</SpeciesEpithet>
+							</TaxonHeadingName>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-34">
+									<hi rend="italic">Attelabus sumptuosus</hi>, Gory in Guer. Mag. Zool. 1834, Cl. ix. t. 119.<hi rend="superscript">
+										<note id="coleoptera-v4p3-taxft-2a">1</note>
+									</hi>
+								</AcceptedOrValidTaxonNameParagraph>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="false">Attelabus sumptuosus</TaxonName>
+									<GenusName Explicit="true">Attelabus</GenusName>
+									<SpeciesEpithet Explicit="true">sumptuosus</SpeciesEpithet>
+								</AcceptedTaxonName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="true" AppliesToRank="species">Gory in Guer.</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Gory</TaxonAuthorAtomised>
+									<TaxonAuthorAtomised KindOfAuthor="CombinationIn" OrderOfAuthors="1">Guer.</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<PrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="true">Mag. Zool.</BookSeriesJournalTitle>
+										<Volume Explicit="true">Cl. ix</Volume>
+										<Pagination Explicit="true">t. 119</Pagination>
+										<PublicationDateCited Explicit="true">1834</PublicationDateCited>
+									</CitationPublicationDetails>
+								</PrimaryCitation>
+							</AcceptedOrValidTaxonName>
+						</TaxonCitationGroup>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-35">
+								<hi rend="italic">Hab.</hi> MEXICO (<hi rend="italic">Brit. Mus. ex coll. Children</hi>), Ventanas in Durango (<hi rend="italic">H&ouml;ge</hi>).--??SOUTH AMERICA<hi rend="superscript">
+									<ref target="coleoptera-v4p3-taxft-2a">1</ref>
+								</hi>.</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+								</Locality>
+								<Gathering>
+									<Specimen>
+										<CollectionRepository>Brit. Mus. ex coll. Children</CollectionRepository>
+									</Specimen>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="false">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<Level2 Explicit="true">
+										<Level2Text>Durango</Level2Text>
+									</Level2>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Ventanas</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">H&ouml;ge</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">H&ouml;ge</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level0 Explicit="true">
+										<Level0Text>South America</Level0Text>
+										<Level0Modifier>??</Level0Modifier>
+									</Level0>
+								</Locality>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-36">We have received only three examples, all females, that I can refer to this species; this sex has the peculiarity that the front tibi&aelig; are bimucronate at the extremity, the mucrones being placed at the inner edge, one in front, the other behind.</DiscussionParagraph>
+									<DiscussionParagraph ElementID="colv4p3-37">
+										<hi rend="italic">Attelabus sumptuosus</hi> has hitherto been only recorded from South America, but I feel sure that this has been the result of error. Gory<hi rend="superscript">
+											<ref target="coleoptera-v4p3-taxft-2a">1</ref>
+										</hi> says, &ldquo;cette charmante esp&egrave;ce a &eacute;t&eacute; trouv&eacute;e dans l'Am&eacute;rique m&eacute;ridionale, et m'a &eacute;t&eacute; donn&eacute;e par M. Children de Londres.&rdquo; Now the two examples of the species in the collection of the British Museum are also from Children&apos;s collection and are labelled Mexico, so that it is highly probable that Gory&apos;s example was really from there; this appears more certain when we recollect how vague is the term &ldquo;Am&eacute;rique m&eacute;ridionale&rdquo; used by Gory.</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+					</TaxonTreatment>
+					<TaxonTreatment TaxonID="colv4p3-t4" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t2" SiblingNodeNextID="colv4p3-t5" SiblingNodePreviousID="colv4p3-t3">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-38" Explicit="true">2. <hi rend="bold">Attelabus viridans</hi>.  (<hi rend="italic">A. viridanus</hi>, <ref target="coleoptera-v4p3-fig-t1f1 coleoptera-v4p3-fig-t1f1a">Tab I. figg. 1, 1a</ref>.)</TaxonHeadingBody>
+							<RankDesignation Explicit="false">species</RankDesignation>
+							<TaxonIdentifier>2</TaxonIdentifier>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Attelabus viridans</TaxonName>
+								<GenusName Explicit="true">Attelabus</GenusName>
+								<SpeciesEpithet Explicit="true">viridans</SpeciesEpithet>
+							</TaxonHeadingName>
+							<ImageCrossReference TreatmentOrCitation="InCurrentTreatment">
+								<ImageCrossReferenceString>Tab I. figg. 1, 1a</ImageCrossReferenceString>
+								<TargetReference>coleoptera-v4p3-fig-t1f1</TargetReference>
+								<TargetReference>coleoptera-v4p3-fig-t1f1a</TargetReference>
+							</ImageCrossReference>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-39">
+									<hi rend="italic">Attelabus viridans</hi> Gyll. in Sch&ouml;nh. Gen. et Spec. Curc. v. p. 303<hi rend="superscript">
+										<note id="coleoptera-v4p3-taxft-2b">1</note>
+									</hi>.</AcceptedOrValidTaxonNameParagraph>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="false">Attelabus viridans</TaxonName>
+									<GenusName Explicit="true">Attelabus</GenusName>
+									<SpeciesEpithet Explicit="true">viridans</SpeciesEpithet>
+								</AcceptedTaxonName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="true" AppliesToRank="species">Gyll. in Sch&ouml;nh.</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Gyll.</TaxonAuthorAtomised>
+									<TaxonAuthorAtomised KindOfAuthor="CombinationIn" OrderOfAuthors="1">Sch&ouml;nh.</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<PrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="true">Gen. et Spec. Curc.</BookSeriesJournalTitle>
+										<Volume Explicit="true">v</Volume>
+										<Pagination Explicit="true">p. 303</Pagination>
+									</CitationPublicationDetails>
+								</PrimaryCitation>
+							</AcceptedOrValidTaxonName>
+						</TaxonCitationGroup>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-40">
+								<hi rend="italic">Hab.</hi> Mexico between Oaxaca and Acapulco<hi rend="superscript">
+									<ref target="coleoptera-v4p3-taxft-2b">1</ref>
+								</hi>, Cuernavaca (Sall&eacute;).</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>between Oaxaca and Acapulco</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="false">Sall&eacute;</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Sall&eacute;</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="false">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Cuernavaca</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Sall&eacute;</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Sall&eacute;</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-41">If I rightly apply this description, <hi rend="italic">A. viridans</hi> is very closely allied to <hi rend="italic">A. sumptuosus</hi>, and differs chiefly in the coarser sculpture of the wing-cases. It is apparently very variable in colour, some specimens being in this respect similar to <hi rend="italic">A. sumptuosus</hi>, while others are blue or green, without copper or golden stripe; I think, however, all belong to one species, though this is by no means certain. The structure of the front tibi&aelig; of the female is the same as in <hi rend="italic">A. sumptuosus</hi>.</DiscussionParagraph>
+									<DiscussionParagraph ElementID="colv4p3-42">This is apparently a rare insect, as our editors have received only five examples, and I am acquainted with only two or three others in the collections of the Rev. H. S. Gorham and myself, obtained from old sources.</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+					</TaxonTreatment>
+					<TaxonTreatment TaxonID="colv4p3-t5" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t2" SiblingNodeNextID="colv4p3-t6" SiblingNodePreviousID="colv4p3-t4">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-43" Explicit="true">3. <hi rend="bold">Attelabus smithi</hi>, sp. n.</TaxonHeadingBody>
+							<RankDesignation Explicit="false">species</RankDesignation>
+							<TaxonIdentifier>3</TaxonIdentifier>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Attelabus smithii</TaxonName>
+								<GenusName Explicit="true">Attelabus</GenusName>
+								<SpeciesEpithet Explicit="true">smithii</SpeciesEpithet>
+							</TaxonHeadingName>
+							<NewNameDesignation Explicit="true">sp. n.</NewNameDesignation>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="false">Attelabus viridans</TaxonName>
+									<GenusName Explicit="true">Attelabus</GenusName>
+									<SpeciesEpithet Explicit="true">smithi</SpeciesEpithet>
+								</AcceptedTaxonName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="false" AppliesToRank="species">Sharp</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Sharp</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<PrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="false">Biologia Centrali-Amer.</BookSeriesJournalTitle>
+										<Volume Explicit="false">vol. 4, part 3</Volume>
+										<Pagination Explicit="false">2</Pagination>
+									</CitationPublicationDetails>
+								</PrimaryCitation>
+							</AcceptedOrValidTaxonName>
+						</TaxonCitationGroup>
+						<Descriptions>
+							<LatinDiagnosis>
+								<LatinDiagnosisParagraph ElementID="colv4p3-44">Subtus viridi-auratus, supra cupreus, prothoracis basi elytrorumque viridis, antennis pedibusque nigris; elytris fortiter profundeque punctatis.</LatinDiagnosisParagraph>
+								<LatinDiagnosisParagraph ElementID="colv4p3-45">Long. cum rostro 8 millim.</LatinDiagnosisParagraph>
+							</LatinDiagnosis>
+						</Descriptions>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-46">Hab. Mexico, Mescala in Guerrero (H. H. Smith).<pb id="coleoptera-v4p3-3"/>
+							</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<Level2 Explicit="true">
+										<Level2Text>Guerrero </Level2Text>
+									</Level2>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Mescala</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">H. H. Smith</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">H. H. Smith</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-47">Antenn&aelig; very short, the fourth joint a little longer than broad, the sixth about as long as broad, the seventh and eighth transverse, the club abrupt, compact, about as long as the five preceding joints, the tenth joint rather shorter than the ninth or eleventh. Rostrum short and broad, only as long as the head; eyes prominent, widely separated, the surface between them rugose. Thorax narrower in front than behind, constricted both in front and at the base. Elytra with a series of deep punctures, subrugose, not brilliant even at the apex.</DiscussionParagraph>
+									<DiscussionParagraph ElementID="colv4p3-48">We have received only two female examples of this species. One of the varieties of <hi rend="italic">A. viridans</hi> is almost similarly coloured, but I separate <hi rend="italic">A. smithi</hi> on account of its smaller size and still coarser and deeper sculpture. The cupreous-red parts of <hi rend="italic">A. smithi</hi> are duller in colour than in <hi rend="italic">A. sumptuosus</hi> and <hi rend="italic">A. viridans</hi>, var., and the legs have scarcely any metallic tint.</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+					</TaxonTreatment>
+					<TaxonTreatment TaxonID="colv4p3-t6" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t2" SiblingNodeNextID="colv4p3-t7" SiblingNodePreviousID="colv4p3-t5">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-49" Explicit="true">4. <hi rend="bold">Attelabus splendens</hi>.  (<ref target="coleoptera-v4p3-fig-t1f2">Tab I. fig. 2</ref>, &male;.)</TaxonHeadingBody>
+							<RankDesignation Explicit="false">species</RankDesignation>
+							<TaxonIdentifier>4</TaxonIdentifier>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Attelabus splendens</TaxonName>
+								<GenusName Explicit="true">Attelabus</GenusName>
+								<SpeciesEpithet Explicit="true">splendens</SpeciesEpithet>
+							</TaxonHeadingName>
+							<ImageCrossReference TreatmentOrCitation="InCurrentTreatment">
+								<ImageCrossReferenceString>Tab I. fig. 2, &male;</ImageCrossReferenceString>
+								<TargetReference>coleoptera-v4p3-fig-t1f2</TargetReference>
+							</ImageCrossReference>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-50">
+									<hi rend="italic">Attelabus splendens</hi> Gyll. in Sch&ouml;nh. Gen. et Spec. Curc. v. p. 304<hi rend="superscript">
+										<note id="coleoptera-v4p3-taxft-3a">1</note>
+									</hi>.</AcceptedOrValidTaxonNameParagraph>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="false">Attelabus splendens</TaxonName>
+									<GenusName Explicit="true">Attelabus</GenusName>
+									<SpeciesEpithet Explicit="true">splendens</SpeciesEpithet>
+								</AcceptedTaxonName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="true" AppliesToRank="species">Gyll. in Sch&ouml;nh.</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Gyll.</TaxonAuthorAtomised>
+									<TaxonAuthorAtomised KindOfAuthor="CombinationIn" OrderOfAuthors="1">Sch&ouml;nh.</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<PrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="true">Gen. et Spec. Curc.</BookSeriesJournalTitle>
+										<Volume Explicit="true">v</Volume>
+										<Pagination Explicit="true">p. 304</Pagination>
+									</CitationPublicationDetails>
+								</PrimaryCitation>
+							</AcceptedOrValidTaxonName>
+						</TaxonCitationGroup>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-51">Hab. Mexico, Vera Cruz (<hi rend="italic">Chevrolat</hi>
+								<hi rend="superscript">
+									<ref target="coleoptera-v4p3-taxft-3a">1</ref>
+								</hi>, <hi rend="italic">Sall&eacute;</hi>).</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Veracruz</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Chevrolat</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Chevrolat</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="false">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="false">
+										<DetailedLocationText>Veracruz</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Sall&eacute;</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Sall&eacute;</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-52">I have seen only two examples of this species: one was obtained from Sall&eacute;&apos;s collection, and therein was labelled &ldquo;<hi rend="italic">O. sallei</hi>, type&rdquo;; the other is also a &ldquo;type&rdquo; from Sch&ouml;nherr&apos;s collection communicated by Dr. Aurivillius.  <hi rend="italic">O. sall&aelig;i</hi> is one of the most densely squamose species of the genus, and I think the maculation of the surface in these individuals is in part, if not entirely, due to their being stained irregularly with a very tenacious, muddy fluid. The legs are remarkably short. The rostrum is short, without median groove, but with a vague basal, transverse impression. The mentum is short and broad, greatly narrowed towards the base, depressed and shining in the middle.</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+					</TaxonTreatment>
+					<TaxonTreatment TaxonID="colv4p3-t7" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t2" SiblingNodeNextID="colv4p3-t8" SiblingNodePreviousID="colv4p3-t6">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-53" Explicit="true">5. <hi rend="bold">Attelabus klugi</hi>.  (<ref target="coleoptera-v4p3-fig-t1f3">Tab I. fig. 3</ref>, &male;.)</TaxonHeadingBody>
+							<RankDesignation Explicit="false">species</RankDesignation>
+							<TaxonIdentifier>5</TaxonIdentifier>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Attelabus klugi</TaxonName>
+								<GenusName Explicit="true">Attelabus</GenusName>
+								<SpeciesEpithet Explicit="true">klugi</SpeciesEpithet>
+							</TaxonHeadingName>
+							<ImageCrossReference TreatmentOrCitation="InCurrentTreatment">
+								<ImageCrossReferenceString>Tab I. fig. 3, &male;</ImageCrossReferenceString>
+								<TargetReference>coleoptera-v4p3-fig-t1f3</TargetReference>
+							</ImageCrossReference>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-54">
+									<hi rend="italic">Attelabus klugii</hi>, Gyll. in Sch&ouml;nh. Gen. et Spec. Curc. v. p. 302.</AcceptedOrValidTaxonNameParagraph>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="false">Attelabus klugii</TaxonName>
+									<GenusName Explicit="true">Attelabus</GenusName>
+									<SpeciesEpithet Explicit="true">klugii</SpeciesEpithet>
+								</AcceptedTaxonName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="true" AppliesToRank="species">Gyll. in Sch&ouml;nh.</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Gyll.</TaxonAuthorAtomised>
+									<TaxonAuthorAtomised KindOfAuthor="CombinationIn" OrderOfAuthors="1">Sch&ouml;nh.</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<PrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="true">Gen. et Spec. Curc.</BookSeriesJournalTitle>
+										<Volume Explicit="true">v</Volume>
+										<Pagination Explicit="true">p. 302</Pagination>
+									</CitationPublicationDetails>
+								</PrimaryCitation>
+							</AcceptedOrValidTaxonName>
+						</TaxonCitationGroup>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-55">
+								<hi rend="italic">Hab.</hi> MEXICO (<hi rend="italic">Klug</hi>
+								<hi rend="superscript">
+									<ref target="coleoptera-v4p3-taxft-3b">1</ref>
+								</hi>), Parada (<hi rend="italic">Sall&eacute;</hi>).</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Klug</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Klug</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="false">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Parada</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Sall&eacute;</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Sall&eacute;</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+					</TaxonTreatment>
+					<TaxonTreatment TaxonID="colv4p3-t8" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t2" SiblingNodeNextID="colv4p3-t10" SiblingNodePreviousID="colv4p3-t7">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-56" Explicit="true">6. <hi rend="bold">Attelabus nigriclava</hi>, sp. n.</TaxonHeadingBody>
+							<RankDesignation Explicit="false">species</RankDesignation>
+							<TaxonIdentifier>6</TaxonIdentifier>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Attelabus nigriclava</TaxonName>
+								<GenusName Explicit="true">Attelabus</GenusName>
+								<SpeciesEpithet Explicit="true">nigriclava</SpeciesEpithet>
+							</TaxonHeadingName>
+							<NewNameDesignation Explicit="true">sp. n.</NewNameDesignation>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="false">Attelabus viridans</TaxonName>
+									<GenusName Explicit="true">Attelabus</GenusName>
+									<SpeciesEpithet Explicit="true">nigriclava</SpeciesEpithet>
+								</AcceptedTaxonName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="false" AppliesToRank="species">Sharp</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Sharp</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<PrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="false">Biologia Centrali-Amer.</BookSeriesJournalTitle>
+										<Volume Explicit="false">vol. 4, part 3</Volume>
+										<Pagination Explicit="false">3</Pagination>
+									</CitationPublicationDetails>
+								</PrimaryCitation>
+							</AcceptedOrValidTaxonName>
+						</TaxonCitationGroup>
+						<Descriptions>
+							<LatinDiagnosis>
+								<LatinDiagnosisParagraph ElementID="colv4p3-57">Gracilis, &aelig;neus, rugosus, griseo-pubescens, antennarum clava nigerrima, elytris singulis puncto depresso fusco.</LatinDiagnosisParagraph>
+								<LatinDiagnosisParagraph ElementID="colv4p3-58">Long. cum rostro 7 millim.</LatinDiagnosisParagraph>
+							</LatinDiagnosis>
+						</Descriptions>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-64">We have received five examples of this species, which is allied to 
+<hi rend="italic">A. klugi</hi>, but differs in a great many minor points, besides the fove&aelig; on the wing-cases. Of the variety we have received only one specimen. It is quite possible that it may prove to be a distinct species.</DiscussionParagraph>
+									<DiscussionParagraph ElementID="colv4p3-63">Antenn&aelig; moderately long, the club abrupt, quite black and thus contrasting strongly with the other joints, as these bear much white hair. Head as long as the rostrum; eyes prominent, widely separated. Thorax much narrowed towards the front, but not constricted either in front or at the base, deeply transversely rugose. Scutellum narrow. Elytra rather deeply and coarsely rugose; on the middle of each is a small<lb/>
+										<milestone unit="partial signature"/>
+										<hi rend="bold">BB 2</hi>
+										<pb id="coleoptera-v4p3-4"/>round fovea. Legs slender. Male with a depression along the middle of the ventral segments.</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-59">
+								<hi rend="italic">Hab.</hi> MEXICO, Chilpancingo in Guerrero 4600 feet (<hi rend="italic">H. H. Smith</hi>).</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<Level2 Explicit="true">
+										<Level2Text>Guerrero</Level2Text>
+									</Level2>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Chilpancingo</DetailedLocationText>
+									</DetailedLocation>
+									<Altitude>
+										<AltitudeValue>4600</AltitudeValue>
+										<AltitudeUnits>feet</AltitudeUnits>
+									</Altitude>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">H. H. Smith</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">H. H. Smith</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+						<TaxonTreatment TaxonID="colv4p3-t9" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t8">
+							<TreatmentAuthors>
+								<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+								<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+							</TreatmentAuthors>
+							<TaxonHeading>
+								<TaxonHeadingBody ElementID="colv4p3-60" Explicit="true">
+									<hi rend="italic">Var.</hi>
+								</TaxonHeadingBody>
+								<RankDesignation Explicit="true">variety</RankDesignation>
+								<TaxonHeadingName>
+									<TaxonName InformalName="true">Var.</TaxonName>
+									<GenusName Explicit="false">Attelabus</GenusName>
+									<SpeciesEpithet Explicit="false">nigriclava</SpeciesEpithet>
+									<InfraSpecificGroup OrderofNames="1">
+										<InfraSpecificName Explicit="false">[unnamed]</InfraSpecificName>
+									</InfraSpecificGroup>
+								</TaxonHeadingName>
+							</TaxonHeading>
+							<Descriptions>
+								<LatinDiagnosis>
+									<LatinDiagnosisParagraph ElementID="colv4p3-61">Var. Elytris minus profunde rugosis, quasi submaculatis; minus conspicue griseo-pubescens.</LatinDiagnosisParagraph>
+								</LatinDiagnosis>
+							</Descriptions>
+							<DistributionAndOrSpecimenCitations>
+								<DistributionAndOrSpecimenParagraph ElementID="colv4p3-62">
+									<hi rend="italic">Hab.</hi> MEXICO, Omilteme in Guerrero 8000 feet (<hi rend="italic">H. H. Smith</hi>).</DistributionAndOrSpecimenParagraph>
+								<IndividualLocalities>
+									<Locality>
+										<Level1 Explicit="true">
+											<Level1Text>Mexico</Level1Text>
+										</Level1>
+										<Level2 Explicit="true">
+											<Level2Text>Guerrero</Level2Text>
+										</Level2>
+										<DetailedLocation Explicit="true">
+											<DetailedLocationText>Omiltepe</DetailedLocationText>
+										</DetailedLocation>
+										<Altitude>
+											<AltitudeValue>8000</AltitudeValue>
+											<AltitudeUnits>feet</AltitudeUnits>
+										</Altitude>
+									</Locality>
+									<Gathering>
+										<CollectorOrExpeditionName>
+											<ContributorString Explicit="true">
+												<ContributorText>H. H. Smith</ContributorText>
+											</ContributorString>
+											<ContributorAtomised OrderOfContributors="1">
+												<Contributor>H. H. Smith</Contributor>
+											</ContributorAtomised>
+										</CollectorOrExpeditionName>
+									</Gathering>
+								</IndividualLocalities>
+							</DistributionAndOrSpecimenCitations>
+						</TaxonTreatment>
+					</TaxonTreatment>
+					<TaxonTreatment TaxonID="colv4p3-t10" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t2" SiblingNodePreviousID="colv4p3-t8">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-65" Explicit="true">7. <hi rend="bold">Attelabus diffinis</hi>, sp. n.</TaxonHeadingBody>
+							<RankDesignation Explicit="false">species</RankDesignation>
+							<TaxonIdentifier>7</TaxonIdentifier>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Attelabus diffinis</TaxonName>
+								<GenusName Explicit="true">Attelabus</GenusName>
+								<SpeciesEpithet Explicit="true">diffinis</SpeciesEpithet>
+							</TaxonHeadingName>
+							<NewNameDesignation Explicit="true">sp. n.</NewNameDesignation>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="false">Attelabus viridans</TaxonName>
+									<GenusName Explicit="true">Attelabus</GenusName>
+									<SpeciesEpithet Explicit="true">diffinis</SpeciesEpithet>
+								</AcceptedTaxonName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="false" AppliesToRank="species">Sharp</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Sharp</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<PrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="false">Biologia Centrali-Amer.</BookSeriesJournalTitle>
+										<Volume Explicit="false">vol. 4, part 3</Volume>
+										<Pagination Explicit="false">4</Pagination>
+									</CitationPublicationDetails>
+								</PrimaryCitation>
+							</AcceptedOrValidTaxonName>
+						</TaxonCitationGroup>
+						<Descriptions>
+							<LatinDiagnosis>
+								<LatinDiagnosisParagraph ElementID="colv4p3-66">Gracilis, nigerrimus, brevissime parcissimeque pubescens, subopacus; elytris obsolete sculpturatis.</LatinDiagnosisParagraph>
+								<LatinDiagnosisParagraph ElementID="colv4p3-67">Long. cum rostro 9 millim.</LatinDiagnosisParagraph>
+							</LatinDiagnosis>
+						</Descriptions>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-70">This insect has the form of <hi rend="italic">A. klugi</hi>, but is very different in colour, sculpture, and pubescence. Only one example has been obtained; it is a female, and has the two spurs on the anterior tibi&aelig; placed one in front of the other as in <hi rend="italic">A. viridans</hi>.</DiscussionParagraph>
+									<DiscussionParagraph ElementID="colv4p3-69">Head elongate, about as long as the rostrum, the eyes convex, very widely separated, the space between them without depressions, rugosely sculptured. Thorax elongate, rounded at the sides and a little narrowed in front, with a feeble depression or constriction in front of the base, the surface transversely rugose. Scutellum narrow and quite small. Elytra elongate, with a distant, very irregular punctuation. Legs long and slender.</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-68">
+								<hi rend="italic">Hab.</hi> MEXICO, Chilpancingo in Guerrero (<hi rend="italic">H. H. Smith</hi>, June 1888).</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<Level2 Explicit="true">
+										<Level2Text>Guerrero</Level2Text>
+									</Level2>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Chilpancingo</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">H. H. Smith</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">H. H. Smith</ContributorAtomised>
+									</CollectorOrExpeditionName>
+									<GatheringDate>June 1888</GatheringDate>
+								</Gathering>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+					</TaxonTreatment>
+					<TaxonTreatment TaxonID="colv4p3-t19" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t2">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-110" Explicit="true">15. <hi rend="bold">Attelabus -- ?</hi>
+							</TaxonHeadingBody>
+							<RankDesignation Explicit="false">species</RankDesignation>
+							<TaxonIdentifier>15</TaxonIdentifier>
+							<TaxonHeadingName>
+								<TaxonName InformalName="true">Attelabus -- ?</TaxonName>
+								<GenusName Explicit="true">Attelabus</GenusName>
+								<SpeciesEpithet Explicit="false">[unnamed]</SpeciesEpithet>
+							</TaxonHeadingName>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="true">Attelabus --?</TaxonName>
+									<GenusName Explicit="true">Attelabus</GenusName>
+									<SpeciesEpithet Explicit="true">[unnamed]</SpeciesEpithet>
+								</AcceptedTaxonName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="false" AppliesToRank="species">Sharp</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Sharp</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<PrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="false">Biologia Centrali-Amer.</BookSeriesJournalTitle>
+										<Volume Explicit="false">vol. 4, part 3</Volume>
+										<Pagination Explicit="false">7</Pagination>
+									</CitationPublicationDetails>
+								</PrimaryCitation>
+							</AcceptedOrValidTaxonName>
+						</TaxonCitationGroup>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-112">A single female example.  This is probably the exponent of a species very near to <hi rend="italic">A. l&aelig;sicollis</hi>; it is smaller, and has the eyes placed nearer to the thorax, but the male should be known before a decision is made about it.</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-111">
+								<hi rend="italic">Hab.</hi> MEXICO, Tierra Colorada in Guerrero (<hi rend="italic">H. H. Smith.</hi>)</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<Level2 Explicit="true">
+										<Level2Text>Guerrero</Level2Text>
+									</Level2>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Tierra Colorada</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">H. H. Smith</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">H. H. Smith</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+					</TaxonTreatment>
+					<TaxonTreatment TaxonID="colv4p3-t29" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t2">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-169" Explicit="true">25. <hi rend="bold">Attelabus ater</hi>.  (<ref target="coleoptera-v4p3-fig-t1f8">Tab. I. fig. 8</ref>, var. <hi rend="italic">sall&aelig;i</hi>.)</TaxonHeadingBody>
+							<RankDesignation Explicit="false">species</RankDesignation>
+							<TaxonIdentifier>25</TaxonIdentifier>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Attelabus ater</TaxonName>
+								<GenusName Explicit="true">Attelabus</GenusName>
+								<SpeciesEpithet Explicit="true">ater</SpeciesEpithet>
+							</TaxonHeadingName>
+							<ImageCrossReference TreatmentOrCitation="InCurrentTreatment">
+								<ImageCrossReferenceString>Tab. I. fig. 8, var. sall&aelig;i</ImageCrossReferenceString>
+								<TargetReference>coleoptera-v4p3-fig-t1f8</TargetReference>
+							</ImageCrossReference>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-170">
+									<hi rend="italic">Attelabus ater</hi>, Oliv. Encycl. Meth., Ins. iv. p. 278<hi rend="superscript">
+										<note id="coleoptera-v4p3-taxft-11a">1</note>
+									</hi>; Ent. v. no. 81, p. 8, t. 1. f. 6<hi rend="superscript">
+										<note id="coleoptera-v4p3-taxft-11b">2</note>
+									</hi>.</AcceptedOrValidTaxonNameParagraph>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="false">Attelabus ater</TaxonName>
+									<GenusName Explicit="true">Attelabus</GenusName>
+									<SpeciesEpithet Explicit="true">ater</SpeciesEpithet>
+								</AcceptedTaxonName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="true" AppliesToRank="species">Oliv.</TaxonAuthorString>
+									<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Oliv.</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<PrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="true">Encycl. Meth., Ins.</BookSeriesJournalTitle>
+										<Volume Explicit="true">iv</Volume>
+										<Pagination Explicit="true">p. 278</Pagination>
+									</CitationPublicationDetails>
+								</PrimaryCitation>
+								<OtherCitations>
+									<OtherCitation>
+										<CitationPublicationDetails>
+											<BookSeriesJournalTitle Explicit="true">Ent.</BookSeriesJournalTitle>
+											<Volume Explicit="true">v. no. 81</Volume>
+											<Pagination Explicit="true">p. 8, t. 1. f. 6</Pagination>
+										</CitationPublicationDetails>
+									</OtherCitation>
+								</OtherCitations>
+							</AcceptedOrValidTaxonName>
+							<SynonymCitation>
+								<SynonymCitationParagraph ElementID="colv4p3-171">? <hi rend="italic">Attelabus atratus</hi>, Fabr. Syst. Eleuth. ii. p. 419<hi rend="superscript">
+										<note id="coleoptera-v4p3-taxft-11c">3</note>
+									</hi>.</SynonymCitationParagraph>
+								<SynonymSubsets>
+									<SynonymName>
+										<TaxonName InformalName="false">? Attelabus atratus</TaxonName>
+										<GenusName Explicit="true">Attelabus</GenusName>
+										<SpeciesEpithet Explicit="true">atratus</SpeciesEpithet>
+									</SynonymName>
+									<TaxonAuthor>
+										<TaxonAuthorString Explicit="true" AppliesToRank="species">Fabr.</TaxonAuthorString>
+										<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Fabr.</TaxonAuthorAtomised>
+									</TaxonAuthor>
+									<NameComments>?</NameComments>
+									<SynonymPrimaryCitation>
+										<CitationPublicationDetails>
+											<BookSeriesJournalTitle Explicit="true">Syst. Eleuth.</BookSeriesJournalTitle>
+											<Volume Explicit="true">ii</Volume>
+											<Pagination Explicit="true">p. 419</Pagination>
+										</CitationPublicationDetails>
+									</SynonymPrimaryCitation>
+								</SynonymSubsets>
+							</SynonymCitation>
+							<SynonymCitation>
+								<SynonymCitationParagraph ElementID="colv4p3-172">
+									<hi rend="italic">Attelabus ignitus</hi>, Sch&ouml;nh. Curc. disp. Meth. p. 44<hi rend="superscript">
+										<note id="coleoptera-v4p3-taxft-11d">4</note>
+									</hi>.</SynonymCitationParagraph>
+								<SynonymSubsets>
+									<SynonymName>
+										<TaxonName InformalName="false">Attelabus ignitus</TaxonName>
+										<GenusName Explicit="true">Attelabus</GenusName>
+										<SpeciesEpithet Explicit="true">ignitus</SpeciesEpithet>
+									</SynonymName>
+									<TaxonAuthor>
+										<TaxonAuthorString Explicit="true" AppliesToRank="species">Sch&ouml;nh.</TaxonAuthorString>
+										<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Sch&ouml;nh.</TaxonAuthorAtomised>
+									</TaxonAuthor>
+									<SynonymPrimaryCitation>
+										<CitationPublicationDetails>
+											<BookSeriesJournalTitle Explicit="true">Curc. disp. Meth.</BookSeriesJournalTitle>
+											<Pagination Explicit="true">p. 44</Pagination>
+										</CitationPublicationDetails>
+									</SynonymPrimaryCitation>
+								</SynonymSubsets>
+							</SynonymCitation>
+							<SynonymCitation>
+								<SynonymCitationParagraph ElementID="colv4p3-173">
+									<hi rend="italic">Attelabus variabilis</hi>, Gyll. in Sch&ouml;nh. Gen. et Spec. Curc. i. p. 201<hi rend="superscript">
+										<note id="coleoptera-v4p3-taxft-11e">5</note>
+									</hi>.</SynonymCitationParagraph>
+								<SynonymSubsets>
+									<SynonymName>
+										<TaxonName InformalName="false">Attelabus variabilis</TaxonName>
+										<GenusName Explicit="true">Attelabus</GenusName>
+										<SpeciesEpithet Explicit="true">variabilis</SpeciesEpithet>
+									</SynonymName>
+									<TaxonAuthor>
+										<TaxonAuthorString Explicit="true" AppliesToRank="species">Gyll. in Sch&ouml;nh.</TaxonAuthorString>
+										<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Gyll.</TaxonAuthorAtomised>
+										<TaxonAuthorAtomised KindOfAuthor="CombinationIn" OrderOfAuthors="1">Sch&ouml;nh.</TaxonAuthorAtomised>
+									</TaxonAuthor>
+									<SynonymPrimaryCitation>
+										<CitationPublicationDetails>
+											<BookSeriesJournalTitle Explicit="true">Gen. et Spec. Curc.</BookSeriesJournalTitle>
+											<Volume Explicit="true">i</Volume>
+											<Pagination Explicit="true">p. 201</Pagination>
+										</CitationPublicationDetails>
+									</SynonymPrimaryCitation>
+								</SynonymSubsets>
+							</SynonymCitation>
+							<SynonymCitation>
+								<SynonymCitationParagraph ElementID="colv4p3-174">
+									<hi rend="italic">Attelabus</hi> (<hi rend="italic">Hybolabus</hi>) <hi rend="italic">sallei</hi>, Jekel, Ins. Saund. ii. p. 208<hi rend="superscript">
+										<note id="coleoptera-v4p3-taxft-11f">6</note>
+									</hi> (n. syn.).</SynonymCitationParagraph>
+								<SynonymSubsets>
+									<SynonymName>
+										<TaxonName InformalName="false">Attelabus (Hybolabus) sallei</TaxonName>
+										<GenusName Explicit="true">Attelabus</GenusName>
+										<InfraGenericGroup OrderOfNames="1">
+											<InfraGenericName Explicit="true">Hybolabus</InfraGenericName>
+										</InfraGenericGroup>
+										<SpeciesEpithet Explicit="true">sallei</SpeciesEpithet>
+									</SynonymName>
+									<TaxonAuthor>
+										<TaxonAuthorString Explicit="true" AppliesToRank="species">Jekel</TaxonAuthorString>
+										<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Jekel</TaxonAuthorAtomised>
+									</TaxonAuthor>
+									<NewSynonymDesignation Explicit="Explicit">n. syn.</NewSynonymDesignation>
+									<SynonymPrimaryCitation>
+										<CitationPublicationDetails>
+											<BookSeriesJournalTitle Explicit="true">Ins. Saund.</BookSeriesJournalTitle>
+											<Volume Explicit="true">ii</Volume>
+											<Pagination Explicit="true">p. 208</Pagination>
+										</CitationPublicationDetails>
+									</SynonymPrimaryCitation>
+								</SynonymSubsets>
+							</SynonymCitation>
+						</TaxonCitationGroup>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-176">Jekel considered a specimen from Mexico sent to him by Sall&eacute; as distinct; but I am not able to find any satisfactory characters to distinguish individuals of our region from examples found at Monte Video, these localities being apparently the extreme points of its distribution; the characters relied on by Jekel are but slight, and some of them are not confirmed by the examples before me.</DiscussionParagraph>
+									<DiscussionParagraph ElementID="colv4p3-177">
+										<hi rend="italic">A. ater</hi> appears rare in our region, only five examples having come under my observation. We figure the example found in Guatemala by Mr. Champion.<lb/>
+										<milestone unit="partial signature"/>
+										<hi rend="bold">CC 2</hi>
+									</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-175">
+								<hi rend="italic">Hab.</hi> MEXICO<hi rend="superscript">
+									<ref target="coleoptera-v4p3-taxft-11f">6</ref>
+								</hi>, Toxpam (<hi rend="italic">Sall&eacute;</hi>); GUATEMALA, Panzos (Champion), Coban (Conradt). --SOUTH AMERICA<hi rend="superscript">
+									<ref target="coleoptera-v4p3-taxft-11c">3</ref>
+								</hi>, Cayenne<hi rend="superscript">
+									<ref target="coleoptera-v4p3-taxft-11a">1</ref>
+								</hi>
+								<hi rend="superscript">
+									<ref target="coleoptera-v4p3-taxft-11d">4</ref>
+								</hi>
+								<hi rend="superscript">
+									<ref target="coleoptera-v4p3-taxft-11e">5</ref>
+								</hi>, Brazil<hi rend="superscript">
+									<ref target="coleoptera-v4p3-taxft-11e">5</ref>
+								</hi>, Monte Video (coll. Sharp).</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Mexico</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Toxpam</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Sall&eacute;</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Sall&eacute;</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Guatemala</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Panzos</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Champion</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Champion</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="false">
+										<Level1Text>Guatemala</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Coban</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Conradt</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Conradt</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level0 Explicit="true">
+										<Level0Text>South America</Level0Text>
+									</Level0>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Cayenne</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="false">Sall&eacute;</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Sall&eacute;</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level0 Explicit="false">
+										<Level0Text>South America</Level0Text>
+									</Level0>
+									<Level1 Explicit="true">
+										<Level1Text>Brazil</Level1Text>
+									</Level1>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="false">Sall&eacute;</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Sall&eacute;</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level0 Explicit="false">
+										<Level0Text>South America</Level0Text>
+									</Level0>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Monte Video</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Sall&eacute;</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Sall&eacute;</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+					</TaxonTreatment>
+				</TaxonTreatment>
+			</TaxonTreatment>
+			<TaxonTreatment TaxonID="colv4p3-t40" RecognizedInTreatment="true" TreatmentLanguage="English" SiblingNodePreviousID="colv4p3-t1">
+				<TreatmentAuthors>
+					<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+					<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+				</TreatmentAuthors>
+				<TreatmentDate>April 1889</TreatmentDate>
+				<TreatmentDate>May 1889</TreatmentDate>
+				<TaxonHeading>
+					<TaxonHeadingBody ElementID="colv4p3-250" Explicit="true">Subfam. <hi rend="italic">RHYNCHITIN&AElig;</hi>.</TaxonHeadingBody>
+					<RankDesignation Explicit="true">subfamily</RankDesignation>
+					<TaxonHeadingName>
+						<TaxonName InformalName="false">Rhynchitin&aelig;</TaxonName>
+					</TaxonHeadingName>
+				</TaxonHeading>
+				<TaxonCitationGroup>
+					<AcceptedOrValidTaxonName>
+						<AcceptedTaxonName>
+							<TaxonName InformalName="false">Rhynchitin&aelig;</TaxonName>
+						</AcceptedTaxonName>
+					</AcceptedOrValidTaxonName>
+				</TaxonCitationGroup>
+				<TaxonTreatment TaxonID="colv4p3-t41" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t40">
+					<TreatmentAuthors>
+						<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+						<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+					</TreatmentAuthors>
+					<TreatmentDate>April 1889</TreatmentDate>
+					<TreatmentDate>May 1889</TreatmentDate>
+					<TaxonHeading>
+						<TaxonHeadingBody ElementID="colv4p3-251" Explicit="true">RHYNCHITES.</TaxonHeadingBody>
+						<RankDesignation Explicit="false">genus</RankDesignation>
+						<TaxonHeadingName>
+							<TaxonName InformalName="false">Rhynchites</TaxonName>
+							<GenusName Explicit="true">Rhynchites</GenusName>
+						</TaxonHeadingName>
+					</TaxonHeading>
+					<TaxonCitationGroup>
+						<AcceptedOrValidTaxonName>
+							<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-252">
+								<hi rend="italic">Rhynchites</hi>, Herbst, Natursyst. K&auml;f. vii. p. 123 (1797).</AcceptedOrValidTaxonNameParagraph>
+							<AcceptedTaxonName>
+								<TaxonName InformalName="false">Rhynchites</TaxonName>
+								<GenusName Explicit="true">Rhynchites</GenusName>
+							</AcceptedTaxonName>
+							<TaxonAuthor>
+								<TaxonAuthorString Explicit="true"/>
+								<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Herbst</TaxonAuthorAtomised>
+							</TaxonAuthor>
+							<PrimaryCitation>
+								<CitationPublicationDetails>
+									<BookSeriesJournalTitle Explicit="true">Natursyst. K&auml;f.</BookSeriesJournalTitle>
+									<Volume Explicit="true">vii</Volume>
+									<Pagination Explicit="true">p. 123</Pagination>
+									<PublicationDateCited Explicit="true">1797</PublicationDateCited>
+								</CitationPublicationDetails>
+							</PrimaryCitation>
+						</AcceptedOrValidTaxonName>
+						<SynonymCitation>
+							<SynonymCitationParagraph ElementID="colv4p3-253">
+								<hi rend="italic">Lasiorhynchites</hi>, Jekel, Ins. Saund. ii. p. 227, note.</SynonymCitationParagraph>
+							<SynonymSubsets>
+								<SynonymName>
+									<TaxonName InformalName="false">Lasiorhynchites</TaxonName>
+									<GenusName Explicit="true">Lasiorhynchites</GenusName>
+								</SynonymName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="true"/>
+									<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Jekel</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<SynonymPrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="true">Ins. Saund.</BookSeriesJournalTitle>
+										<Volume Explicit="true">ii</Volume>
+										<Pagination Explicit="true">p. 227, note.</Pagination>
+									</CitationPublicationDetails>
+								</SynonymPrimaryCitation>
+							</SynonymSubsets>
+						</SynonymCitation>
+					</TaxonCitationGroup>
+					<Discussions>
+						<GeneralDiscussion>
+							<DiscussionBody>
+								<DiscussionParagraph ElementID="colv4p3-254">This genus consists at present of about 100 species, distributed in the continental regions of both the Old and New Worlds, but there are very few representatives described from South America. The North-American species are moderately numerous, but they are not yet very well elucidated.</DiscussionParagraph>
+								<DiscussionParagraph ElementID="colv4p3-255">We have obtained a fair series of species from our region which may be arranged in three groups, besides an aberrant species which may form ultimately another genus. Jekel, when describing a species of one of these groups, proposed for it the name of <hi rend="italic">Lasiorhynchites</hi>, stating, however, that the European <hi rend="italic">Rhynchites pubescens</hi> was the type of the group or subgenus. This association is, however, an unnatural one, as <hi rend="italic">R. pubescens</hi> cannot be placed in the same subgenus as <hi rend="italic">R. rufiventris</hi>, which is a member of a group peculiar to the tropical regions of the New World. So far as the species of our region are concerned <hi rend="italic">Lasiorhynchites</hi>, Jekel, is therefore a synonym of <hi rend="italic">Rhynchites</hi>.</DiscussionParagraph>
+							</DiscussionBody>
+						</GeneralDiscussion>
+					</Discussions>
+					<KeyToTaxa KeyID="colv4p3-k2">
+						<KeyDecisionNode NodeID="colv4p3-kn2.1" ParentKeyID="colv4p3-k2">
+							<KeyLug LugID="colv4p3-kl2.1.1">
+								<KeyLugString ElementID="colv4p3-256">&sect; 1. <hi rend="italic">Pygidium almost entirely covered; rostrum nearly always much sculptured, but little curved.</hi>
+								</KeyLugString>
+								<LugIdentifier>&sect; 1</LugIdentifier>
+								<Characters>Pygidium almost entirely covered; rostrum nearly always much sculptured, but little curved.</Characters>
+							</KeyLug>
+							<KeyLug LugID="colv4p3-kl2.1.2">
+								<KeyLugString ElementID="colv4p3-780">&sect; 2. Pygidium entirely exposed....</KeyLugString>
+							</KeyLug>
+							<KeyLug LugID="colv4p3-kl2.1.3">
+								<KeyLugString ElementID="colv4p3-850">&sect; 3. Pygidium covered....</KeyLugString>
+							</KeyLug>
+							<KeyLug LugID="colv4p3-kl2.1.4">
+								<KeyLugString ElementID="colv4p3-910">&sect; 4. Aberrant species....</KeyLugString>
+							</KeyLug>
+						</KeyDecisionNode>
+					</KeyToTaxa>
+					<Discussions/>
+					<TaxonTreatment TaxonID="colv4p3-t56" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t41">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TreatmentDate>April 1889</TreatmentDate>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-750" Explicit="true">8. <hi rend="bold">Rhynchites scutellaris</hi>, sp. n.</TaxonHeadingBody>
+							<RankDesignation Explicit="false">species</RankDesignation>
+							<TaxonIdentifier>8</TaxonIdentifier>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Rhynchites scutellaris</TaxonName>
+								<GenusName Explicit="true">Rhynchites</GenusName>
+								<SpeciesEpithet Explicit="true">scutellaris</SpeciesEpithet>
+							</TaxonHeadingName>
+							<TaxonAuthor>
+								<TaxonAuthorString Explicit="false" AppliesToRank="species">Sharp</TaxonAuthorString>
+								<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Sharp</TaxonAuthorAtomised>
+							</TaxonAuthor>
+							<NewNameDesignation Explicit="true">sp. n.</NewNameDesignation>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="false">Rhynchites scutellaris</TaxonName>
+									<GenusName Explicit="true">Rhynchites</GenusName>
+									<SpeciesEpithet Explicit="true">scutellaris</SpeciesEpithet>
+								</AcceptedTaxonName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="false">Sharp</TaxonAuthorString>
+									<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Sharp</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<PrimaryCitation>
+									<CitationPublicationDetails>
+										<BookSeriesJournalTitle Explicit="false">Biologia Centrali-Amer.</BookSeriesJournalTitle>
+										<Volume Explicit="false">vol. 4, part 3</Volume>
+										<Pagination Explicit="false">19</Pagination>
+									</CitationPublicationDetails>
+								</PrimaryCitation>
+							</AcceptedOrValidTaxonName>
+						</TaxonCitationGroup>
+						<Descriptions>
+							<LatinDiagnosis>
+								<LatinDiagnosisParagraph ElementID="colv4p3-751">Nigerrimus, nitidus, nigro-hirtus, scutello albido-piloso, corpore subtus griseo-pubescens; capite prothoraceque parce punctatis; elytris seriatim punctatis, interstitiis seriatim remote punctatis.</LatinDiagnosisParagraph>
+								<LatinDiagnosisParagraph ElementID="colv4p3-752">Long. cum rostro 3&frac12;&ndash;4&frac12; millim.</LatinDiagnosisParagraph>
+							</LatinDiagnosis>
+						</Descriptions>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-757">This species is closely allied to <hi rend="italic">R. mollis</hi>, but on the upper surface the pubescence does not appear white, except that the scutellum is more densely clothed with long white hairs parted along the middle; the punctuation of the head and thorax is much scantier; on the elytra the serial punctures become quite fine on the posterior half&mdash;they consist of a large puncture alternating with a very fine puncture&mdash;and the broad, quite flat interstices bear also a few fine setigerous punctures. The rostrum is coarsely sculptured; the space between the eyes is impunctate, except laterally; and the vertex, like the slender thorax, is moderately finely, not closely punctate. Four specimens. The example from Juquila that I have treated as a variety will, I think, prove to be distinct.</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-753">
+								<hi rend="italic">Hab.</hi> GUATEMALA, Capetillo (<hi rend="italic">Champion</hi>).</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Guatemala</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Capetillo</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Champion</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Champion</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+						<TaxonTreatment TaxonID="colv4p3-t57" RecognizedInTreatment="false" TreatmentLanguage="English" ParentNodeID="colv4p3-t56">
+							<TreatmentAuthors>
+								<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+								<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+							</TreatmentAuthors>
+							<TreatmentDate>April 1889</TreatmentDate>
+							<TaxonHeading>
+								<TaxonHeadingBody ElementID="colv4p3-754" Explicit="true">
+									<hi rend="italic">Var.</hi> (?)</TaxonHeadingBody>
+								<RankDesignation Explicit="true">variety</RankDesignation>
+								<TaxonHeadingName>
+									<TaxonName InformalName="true">Var. (?)</TaxonName>
+									<GenusName Explicit="false">Rhynchites</GenusName>
+									<SpeciesEpithet Explicit="false">scutellaris</SpeciesEpithet>
+									<InfraSpecificGroup OrderofNames="1">
+										<InfraSpecificName Explicit="true">[unnamed]</InfraSpecificName>
+									</InfraSpecificGroup>
+								</TaxonHeadingName>
+								<NameComments>(?)</NameComments>
+							</TaxonHeading>
+							<Descriptions>
+								<LatinDiagnosis>
+									<LatinDiagnosisParagraph ElementID="colv4p3-755">Major, elytris fortiter punctatis, interstitiis haud omnino planis.</LatinDiagnosisParagraph>
+								</LatinDiagnosis>
+							</Descriptions>
+							<DistributionAndOrSpecimenCitations>
+								<DistributionAndOrSpecimenParagraph ElementID="colv4p3-756">
+									<hi rend="italic">Hab.</hi> Mexico, Juquila (<hi rend="italic">H&ouml;ge</hi>).</DistributionAndOrSpecimenParagraph>
+								<IndividualLocalities>
+									<Locality>
+										<Level1 Explicit="true">
+											<Level1Text>Mexico</Level1Text>
+										</Level1>
+										<DetailedLocation Explicit="true">
+											<DetailedLocationText>Juquila</DetailedLocationText>
+										</DetailedLocation>
+									</Locality>
+									<Gathering>
+										<CollectorOrExpeditionName>
+											<ContributorString Explicit="true">H&ouml;ge</ContributorString>
+											<ContributorAtomised OrderOfContributors="1">H&ouml;ge</ContributorAtomised>
+										</CollectorOrExpeditionName>
+									</Gathering>
+								</IndividualLocalities>
+							</DistributionAndOrSpecimenCitations>
+						</TaxonTreatment>
+					</TaxonTreatment>
+					<TaxonTreatment TaxonID="colv4p3-t75" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t41">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TreatmentDate>April 1889</TreatmentDate>
+						<TreatmentDate>May 1889</TreatmentDate>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-900" Explicit="true">24. <hi rend="bold">Rhynchites inermis</hi>, sp. n.</TaxonHeadingBody>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Rhynchites inermis</TaxonName>
+								<GenusName Explicit="true">Rhynchites</GenusName>
+								<SpeciesEpithet Explicit="true">inermis</SpeciesEpithet>
+							</TaxonHeadingName>
+							<NewNameDesignation Explicit="true">sp. n.</NewNameDesignation>
+						</TaxonHeading>
+						<Descriptions>
+							<LatinDiagnosis>
+								<LatinDiagnosisParagraph ElementID="colv4p3-901">Nigro-violaceous, nitidus, minus dense hirsutus, parcius obsoletiusque punctulatus, scutello elytrorumque sutura in parte basali, elytris apicem versus, pectorisque lateribus albido-pubescentibus.</LatinDiagnosisParagraph>
+								<LatinDiagnosisParagraph ElementID="colv4p3-902">Long. cum rostro 6&ndash;7 millim.</LatinDiagnosisParagraph>
+							</LatinDiagnosis>
+						</Descriptions>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-908">I should have treated this as only a variety of <hi rend="italic">R. championi</hi>, but it has a more slender thorax, and this part is but little dilated in the male; it differs, moreover, in various other slight particulars from that insect. The punctuation of the thorax is very fine, but is numerous at the sides. The elytra are flat, and become a good deal broader behind, very little punctate, and the white pubescence on the suture and scutellum is neither dense nor conspicuous; on the other hand, the white fascia on the side of the breast is remarkably distinct.</DiscussionParagraph>
+									<DiscussionParagraph ElementID="colv4p3-909">We have received seven examples. The variety (?) from Bugaba very likely belongs to a different species.</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+						<DistributionAndOrSpecimenCitations>
+							<DistributionAndOrSpecimenParagraph ElementID="colv4p3-903">
+								<hi rend="italic">Hab.</hi> COSTA RICA, Cache (<hi rend="italic">Rogers</hi>); PANAMA, Volcan de Chiriqui 3000 to 4000 feet (<hi rend="italic">Champion</hi>).</DistributionAndOrSpecimenParagraph>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Costa Rica</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Cache</DetailedLocationText>
+									</DetailedLocation>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Rogers</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Rogers</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+							<IndividualLocalities>
+								<Locality>
+									<Level1 Explicit="true">
+										<Level1Text>Panama</Level1Text>
+									</Level1>
+									<DetailedLocation Explicit="true">
+										<DetailedLocationText>Volcan de Chiriqui</DetailedLocationText>
+									</DetailedLocation>
+									<Altitude>
+										<AltitudeValue>3000 to 4000</AltitudeValue>
+										<AltitudeUnits>feet</AltitudeUnits>
+									</Altitude>
+								</Locality>
+								<Gathering>
+									<CollectorOrExpeditionName>
+										<ContributorString Explicit="true">Champion</ContributorString>
+										<ContributorAtomised OrderOfContributors="1">Champion</ContributorAtomised>
+									</CollectorOrExpeditionName>
+								</Gathering>
+							</IndividualLocalities>
+						</DistributionAndOrSpecimenCitations>
+						<TaxonTreatment TaxonID="colv4p3-t76" RecognizedInTreatment="false" TreatmentLanguage="English" ParentNodeID="colv4p3-t75">
+							<TreatmentAuthors>
+								<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+								<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+							</TreatmentAuthors>
+							<TreatmentDate>May 1889</TreatmentDate>
+							<TaxonHeading>
+								<TaxonHeadingBody ElementID="colv4p3-904" Explicit="true">
+									<hi rend="italic">Var.</hi> ?</TaxonHeadingBody>
+								<TaxonHeadingName>
+									<TaxonName InformalName="true">Var. ?</TaxonName>
+									<GenusName Explicit="false">Rhynchites</GenusName>
+									<SpeciesEpithet Explicit="false">inermis</SpeciesEpithet>
+									<InfraSpecificGroup OrderofNames="1">
+										<InfraSpecificName Explicit="false">[unnamed]</InfraSpecificName>
+									</InfraSpecificGroup>
+								</TaxonHeadingName>
+								<NameComments>?</NameComments>
+							</TaxonHeading>
+							<Descriptions>
+								<LatinDiagnosis>
+									<LatinDiagnosisParagraph ElementID="colv4p3-905">Major, vix violaceo-tinctus, prothorace ad latera parcius punctato.</LatinDiagnosisParagraph>
+									<LatinDiagnosisParagraph ElementID="colv4p3-906">Long. cum rostro 8&frac14; millim.</LatinDiagnosisParagraph>
+								</LatinDiagnosis>
+							</Descriptions>
+							<DistributionAndOrSpecimenCitations>
+								<DistributionAndOrSpecimenParagraph ElementID="colv4p3-907">
+									<hi rend="italic">Hab.</hi> PANAMA, Bugaba (<hi rend="italic">Champion</hi>).</DistributionAndOrSpecimenParagraph>
+								<IndividualLocalities>
+									<Locality>
+										<Level1 Explicit="true">
+											<Level1Text>Panama</Level1Text>
+										</Level1>
+										<DetailedLocation Explicit="true">
+											<DetailedLocationText>Bugaba</DetailedLocationText>
+										</DetailedLocation>
+									</Locality>
+									<Gathering>
+										<CollectorOrExpeditionName>
+											<ContributorString Explicit="true">Champion</ContributorString>
+											<ContributorAtomised OrderOfContributors="1">Champion</ContributorAtomised>
+										</CollectorOrExpeditionName>
+									</Gathering>
+								</IndividualLocalities>
+							</DistributionAndOrSpecimenCitations>
+						</TaxonTreatment>
+					</TaxonTreatment>
+				</TaxonTreatment>
+			</TaxonTreatment>
+			<TaxonTreatment TaxonID="colv4p3-t231" RecognizedInTreatment="true" TreatmentLanguage="English">
+				<TreatmentAuthors>
+					<TreatmentAuthorString Explicit="false">Sharp and Champion</TreatmentAuthorString>
+					<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+					<TreatmentAuthorAtomised OrderOfAuthors="2">Champion</TreatmentAuthorAtomised>
+				</TreatmentAuthors>
+				<TreatmentDate>February 1891-October 1911</TreatmentDate>
+				<TaxonHeading>
+					<TaxonHeadingBody ElementID="colv4p3-3000" Explicit="true">Subfam. <hi rend="italic">OTIORHYNCHIN&AElig;</hi>
+					</TaxonHeadingBody>
+					<RankDesignation Explicit="true">Subfamily</RankDesignation>
+					<TaxonHeadingName>
+						<TaxonName InformalName="false">Otiorhynchin&aelig;</TaxonName>
+					</TaxonHeadingName>
+				</TaxonHeading>
+				<TaxonCitationGroup>
+					<AcceptedOrValidTaxonName>
+						<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-3001">
+							<hi rend="italic">Otiorhynchid&aelig;</hi>, Leconte and Horn, Rhynchophora of North America, p. 13.</AcceptedOrValidTaxonNameParagraph>
+						<AcceptedTaxonName>
+							<TaxonName InformalName="false">Otiorhynchid&aelig;</TaxonName>
+						</AcceptedTaxonName>
+						<TaxonAuthor>
+							<TaxonAuthorString Explicit="true" AppliesToRank="Subfamily">Leconte and Horn</TaxonAuthorString>
+							<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="2">Horn</TaxonAuthorAtomised>
+							<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Leconte</TaxonAuthorAtomised>
+						</TaxonAuthor>
+						<PrimaryCitation>
+							<CitationPublicationDetails>
+								<ArticleTitle Explicit="true">Rhynchophora of N. America</ArticleTitle>
+								<Pagination Explicit="true">p. 13</Pagination>
+							</CitationPublicationDetails>
+						</PrimaryCitation>
+					</AcceptedOrValidTaxonName>
+					<SynonymCitation>
+						<SynonymCitationParagraph ElementID="colv4p3-3002">
+							<hi rend="italic">Brachyderides</hi>, <hi rend="italic">Otiorhynchides</hi> (part.), Lacordaire</SynonymCitationParagraph>
+						<SynonymSubsets>
+							<SynonymName>
+								<TaxonName InformalName="false">Brachyderides</TaxonName>
+							</SynonymName>
+							<TaxonAuthor>
+								<TaxonAuthorString Explicit="false" AppliesToRank="Subfamily">Lacordaire</TaxonAuthorString>
+								<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Lacordaire</TaxonAuthorAtomised>
+							</TaxonAuthor>
+						</SynonymSubsets>
+						<SynonymSubsets>
+							<KindOfSynonym Explicit="true">pro parte</KindOfSynonym>
+							<SynonymName>
+								<TaxonName InformalName="false">Brachyderides, Otiorhynchides</TaxonName>
+							</SynonymName>
+							<TaxonAuthor>
+								<TaxonAuthorString Explicit="false" AppliesToRank="Subfamily">Lacordaire</TaxonAuthorString>
+								<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Lacordaire</TaxonAuthorAtomised>
+							</TaxonAuthor>
+						</SynonymSubsets>
+					</SynonymCitation>
+				</TaxonCitationGroup>
+				<Discussions>
+					<GeneralDiscussion>
+						<DiscussionBody>
+							<DiscussionParagraph ElementID="colv4p3-3003">This subfamily is defined in a satisfactory manner by the existence of a scar on each of the mandibles, due to the detachment of a peculiar pair of cutting instruments, supposed to be used by the insect for freeing itself when emerging from the pupal stage.</DiscussionParagraph>
+							<DiscussionParagraph ElementID="colv4p3-3004">I propose to divide the subfamily into two divisions, consisting (I.) of the apterous, (II), of the winged Otiorhynchin&aelig;.</DiscussionParagraph>
+						</DiscussionBody>
+					</GeneralDiscussion>
+				</Discussions>
+				<TaxonTreatment TaxonID="colv4p3-t232" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t231" SiblingNodeNextID="colv4p3-t459">
+					<TreatmentAuthors>
+						<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+						<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+					</TreatmentAuthors>
+					<TreatmentDate>February 1891-May 1911</TreatmentDate>
+					<TaxonHeading>
+						<TaxonHeadingBody ElementID="colv4p3-3005" Explicit="true">Series OTIORHYNCHIN&AElig; APTER&AElig;.</TaxonHeadingBody>
+						<RankDesignation Explicit="true">Series</RankDesignation>
+						<TaxonHeadingName>
+							<TaxonName InformalName="true">Otiorhynchin&aelig; Apter&aelig;</TaxonName>
+						</TaxonHeadingName>
+					</TaxonHeading>
+					<TaxonCitationGroup>
+						<AcceptedOrValidTaxonName>
+							<AcceptedTaxonName>
+								<TaxonName InformalName="true">Otiorhynchin&aelig; Apter&aelig;</TaxonName>
+							</AcceptedTaxonName>
+						</AcceptedOrValidTaxonName>
+					</TaxonCitationGroup>
+					<Descriptions>
+						<LatinDiagnosis>
+							<LatinDiagnosisParagraph ElementID="colv4p3-3006">Al&aelig; rudimentari&aelig;.  Metanotum membraneum.</LatinDiagnosisParagraph>
+						</LatinDiagnosis>
+					</Descriptions>
+					<Discussions>
+						<GeneralDiscussion>
+							<DiscussionBody>
+								<DiscussionParagraph ElementID="colv4p3-3007">These important characters divide the Otiorhycnhin&aelig; in a natural manner, and though they cannot be directly observed without breaking up the specimen, as the elytra are frequently more or less soldered together in the apterous forms, yet it is very easy to distinguish the members of the two groups by external minor characters. In the &ldquo;Otiorhynchin&aelig; apter&aelig;&rdquo; there are no prominent shoulders to the elytra; the exposed portion of the scutellum is usually very minute, and scarcely penetrates at all between the exposed parts of the wing-cases; the metasternum is always short; and the part of the mesothoracic episterna left uncovered by the elytra is small or moderate in size. Although this latter point is very variable it is of great assistance in separating the insects of the two groups, and indeed was made use of by Horn as a means of dividing the family.</DiscussionParagraph>
+								<DiscussionParagraph ElementID="colv4p3-3008">In the "Otiorhynchin&aelig; alat&aelig;&rdquo; the shoulders of the elytra are distinct and stand out more or less laterally, the tip of the scutellum separates the exposed bases of the elytra, the metasternum is either elongate or short, and the uncovered part of the mesothoracic episterna is either moderate in size or large.</DiscussionParagraph>
+							</DiscussionBody>
+						</GeneralDiscussion>
+					</Discussions>
+					<TaxonTreatment TaxonID="colv4p3-t233" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t232">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TreatmentDate>February 1891</TreatmentDate>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-3009" Explicit="true">Group <hi rend="bold">OPHRYASTINA</hi>.</TaxonHeadingBody>
+							<RankDesignation Explicit="true">Group</RankDesignation>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Ophryastina</TaxonName>
+							</TaxonHeadingName>
+						</TaxonHeading>
+						<TaxonCitationGroup>
+							<AcceptedOrValidTaxonName>
+								<AcceptedTaxonName>
+									<TaxonName InformalName="false">Ophryastina</TaxonName>
+								</AcceptedTaxonName>
+							</AcceptedOrValidTaxonName>
+						</TaxonCitationGroup>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-3010">This group includes all the apterous Otiorhynchin&aelig; of our region that have ocular lobes on the prothorax. As regards this point it should be remarked that there are some species in which it is difficult at first sight to determine whether ocular lobes are present or not; but in such cases the form of the eye will determine the point, it being more <pb id="coleoptera-v4p3-88"/>or less longitudinal in the greatest diameter when lobes are present, and transverse when they are absent.</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+						<KeyToTaxa KeyID="colv4p3-k5">
+							<KeyIntroductoryText ElementID="colv4p3-3011">It includes two minor groups that it is unnecessary to distinguish here by names, viz.:</KeyIntroductoryText>
+							<KeyDecisionNode NodeID="colv4p3-kn5.1" ParentKeyID="colv4p3-k5">
+								<KeyLug LugID="colv4p3-kl5.1.1">
+									<KeyLugString ElementID="colv4p3-3012">I. Rostrum with scrobes that are very deep and definite, even at their termination.  Genera <hi rend="italic">Ophyrastes</hi>, <hi rend="italic">Tosastes</hi>, <hi rend="italic">Caccophyrastes</hi>, and <hi rend="italic">Eupagoderes</hi>.</KeyLugString>
+									<LugIdentifier>I</LugIdentifier>
+									<Characters>Rostrum with scrobes that are very deep and definite, even at their termination.</Characters>
+									<KeyReference>
+										<TaxaReferedTo>
+											<TaxonName>
+												<TaxonName InformalName="false">Ophyrastes</TaxonName>
+												<GenusName Explicit="true">Ophyrastes</GenusName>
+											</TaxonName>
+										</TaxaReferedTo>
+										<TaxaReferedTo>
+											<TaxonName>
+												<TaxonName InformalName="false">Toastes</TaxonName>
+												<GenusName Explicit="true">Toastes</GenusName>
+											</TaxonName>
+										</TaxaReferedTo>
+										<TaxaReferedTo>
+											<TaxonName>
+												<TaxonName InformalName="false">Caccophryastes</TaxonName>
+												<GenusName Explicit="true">Caccophryastes</GenusName>
+											</TaxonName>
+										</TaxaReferedTo>
+										<TaxaReferedTo>
+											<TaxonName>
+												<TaxonName InformalName="false">Eupagoderes</TaxonName>
+												<GenusName Explicit="true">Epagoderes</GenusName>
+											</TaxonName>
+										</TaxaReferedTo>
+									</KeyReference>
+								</KeyLug>
+								<KeyLug LugID="colv4p3-kl5.1.2">
+									<KeyLugString ElementID="colv4p3-3013">II. Rostrum with scrobes that are extremely broad and quite indefinite behind. Genus <hi rend="italic">Amphidees</hi>.</KeyLugString>
+									<LugIdentifier>II</LugIdentifier>
+									<Characters>Rostrum with scrobes that are extremely broad and quite indefinite behind.</Characters>
+									<KeyReference>
+										<TaxaReferedTo>
+											<TaxonName>
+												<TaxonName InformalName="false">Amphidees</TaxonName>
+												<GenusName Explicit="true">Amphidees</GenusName>
+											</TaxonName>
+										</TaxaReferedTo>
+									</KeyReference>
+								</KeyLug>
+							</KeyDecisionNode>
+						</KeyToTaxa>
+						<KeyToTaxa KeyID="colv4p3-k6">
+							<KeyIntroductoryText ElementID="colv4p3-3014">The genera of the first subgroup may be readily distinguished as follows:&mdash;</KeyIntroductoryText>
+							<KeyDecisionNode NodeID="colv4p3-kn6.1" ParentKeyID="colv4p3-k6">
+								<KeyLug LugID="colv4p3-kl6.1.1">
+									<KeyLugString ElementID="colv4p3-3015">A. Tarsi without pubescence on the third joint.</KeyLugString>
+									<LugIdentifier>A</LugIdentifier>
+									<Characters>Tarsi without pubescence on the third joint.</Characters>
+								</KeyLug>
+								<KeyLug LugID="colv4p3-kl6.1.2">
+									<KeyLugString ElementID="colv4p3-3018">B. Tarsi with adhesive pubescence on the lobes of the third joint.</KeyLugString>
+									<LugIdentifier>B</LugIdentifier>
+									<Characters>Tarsi with adhesive pubescence on the lobes of the third joint.</Characters>
+								</KeyLug>
+							</KeyDecisionNode>
+							<KeyDecisionNode NodeID="colv4p3-kn6.2" ParentKeyID="colv4p3-k6">
+								<KeyLug LugID="colv4p3-kl6.2.1" ParentLugID="colv4p3-kl6.1.1">
+									<KeyLugString ElementID="colv4p3-3016">1. Corbels of the posterior tibi&aelig; more or less imperfectly cavernous<hi rend="italic">Ophyrastes</hi>.</KeyLugString>
+									<LugIdentifier>1</LugIdentifier>
+									<Characters>Corbels of the posterior  tibi&aelig; more or less imperfectly cavernous</Characters>
+									<KeyReference>
+										<TaxaReferedTo>
+											<TaxonName>
+												<TaxonName InformalName="false">Ophyrastes</TaxonName>
+												<GenusName Explicit="true">Ophyrastes</GenusName>
+											</TaxonName>
+										</TaxaReferedTo>
+									</KeyReference>
+								</KeyLug>
+								<KeyLug LugID="colv4p3-kl6.2.2" ParentLugID="colv4p3-kl6.1.1">
+									<KeyLugString ElementID="colv4p3-3017">2. Corbels of the posterior tibi&aelig; with laminate tip bearing only one series of spinules externally (&ldquo;open corbels,&rdquo; <hi rend="italic">Lacord.</hi>) <hi rend="italic">Tosastes</hi>.</KeyLugString>
+									<LugIdentifier>2</LugIdentifier>
+									<Characters>Corbels of the posteriortibi&aelig; with laminate tip bearing only one series of spinules externally (&ldquo;open corbels,&rdquo; <hi rend="italic">Lacord.</hi>)</Characters>
+									<KeyReference>
+										<TaxaReferedTo>
+											<TaxonName>
+												<TaxonName InformalName="false">Tosastes</TaxonName>
+												<GenusName Explicit="true">Tosastes</GenusName>
+											</TaxonName>
+										</TaxaReferedTo>
+									</KeyReference>
+								</KeyLug>
+							</KeyDecisionNode>
+							<KeyDecisionNode NodeID="colv4p3-kn6.3" ParentKeyID="colv4p3-t6">
+								<KeyLug LugID="colv4p3-kl6.3.1">
+									<KeyLugString ElementID="colv4p3-3019">1. Mentum concealing the palpi entirely <hi rend="italic">Eupagoderes</hi>.</KeyLugString>
+									<LugIdentifier>1</LugIdentifier>
+									<Characters>Mentum concealing the palpi entirely</Characters>
+									<KeyReference>
+										<TaxaReferedTo>
+											<TaxonName>
+												<TaxonName InformalName="false">Eupagoderes</TaxonName>
+												<GenusName Explicit="true">Eupagoderes</GenusName>
+											</TaxonName>
+										</TaxaReferedTo>
+									</KeyReference>
+								</KeyLug>
+								<KeyLug LugID="colv4p3-kl6.3.2">
+									<KeyLugString ElementID="colv4p3-3020">2. Palpi projecting beyond the apex of the mentum <hi rend="italic">Caccophryastes</hi>.</KeyLugString>
+									<LugIdentifier>2</LugIdentifier>
+									<Characters>Palpi projecting beyond the apex of the mentum</Characters>
+									<KeyReference>
+										<TaxaReferedTo>
+											<TaxonName>
+												<TaxonName InformalName="false">Caccophryastes</TaxonName>
+												<GenusName Explicit="true">Caccophryastes</GenusName>
+											</TaxonName>
+										</TaxaReferedTo>
+									</KeyReference>
+								</KeyLug>
+							</KeyDecisionNode>
+						</KeyToTaxa>
+						<TaxonTreatment TaxonID="colv4p3-t234" RecognizedInTreatment="true" TreatmentLanguage="English" ParentNodeID="colv4p3-t233">
+							<TreatmentAuthors>
+								<TreatmentAuthorString Explicit="true">Sharp</TreatmentAuthorString>
+								<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+							</TreatmentAuthors>
+							<TreatmentDate>February 1891</TreatmentDate>
+							<TaxonHeading>
+								<TaxonHeadingBody ElementID="colv4p3-3021" Explicit="true">
+									<hi rend="bold">OPHRYASTES</hi>.</TaxonHeadingBody>
+								<RankDesignation Explicit="false">genus</RankDesignation>
+								<TaxonHeadingName>
+									<TaxonName InformalName="false">Ophryastes</TaxonName>
+								</TaxonHeadingName>
+							</TaxonHeading>
+							<TaxonCitationGroup>
+								<AcceptedOrValidTaxonName>
+									<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-3022">
+										<hi rend="italic">Ophryastes</hi> (part.), Schönh. Gen. Curc. i. p. 508 (1833).</AcceptedOrValidTaxonNameParagraph>
+									<AcceptedTaxonName>
+										<TaxonName InformalName="false">Ophryastes</TaxonName>
+									</AcceptedTaxonName>
+									<TaxonAuthor>
+										<TaxonAuthorString Explicit="true">Sch&ouml;nh.</TaxonAuthorString>
+										<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Sch&ouml;nh.</TaxonAuthorAtomised>
+									</TaxonAuthor>
+									<NameAddendum>part.</NameAddendum>
+									<PrimaryCitation>
+										<CitationPublicationDetails>
+											<BookSeriesJournalTitle Explicit="true">Gen. Curc.</BookSeriesJournalTitle>
+											<Volume Explicit="true">i</Volume>
+											<Pagination Explicit="true">508</Pagination>
+											<PublicationDateCited Explicit="true">1833</PublicationDateCited>
+										</CitationPublicationDetails>
+									</PrimaryCitation>
+								</AcceptedOrValidTaxonName>
+								<SynonymCitation>
+									<SynonymCitationParagraph ElementID="colv4p3-3023">
+										<hi rend="italic">Dystirus</hi>, Pascoe, Journ. Linn. Soc., Zool. xi. p. 447.</SynonymCitationParagraph>
+									<SynonymSubsets>
+										<KindOfSynonym Explicit="false">synonym</KindOfSynonym>
+										<SynonymName>
+											<TaxonName InformalName="false">Dystirus</TaxonName>
+										</SynonymName>
+										<TaxonAuthor>
+											<TaxonAuthorString Explicit="true">Pascoe</TaxonAuthorString>
+											<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Pascoe</TaxonAuthorAtomised>
+										</TaxonAuthor>
+										<SynonymPrimaryCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="true">Journ. Linn. Soc., Zool.</BookSeriesJournalTitle>
+												<Volume Explicit="true">xi</Volume>
+												<Pagination Explicit="true">447</Pagination>
+											</CitationPublicationDetails>
+										</SynonymPrimaryCitation>
+									</SynonymSubsets>
+								</SynonymCitation>
+								<SynonymCitation>
+									<SynonymCitationParagraph ElementID="colv4p3-3024">
+										<hi rend="italic">Ophyrastes</hi>, Leconte and Horn, Rhynchophora of N. Am. p. 30.</SynonymCitationParagraph>
+									<SynonymSubsets>
+										<KindOfSynonym Explicit="false">synonym</KindOfSynonym>
+										<SynonymName>
+											<TaxonName InformalName="false">Ophryastes</TaxonName>
+										</SynonymName>
+										<TaxonAuthor>
+											<TaxonAuthorString Explicit="true">Leconte and Horn</TaxonAuthorString>
+											<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Leconte</TaxonAuthorAtomised>
+											<TaxonAuthorAtomised OrderOfAuthors="2" KindOfAuthor="Combination">Horn</TaxonAuthorAtomised>
+										</TaxonAuthor>
+										<SynonymPrimaryCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="true">Rhynchophora of N. Am.</BookSeriesJournalTitle>
+												<Pagination Explicit="true">30</Pagination>
+											</CitationPublicationDetails>
+										</SynonymPrimaryCitation>
+									</SynonymSubsets>
+								</SynonymCitation>
+							</TaxonCitationGroup>
+							<Discussions>
+								<GeneralDiscussion>
+									<DiscussionBody>
+										<DiscussionParagraph ElementID="colv4p3-3025">Although this genus  cannot be defined by means of the tuberosities at the side of the thorax, yet it may be satisfactorily separated from <hi rend="italic">Eupagoderes</hi> by the absence of adhesive pubescence from the lobes of the third tarsal joint. The tips of the hind tibi&aelig; are cavernous, as stated by Lacordaire, though in an imperfect and variable manner.</DiscussionParagraph>
+										<DiscussionParagraph ElementID="colv4p3-3026">
+											<hi rend="italic">Ophryastes</hi> is peculiar to the arid regions of the Southern United States and Northern Mexico. The species are no doubt epigeal in habits, though I have not seen any records to this effect.</DiscussionParagraph>
+										<DiscussionParagraph ElementID="colv4p3-3027">North-American form may be at present placed in the genus, though, no doubt, it will have to be ultimately separated
+<ref target="coleoptera-v4p3-ft-taxft-88a">*</ref>.</DiscussionParagraph>
+									</DiscussionBody>
+								</GeneralDiscussion>
+							</Discussions>
+							<TaxonTreatment RecognizedInTreatment="true" TreatmentLanguage="English" TaxonID="colv4p3-t234a" ParentNodeID="colv4p3-t234">
+								<TreatmentAuthors>
+									<TreatmentAuthorString Explicit="false">Sharp</TreatmentAuthorString>
+									<TreatmentAuthorAtomised OrderOfAuthors="1">Sharp</TreatmentAuthorAtomised>
+								</TreatmentAuthors>
+								<TreatmentDate>February 1891</TreatmentDate>
+								<TaxonHeading>
+									<TaxonHeadingBody ElementID="colv4p3-3028" Explicit="true">
+										<note id="coleoptera-v4p3-taxft-88a">*</note>
+										<hi rend="bold">Ophryastes wickhami</hi>, sp. n.</TaxonHeadingBody>
+								</TaxonHeading>
+								<Descriptions>
+									<LatinDiagnosis>
+										<LatinDiagnosisParagraph ElementID="colv4p3-3029">Griseus, dense squamosus, breviter hispidus; rostro trisulcato, basi depresso; prothorace transverso, rugoso, ad latera perparum incrassato; elytris subsulcatis, sulcis obsolete punctatis.</LatinDiagnosisParagraph>
+										<LatinDiagnosisParagraph ElementID="colv4p3-3030">Long. cum rostro 19 millim.</LatinDiagnosisParagraph>
+									</LatinDiagnosis>
+								</Descriptions>
+								<DistributionAndOrSpecimenCitations>
+									<DistributionAndOrSpecimenParagraph ElementID="colv4p3-3031">
+										<hi rend="italic">Hab.</hi>NORTH AMERICA, Winslow, Arizona (<hi rend="italic">Wickham</hi>).</DistributionAndOrSpecimenParagraph>
+									<IndividualLocalities>
+										<Locality>
+											<Level0 Explicit="true">
+												<Level0Text>North America</Level0Text>
+											</Level0>
+											<Level1 Explicit="false">
+												<Level1Text>United States</Level1Text>
+											</Level1>
+											<Level2 Explicit="true">
+												<Level2Text>Arizona</Level2Text>
+											</Level2>
+											<DetailedLocation Explicit="true">
+												<DetailedLocationText>Winslow</DetailedLocationText>
+											</DetailedLocation>
+										</Locality>
+										<Gathering>
+											<CollectorOrExpeditionName>
+												<ContributorString Explicit="true">Wickham</ContributorString>
+												<ContributorAtomised OrderOfContributors="1">Wickham</ContributorAtomised>
+											</CollectorOrExpeditionName>
+										</Gathering>
+									</IndividualLocalities>
+								</DistributionAndOrSpecimenCitations>
+								<Discussions>
+									<GeneralDiscussion>
+										<DiscussionBody>
+											<DiscussionParagraph ElementID="colv4p3-3032">I name this species in honour of Mr. H. F. Wickham, to whom I am indebted for a considerable part of the specimens that have enabled me to form some idea of the N.-American <hi rend="italic">Ophryastini</hi>. The feet of <hi rend="italic">O. wickhami</hi>are rather broad, but have no horny projections beneath, these being replaced by membranous processes (formed apparently by agglutinated cili&aelig;) coming from the side-margins of the joints; the tips of the hind tibi&aelig; are distinctly truncate, and the truncature is entirely filled by long cili&aelig; or scales, part of them directed inwards, part outwards, but there are no marginal cili&aelig;. Mr. Wickham thought the species might be referable to <hi rend="italic">O. desertus</hi>, Lec., but this is clearly not the case.<pb id="coleoptera-v4p3-89"/>
+											</DiscussionParagraph>
+										</DiscussionBody>
+									</GeneralDiscussion>
+								</Discussions>
+							</TaxonTreatment>
+						</TaxonTreatment>
+					</TaxonTreatment>
+				</TaxonTreatment>
+				<TaxonTreatment TaxonID="colv4p3-t459" RecognizedInTreatment="true" TreatmentLanguage="English">
+					<TreatmentAuthors>
+						<TreatmentAuthorString Explicit="true">G. C. Champion</TreatmentAuthorString>
+						<TreatmentAuthorAtomised OrderOfAuthors="1">G. C. Champion</TreatmentAuthorAtomised>
+					</TreatmentAuthors>
+					<TreatmentDate>May 1911</TreatmentDate>
+					<TaxonHeading>
+						<TaxonHeadingBody ElementID="colv4p3-4000" Explicit="true">Series Otiorhynchin&aelig; Alat&aelig;<ref target="coleoptera-v4p3-ft-taxft-178a">*</ref>.<note id="coleoptera-v4p3-ft-taxft-178a">* By G. C. CHAMPION.</note>
+						</TaxonHeadingBody>
+						<RankDesignation Explicit="true">Series</RankDesignation>
+						<TaxonHeadingName>
+							<TaxonName InformalName="true">Otiorhynchin&aelig; Alat&aelig;</TaxonName>
+						</TaxonHeadingName>
+					</TaxonHeading>
+					<TaxonCitationGroup>
+						<AcceptedOrValidTaxonName>
+							<AcceptedTaxonName>
+								<TaxonName InformalName="true">Otiorhynchin&aelig; Alat&aelig;</TaxonName>
+							</AcceptedTaxonName>
+						</AcceptedOrValidTaxonName>
+					</TaxonCitationGroup>
+					<KeyToTaxa KeyID="colv4p3-k55">
+						<KeyDecisionNode NodeID="colv4p3-key178node1" ParentKeyID="colv4p3-k55">
+							<KeyLug LugID="colv4p3-key178node1-1">
+								<KeyLugString ElementID="colv4p3-4002">Section I. &mdash; <hi rend="italic">Ocular lobes wanting or rudimentary.</hi>
+								</KeyLugString>
+								<LugIdentifier>Section I.</LugIdentifier>
+								<Characters>Ocular lobes wanting or rudimentary.</Characters>
+							</KeyLug>
+						</KeyDecisionNode>
+					</KeyToTaxa>
+					<Discussions>
+						<GeneralDiscussion>
+							<DiscussionBody>
+								<DiscussionParagraph ElementID="colv4p3-4001">The characters for this Series of the Otiorhynchin&aelig; are given on p. 87, <hi rend="italic">ante&agrave;</hi>, and are much the same as those used by Horn for his Division II. of the N.-American forms. The term &ldquo;Alat&aelig;&rdquo; unfortunately proves to be misleading, as we now know that the wings are sometimes rudimentary even in a series of specimens of certain species, <hi rend="italic">e.g.</hi> in <hi rend="italic">Tanymecus confertus</hi>, Gyll. (&equals;<hi rend="italic">variabilis</hi>, F&aring;hr.), from the same locality, and one or two other genera also include both apterous and winged forms. It is proposed here to divide the species of the present series into two sections: one without definite ocular lobes to the prothorax<ref target="coleoptera-v4p3-ft-taxft-178b">&dagger;</ref>
+									<note id="coleoptera-v4p3-ft-taxft-178b">&dagger; In <hi rend="italic">Pachn&aelig;us</hi> and <hi rend="italic">Diaprepes</hi> there is sometimes an indication of a short lobe, as in <hi rend="italic">Pandeleteius</hi> and <hi rend="italic">Hadromerus</hi>, the other with the lobes large and rounded. The first section, again, is subdivided, according to the presence<ref target="coleoptera-v4p3-ft-taxft-178c">&Dagger;</ref>.</note>
+									<note id="coleoptera-v4p3-ft-taxft-178c">&Dagger; Apparently wanting or replaced by scales in one or two of the smaller species of <hi rend="italic">Pandeleteius</hi> of the &ldquo;Tanymecina.&rdquo;</note> or absence of vibriss&aelig;, the condition of the tarsal claws (connate or free), the position of the scrobes and eyes, the lamination or otherwise of the apex of the posterior tibi&aelig; (closed or open corbels), &amp;c. Horn&apos;s groups &lsqb;tribes&rsqb; &ldquo;Tanymecini,&rdquo; &ldquo;Exophthalmini,&rdquo; and &ldquo;Promecopini&rdquo; are practically accepted, the last-named corresponding to our Section II.; but his &ldquo;Cyphini,&rdquo; with the much larger number of genera represented in our region, and &ldquo;Phyllobiini&rdquo; require different treatment.</DiscussionParagraph>
+							</DiscussionBody>
+						</GeneralDiscussion>
+					</Discussions>
+					<TaxonTreatment TaxonID="colv4p3-t465" ParentNodeID="colv4p3-t459" RecognizedInTreatment="true" TreatmentLanguage="English">
+						<TreatmentAuthors>
+							<TreatmentAuthorString Explicit="false">Champion</TreatmentAuthorString>
+							<TreatmentAuthorAtomised OrderOfAuthors="1">Champion</TreatmentAuthorAtomised>
+						</TreatmentAuthors>
+						<TaxonHeading>
+							<TaxonHeadingBody ElementID="colv4p3-4003" Explicit="true">Group TANYMECINA.</TaxonHeadingBody>
+							<RankDesignation Explicit="true">Group</RankDesignation>
+							<TaxonHeadingName>
+								<TaxonName InformalName="false">Tanymecina</TaxonName>
+							</TaxonHeadingName>
+						</TaxonHeading>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-4004">This group is equivalent to Horn&apos;s Tribe &ldquo;Tanymecini,&rdquo; and it includes two genera in addition to those belonging to the N.-American fauna. <hi rend="italic">Polydacrys</hi> is said by him to have &ldquo;very distinct vibriss&aelig; composed of scales,&rdquo; but these longer scales seem to me to be part of the general vestiture and not true vibriss&aelig;; this genus, moreover, cannot be satisfactorily placed in a different group from its close ally, <hi rend="italic">Anypotactus</hi>, in which the vibrissiform scales are wanting. The tarsal claws are free, except in the anomalous genus <hi rend="italic">Isodrusus</hi>, which forms a connecting-link with the Polydrosina. The essential characters of the Tanymecina, therefore, are the presence of setiform vibriss&aelig; and the laterally placed scrobes.<pb id="coleoptera-v4p3-179"/>
+									</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+						<Discussions>
+							<GeneralDiscussion>
+								<DiscussionBody>
+									<DiscussionParagraph ElementID="colv4p3-4300">The following description was drawn up many years ago by Dr. Sharp and requires no alteration:&mdash;</DiscussionParagraph>
+								</DiscussionBody>
+							</GeneralDiscussion>
+						</Discussions>
+						<TaxonTreatment TaxonID="colv4p3-t466" RecognizedInTreatment="true" TreatmentLanguage="English">
+							<TreatmentAuthors>
+								<TreatmentAuthorString Explicit="false">Champion</TreatmentAuthorString>
+								<TreatmentAuthorAtomised OrderOfAuthors="1">Champion</TreatmentAuthorAtomised>
+							</TreatmentAuthors>
+							<TaxonHeading>
+								<TaxonHeadingBody ElementID="colv4p3-4006" Explicit="true">TANYMECUS.</TaxonHeadingBody>
+								<RankDesignation Explicit="false">Genus</RankDesignation>
+								<TaxonHeadingName>
+									<TaxonName InformalName="false">Tanymecus</TaxonName>
+								</TaxonHeadingName>
+							</TaxonHeading>
+							<TaxonCitationGroup>
+								<AcceptedOrValidTaxonName>
+									<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-4007">Tanymecus, Sch&ouml;nherr, Curc. Disp. Meth. p. 127 (1826); Gen. Curc. ii. p. 75; Lacordaire, Gen. Col. vi. p. 96; Horn, Proc. Am. Phil. Soc. xv. p. 83.</AcceptedOrValidTaxonNameParagraph>
+									<AcceptedTaxonName>
+										<TaxonName InformalName="false">Tanymecus</TaxonName>
+										<GenusName Explicit="true">Tanymecus</GenusName>
+									</AcceptedTaxonName>
+									<TaxonAuthor>
+										<TaxonAuthorString Explicit="true" AppliesToRank="Genus">Sch&ouml;nherr</TaxonAuthorString>
+										<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Sch&ouml;nherr</TaxonAuthorAtomised>
+									</TaxonAuthor>
+									<PrimaryCitation>
+										<CitationPublicationDetails>
+											<BookSeriesJournalTitle Explicit="true">Curc. Disp. Meth.</BookSeriesJournalTitle>
+											<Pagination Explicit="true">127</Pagination>
+											<PublicationDateCited Explicit="true">1826</PublicationDateCited>
+										</CitationPublicationDetails>
+									</PrimaryCitation>
+									<OtherCitations>
+										<OtherCitationAuthors>
+											<OtherCitationAuthorString Explicit="true">Sch&ouml;nherr</OtherCitationAuthorString>
+											<OtherCitationAuthorAtomised KindOfAuthor="CitationAuthor" OrderOfAuthors="1">Sch&ouml;nherr</OtherCitationAuthorAtomised>
+										</OtherCitationAuthors>
+										<OtherCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="true">Gen. Curc.</BookSeriesJournalTitle>
+												<Volume Explicit="true">ii</Volume>
+												<Pagination Explicit="true">75</Pagination>
+											</CitationPublicationDetails>
+										</OtherCitation>
+									</OtherCitations>
+									<OtherCitations>
+										<OtherCitationAuthors>
+											<OtherCitationAuthorString Explicit="true">Lacordaire</OtherCitationAuthorString>
+											<OtherCitationAuthorAtomised KindOfAuthor="citation author" OrderOfAuthors="1">Lacordaire</OtherCitationAuthorAtomised>
+										</OtherCitationAuthors>
+										<OtherCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="true">Gen. Col.</BookSeriesJournalTitle>
+												<Volume Explicit="true">vi</Volume>
+												<Pagination Explicit="true">96</Pagination>
+											</CitationPublicationDetails>
+										</OtherCitation>
+									</OtherCitations>
+									<OtherCitations>
+										<OtherCitationAuthors>
+											<OtherCitationAuthorString Explicit="true">Horn</OtherCitationAuthorString>
+											<OtherCitationAuthorAtomised OrderOfAuthors="1" KindOfAuthor="citation author">Horn</OtherCitationAuthorAtomised>
+										</OtherCitationAuthors>
+										<OtherCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="true">Proc. Am. Phil. Soc.</BookSeriesJournalTitle>
+												<Volume Explicit="true">xv</Volume>
+												<Pagination Explicit="true">83</Pagination>
+											</CitationPublicationDetails>
+										</OtherCitation>
+									</OtherCitations>
+								</AcceptedOrValidTaxonName>
+							</TaxonCitationGroup>
+							<Discussions>
+								<GeneralDiscussion>
+									<DiscussionBody>
+										<DiscussionParagraph ElementID="colv4p3-4008">A genus including a large number of species, very few of which are from the New World; one, however, is abundant in the United States and Central America. These American forms all have well-developed setiform vibriss&aelig;.</DiscussionParagraph>
+									</DiscussionBody>
+								</GeneralDiscussion>
+							</Discussions>
+							<TaxonTreatment TaxonID="colv4p3-t467" RecognizedInTreatment="true" TreatmentLanguage="English">
+								<TreatmentAuthors>
+									<TreatmentAuthorString Explicit="false">Champion</TreatmentAuthorString>
+									<TreatmentAuthorAtomised OrderOfAuthors="1">Champion</TreatmentAuthorAtomised>
+								</TreatmentAuthors>
+								<TaxonHeading>
+									<TaxonHeadingBody ElementID="colv4p3-4009" Explicit="true">1. <hi rend="bold">Tanymecus confertus</hi>. (Tab. VII. figg. 20, 20a, &male;.)<ref target="coleoptera-v4p3-fig-t7f20 coleoptera-v4p3-fig-t7f20a"/>
+									</TaxonHeadingBody>
+									<RankDesignation Explicit="false">species</RankDesignation>
+									<TaxonIdentifier>1</TaxonIdentifier>
+									<TaxonHeadingName>
+										<TaxonName InformalName="false">Tanymecus confertus</TaxonName>
+										<GenusName Explicit="true">Tanymecus</GenusName>
+										<SpeciesEpithet Explicit="true">confertus</SpeciesEpithet>
+									</TaxonHeadingName>
+									<ImageCrossReference TreatmentOrCitation="InCurrentTreatment">
+										<ImageCrossReferenceString>Tab. VII. figg. 20, 20a, m.</ImageCrossReferenceString>
+										<TargetReference>coleoptera-v4p3-fig-t7f20</TargetReference>
+										<TargetReference>coleoptera-v4p3-fig-t7f20a</TargetReference>
+									</ImageCrossReference>
+								</TaxonHeading>
+								<TaxonCitationGroup>
+									<AcceptedOrValidTaxonName>
+										<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-4010">
+											<hi rend="italic">Tanymecus confertus</hi>, Gyll. in Schönh. Gen. Curc. ii. p. 88<hi rend="superscript">
+												<note id="coleoptera-v4p3-taxft-179a">1</note>
+											</hi>; vi. 1, p. 241<hi rend="superscript">
+												<note id="coleoptera-v4p3-taxft-179b">2</note>
+											</hi>; Horn, Proc. Am. Phil. Soc. xv. p. 84<hi rend="superscript">
+												<note id="coleoptera-v4p3-taxft-179c">3</note>
+											</hi>; Pierce, Proc. U.S. Nat. Mus. xxxvii. p. 358<hi rend="superscript">
+												<note id="coleoptera-v4p3-taxft-179d">4</note>
+											</hi>.</AcceptedOrValidTaxonNameParagraph>
+										<AcceptedTaxonName>
+											<TaxonName InformalName="false">Tanymecus confertus</TaxonName>
+											<GenusName Explicit="true">Tanymecus</GenusName>
+											<SpeciesEpithet Explicit="true">confertus</SpeciesEpithet>
+										</AcceptedTaxonName>
+										<TaxonAuthor>
+											<TaxonAuthorString Explicit="true" AppliesToRank="species">Gyll. in Sch&ouml;nh.</TaxonAuthorString>
+											<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Gyll.</TaxonAuthorAtomised>
+											<TaxonAuthorAtomised KindOfAuthor="CombinationIn" OrderOfAuthors="2">Sch&ouml;nh.</TaxonAuthorAtomised>
+										</TaxonAuthor>
+										<PrimaryCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="true">Gen. Curc.</BookSeriesJournalTitle>
+												<Volume Explicit="true">ii</Volume>
+												<Pagination Explicit="true">88</Pagination>
+											</CitationPublicationDetails>
+										</PrimaryCitation>
+										<OtherCitations>
+											<OtherCitationAuthors>
+												<OtherCitationAuthorString Explicit="true">Gyll. in Sch&ouml;nh.</OtherCitationAuthorString>
+												<OtherCitationAuthorAtomised OrderOfAuthors="1" KindOfAuthor="citation author">Gyll.</OtherCitationAuthorAtomised>
+												<OtherCitationAuthorAtomised OrderOfAuthors="2" KindOfAuthor="article or book author">Sch&ouml;nh.</OtherCitationAuthorAtomised>
+											</OtherCitationAuthors>
+											<OtherCitation>
+												<CitationPublicationDetails>
+													<BookSeriesJournalTitle Explicit="true">Gen. Curc.</BookSeriesJournalTitle>
+													<Volume Explicit="true">vi. 1</Volume>
+													<Pagination Explicit="true">241</Pagination>
+												</CitationPublicationDetails>
+											</OtherCitation>
+										</OtherCitations>
+										<OtherCitations>
+											<OtherCitationAuthors>
+												<OtherCitationAuthorString Explicit="true">Horn</OtherCitationAuthorString>
+												<OtherCitationAuthorAtomised OrderOfAuthors="1" KindOfAuthor="citation author">Horn</OtherCitationAuthorAtomised>
+											</OtherCitationAuthors>
+											<OtherCitation>
+												<CitationPublicationDetails>
+													<BookSeriesJournalTitle Explicit="true">Proc. Am. Phil. Soc.</BookSeriesJournalTitle>
+													<Volume Explicit="true">xv</Volume>
+													<Pagination Explicit="true">84</Pagination>
+												</CitationPublicationDetails>
+											</OtherCitation>
+										</OtherCitations>
+										<OtherCitations>
+											<OtherCitationAuthors>
+												<OtherCitationAuthorString Explicit="true">Pierce</OtherCitationAuthorString>
+												<OtherCitationAuthorAtomised OrderOfAuthors="1" KindOfAuthor="citation author">Pierce</OtherCitationAuthorAtomised>
+											</OtherCitationAuthors>
+											<OtherCitation>
+												<CitationPublicationDetails>
+													<BookSeriesJournalTitle Explicit="true">Proc. U. S. Nat. Mus.</BookSeriesJournalTitle>
+													<Volume Explicit="true">xxxvii</Volume>
+													<Pagination Explicit="true">358</Pagination>
+												</CitationPublicationDetails>
+											</OtherCitation>
+										</OtherCitations>
+									</AcceptedOrValidTaxonName>
+									<SynonymCitation>
+										<SynonymCitationParagraph ElementID="colv4p3-4011">
+											<hi rend="italic">Tanymecus confusus</hi>, Say, Descr. N. Am. Curc. p. 9<hi rend="superscript">
+												<note id="coleoptera-v4p3-taxft-179e">5</note>
+											</hi>; Complete Writings, i. p. 269<hi rend="superscript">
+												<note id="coleoptera-v4p3-taxft-179f">6</note>
+											</hi>.</SynonymCitationParagraph>
+										<SynonymSubsets>
+											<SynonymName>
+												<TaxonName InformalName="false">Tanymecus confusus</TaxonName>
+												<GenusName Explicit="true">Tanymecus</GenusName>
+												<SpeciesEpithet Explicit="true">confusus</SpeciesEpithet>
+											</SynonymName>
+											<TaxonAuthor>
+												<TaxonAuthorString Explicit="true" AppliesToRank="species">Say</TaxonAuthorString>
+												<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">Say</TaxonAuthorAtomised>
+											</TaxonAuthor>
+											<SynonymPrimaryCitation>
+												<CitationPublicationDetails>
+													<BookSeriesJournalTitle Explicit="true">Descr. N. Am. Curc.</BookSeriesJournalTitle>
+													<Pagination Explicit="true">9</Pagination>
+												</CitationPublicationDetails>
+											</SynonymPrimaryCitation>
+											<SynonymOtherCitations>
+												<SynonymOtherCitationAuthor>
+													<OtherCitationAuthorString Explicit="false">Say</OtherCitationAuthorString>
+													<OtherCitationAuthorAtomised OrderOfAuthors="1" KindOfAuthor="citation author">Say</OtherCitationAuthorAtomised>
+												</SynonymOtherCitationAuthor>
+												<SynonymOtherCitation>
+													<CitationPublicationDetails>
+														<BookSeriesJournalTitle Explicit="true">Complete Writings</BookSeriesJournalTitle>
+														<Volume Explicit="true">i</Volume>
+														<Pagination Explicit="true">p. 269</Pagination>
+													</CitationPublicationDetails>
+												</SynonymOtherCitation>
+											</SynonymOtherCitations>
+										</SynonymSubsets>
+									</SynonymCitation>
+									<SynonymCitation>
+										<SynonymCitationParagraph ElementID="colv4p3-4012">
+											<hi rend="italic">Tanymecus variabilis</hi>, F&aring;hr. in Sch&ouml;nh. Gen. Curc. vi. 1, p. 241<hi rend="superscript">
+												<note id="coleoptera-v4p3-taxft-179g">7</note>
+											</hi>.</SynonymCitationParagraph>
+										<SynonymSubsets>
+											<SynonymName>
+												<TaxonName InformalName="false">Tanymecus variabilis</TaxonName>
+												<GenusName Explicit="true">Tanymecus</GenusName>
+												<SpeciesEpithet Explicit="true">variabilis</SpeciesEpithet>
+											</SynonymName>
+											<TaxonAuthor>
+												<TaxonAuthorString Explicit="true" AppliesToRank="species">F&aring;hr. in Sch&ouml;nh.</TaxonAuthorString>
+												<TaxonAuthorAtomised KindOfAuthor="Combination" OrderOfAuthors="1">F&aring;hr.</TaxonAuthorAtomised>
+												<TaxonAuthorAtomised KindOfAuthor="CombinationIn" OrderOfAuthors="2">Sch&ouml;nh</TaxonAuthorAtomised>
+											</TaxonAuthor>
+											<SynonymPrimaryCitation>
+												<CitationPublicationDetails>
+													<BookSeriesJournalTitle Explicit="true">Gen. Curc.</BookSeriesJournalTitle>
+													<Volume Explicit="true">vi. 1</Volume>
+													<Pagination Explicit="true">p. 241</Pagination>
+												</CitationPublicationDetails>
+											</SynonymPrimaryCitation>
+										</SynonymSubsets>
+									</SynonymCitation>
+									<SynonymCitation>
+										<SynonymCitationParagraph ElementID="colv4p3-4013">
+											<hi rend="italic">Polydacrus tristis</hi>, in coll. Sturm<hi rend="superscript">
+												<note id="coleoptera-v4p3-taxft-179h">8</note>
+											</hi>.</SynonymCitationParagraph>
+										<SynonymSubsets>
+											<SynonymName>
+												<TaxonName InformalName="false">Polydacrus tristis</TaxonName>
+												<GenusName Explicit="true">Polydacrus</GenusName>
+												<SpeciesEpithet Explicit="true">tristis</SpeciesEpithet>
+											</SynonymName>
+											<SynonymPrimaryCitation>
+												<OtherSourceOfName>in coll. Sturm.</OtherSourceOfName>
+											</SynonymPrimaryCitation>
+										</SynonymSubsets>
+									</SynonymCitation>
+								</TaxonCitationGroup>
+								<DistributionAndOrSpecimenCitations>
+									<DistributionAndOrSpecimenParagraph ElementID="colv4p3-4014">
+										<hi rend="italic">Hab.</hi> NORTH AMERICA<hi rend="superscript">
+											<ref target="coleoptera-v4p3-taxft-179a">1</ref>
+										</hi>
+										<hi rend="superscript">
+											<ref target="coleoptera-v4p3-taxft-179d">4</ref>
+										</hi>
+										<hi rend="superscript">
+											<ref target="coleoptera-v4p3-taxft-179e">5</ref>
+										</hi>
+										<hi rend="superscript">
+											<ref target="coleoptera-v4p3-taxft-179f">6</ref>
+										</hi>, everywhere East of the Rocky Mountains<hi rend="superscript">
+											<ref target="coleoptera-v4p3-taxft-179c">3</ref>
+										</hi>.&mdash;MEXICO<hi rend="superscript">
+											<ref target="coleoptera-v4p3-taxft-179b">2</ref>
+										</hi>
+										<hi rend="superscript">
+											<ref target="coleoptera-v4p3-taxft-179g">7</ref>
+										</hi>
+										<hi rend="superscript">
+											<ref target="coleoptera-v4p3-taxft-179h">8</ref>
+										</hi>; BRITISH HONDURAS; GUATEMALA; NICARAGUA.</DistributionAndOrSpecimenParagraph>
+									<IndividualLocalities>
+										<Locality>
+											<Level0 Explicit="true">
+												<Level0Text>North America</Level0Text>
+											</Level0>
+											<DetailedLocation Explicit="true">
+												<DetailedLocationText>everywhere East of the Rocky Mountains</DetailedLocationText>
+											</DetailedLocation>
+										</Locality>
+									</IndividualLocalities>
+									<IndividualLocalities>
+										<Locality>
+											<Level1 Explicit="true">
+												<Level1Text>Mexico</Level1Text>
+											</Level1>
+										</Locality>
+									</IndividualLocalities>
+									<IndividualLocalities>
+										<Locality>
+											<Level1 Explicit="true">
+												<Level1Text>British Honduras</Level1Text>
+											</Level1>
+										</Locality>
+									</IndividualLocalities>
+									<IndividualLocalities>
+										<Locality>
+											<Level1 Explicit="true">
+												<Level1Text>Guatemala</Level1Text>
+											</Level1>
+										</Locality>
+									</IndividualLocalities>
+									<IndividualLocalities>
+										<Locality>
+											<Level1 Explicit="true">
+												<Level1Text>Nicaragua</Level1Text>
+											</Level1>
+										</Locality>
+									</IndividualLocalities>
+								</DistributionAndOrSpecimenCitations>
+								<Discussions>
+									<GeneralDiscussion>
+										<DiscussionBody>
+											<DiscussionParagraph ElementID="colv4p3-4015">An abundant insect in Central America, apparently not extending south of Nicaragua, examples from our region not differing from others before me from Texas, &amp;c. Specimens from Paso del Norte are larger, more densely punctate, and more closely squamose than the rest; Dr. Horn<hi rend="superscript">
+													<ref target="coleoptera-v4p3-taxft-179c">3</ref>
+												</hi>, too, also notes larger individuals from the Southern United States. The wings are usually in a rudimentary condition, but occasionally become fully developed, even amongst a series examined from the same localities (Teapa and Rio Hondo). The rostral carina is rarely obsolete. The humeri are obliquely truncated. The first ventral segment is hollowed down the middle in the male, the fifth is without trace of oblique lines at the base in the female. The length varies from 5&ndash;8&frac34; millim. A male from Nicaragua is figured. The insect has been found on <hi rend="italic">&OElig;nothera</hi> in Texas<hi rend="superscript">
+													<ref target="coleoptera-v4p3-taxft-179d">4</ref>
+												</hi>.</DiscussionParagraph>
+										</DiscussionBody>
+									</GeneralDiscussion>
+								</Discussions>
+							</TaxonTreatment>
+						</TaxonTreatment>
+						<TaxonTreatment RecognizedInTreatment="true" TreatmentLanguage="English" TaxonID="colv4p3-t470">
+							<TreatmentDate>May 1911</TreatmentDate>
+							<TreatmentAuthors>
+								<TreatmentAuthorString Explicit="false">Champion</TreatmentAuthorString>
+								<TreatmentAuthorAtomised OrderOfAuthors="1">Champion</TreatmentAuthorAtomised>
+							</TreatmentAuthors>
+							<TaxonHeading>
+								<TaxonHeadingBody ElementID="colv4p3-4200" Explicit="true">HADROMERUS.</TaxonHeadingBody>
+								<TaxonHeadingName>
+									<TaxonName InformalName="false">Hadromerus</TaxonName>
+									<GenusName Explicit="true">Hadromerus</GenusName>
+								</TaxonHeadingName>
+							</TaxonHeading>
+							<TaxonCitationGroup>
+								<AcceptedOrValidTaxonName>
+									<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-4201">
+										<hi rend="italic">Hadromerus</hi>, Sch&ouml;nherr, Curc. Disp. Meth. p. 136 (1826); Gen. Curc. ii. p. 127; Lacordaire, Gen. Col. vi. p. 102; Horn, Proc. Am. Phil. Soc. xv. p. 85.</AcceptedOrValidTaxonNameParagraph>
+									<AcceptedTaxonName>
+										<TaxonName InformalName="false">Hadromerus</TaxonName>
+										<GenusName Explicit="true">Hadromerus</GenusName>
+									</AcceptedTaxonName>
+									<TaxonAuthor>
+										<TaxonAuthorString Explicit="true">Sch&ouml;nherr</TaxonAuthorString>
+										<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Sch&ouml;nherr</TaxonAuthorAtomised>
+									</TaxonAuthor>
+									<PrimaryCitation>
+										<CitationPublicationDetails>
+											<BookSeriesJournalTitle Explicit="true">Curc. Disp. Meth.</BookSeriesJournalTitle>
+											<Pagination Explicit="true">p. 136</Pagination>
+											<PublicationDateCited Explicit="true">1826</PublicationDateCited>
+										</CitationPublicationDetails>
+									</PrimaryCitation>
+									<OtherCitations>
+										<OtherCitationAuthors>
+											<OtherCitationAuthorString Explicit="false">Sch&ouml;nherr</OtherCitationAuthorString>
+											<OtherCitationAuthorAtomised OrderOfAuthors="1" KindOfAuthor="other citation">Sch&ouml;nherr</OtherCitationAuthorAtomised>
+										</OtherCitationAuthors>
+										<OtherCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="true">Gen. Curc.</BookSeriesJournalTitle>
+												<Volume Explicit="true">ii</Volume>
+												<Pagination Explicit="true">p. 127</Pagination>
+											</CitationPublicationDetails>
+										</OtherCitation>
+									</OtherCitations>
+									<OtherCitations>
+										<OtherCitationAuthors>
+											<OtherCitationAuthorString Explicit="true">Lacordaire</OtherCitationAuthorString>
+											<OtherCitationAuthorAtomised OrderOfAuthors="1" KindOfAuthor="other citation">Lacordaire</OtherCitationAuthorAtomised>
+										</OtherCitationAuthors>
+										<OtherCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="true">Gen. Col.</BookSeriesJournalTitle>
+												<Volume Explicit="true">vi</Volume>
+												<Pagination Explicit="true">p. 102</Pagination>
+											</CitationPublicationDetails>
+										</OtherCitation>
+									</OtherCitations>
+									<OtherCitations>
+										<OtherCitationAuthors>
+											<OtherCitationAuthorString Explicit="true">Horn</OtherCitationAuthorString>
+											<OtherCitationAuthorAtomised OrderOfAuthors="1" KindOfAuthor="other citation">Horn</OtherCitationAuthorAtomised>
+										</OtherCitationAuthors>
+										<OtherCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="true">Proc. Am. Phil. Soc.</BookSeriesJournalTitle>
+												<Volume Explicit="true">xv</Volume>
+												<Pagination Explicit="true">p. 85</Pagination>
+											</CitationPublicationDetails>
+										</OtherCitation>
+									</OtherCitations>
+								</AcceptedOrValidTaxonName>
+							</TaxonCitationGroup>
+							<Discussions>
+								<GeneralDiscussion>
+									<DiscussionBody>
+										<DiscussionParagraph ElementID="colv4p3-4202">A genus containing some of the most beautiful known American winged Otiorhynchids, <hi rend="italic">H. dejeani, gemmifer, opalinus</hi>, &amp;c., being more or less densely clothed with glittering metallic scales. In a few forms, however, the scales vary greatly in colour and may even become uniformly whitish or cinereous in the same species. The females of all of them have the suture of the elytra set with long erect hairs towards the apex, and the males a small claw at the inner apical angle of the intermediate tibi&aelig;. The type of <hi rend="italic">Hadromerus</hi> is <hi rend="italic">H. nobilitatus</hi>, Gyll. One of the Guatemalan forms has been found in numbers in the &ldquo;tierra fria.&rdquo;</DiscussionParagraph>
+									</DiscussionBody>
+								</GeneralDiscussion>
+							</Discussions>
+							<KeyToTaxa KeyID="colv4p3-k100">
+								<KeyIntroductoryText ElementID="colv4p3-4203">The seven Central-American forms may be tabulated thus:&mdash;</KeyIntroductoryText>
+								<KeyDecisionNode NodeID="colv4p3-key181node1" ParentKeyID="colv4p3-k100">
+									<KeyLug LugID="colv4p3key181lug1">
+										<KeyLugString ElementID="colv4p3-4204">a. Surface closely squamose, the legs included, the femora (except in immature examples) at least black.</KeyLugString>
+										<LugIdentifier>a</LugIdentifier>
+										<Characters>Surface closely squamose, the legs included, the femora (except in immature examples) at least black.</Characters>
+										<KeyReference>
+											<KeyDecisionNode NodeID="colv4p3key181node2" ParentKeyID="colv4p3-k100">
+												<KeyLug LugID="colv4p3key181lug3">
+													<KeyLugString ElementID="colv4p3-4206">a<hi rend="superscript">2</hi> Elytra with the seriate punctures distinctly visible.</KeyLugString>
+													<LugIdentifier>a<hi rend="superscript">2</hi>
+													</LugIdentifier>
+													<Characters>Elytra with the seriate punctures distinctly visible.</Characters>
+												</KeyLug>
+											</KeyDecisionNode>
+										</KeyReference>
+									</KeyLug>
+									<KeyLug LugID="colv4p3key181lug2">
+										<KeyLugString ElementID="colv4p3-4215">b. Surface partly bare and comparatively smooth, the legs included, the latter wholly rufous; the metallic-green scales on the elytra condensed into a narrow sinuous stripe on the disk: species large...rufipes, sp. n.</KeyLugString>
+										<LugIdentifier>b</LugIdentifier>
+										<Characters>Surface partly bare and comparatively smooth, the legs included, the latter wholly rufous; the metallic-green scales on the elytra condensed into a narrow sinuous stripe on the disk: species large</Characters>
+										<KeyReference>
+											<TaxaReferedTo>
+												<TaxonName>
+													<TaxonName InformalName="false">rufipes</TaxonName>
+													<GenusName Explicit="false">Hadromerus</GenusName>
+													<SpeciesEpithet Explicit="true">rufipes</SpeciesEpithet>
+												</TaxonName>
+												<KeyLugNameAddendum>sp.n.</KeyLugNameAddendum>
+											</TaxaReferedTo>
+										</KeyReference>
+									</KeyLug>
+								</KeyDecisionNode>
+							</KeyToTaxa>
+						</TaxonTreatment>
+						<TaxonTreatment RecognizedInTreatment="true" TreatmentLanguage="" TaxonID="colv4p3-t518">
+							<TreatmentDate>May 1911</TreatmentDate>
+							<TreatmentAuthors>
+								<TreatmentAuthorString Explicit="false">Champion</TreatmentAuthorString>
+								<TreatmentAuthorAtomised OrderOfAuthors="1">Champion</TreatmentAuthorAtomised>
+							</TreatmentAuthors>
+							<TaxonHeading>
+								<TaxonHeadingBody ElementID="colv4p3-4301" Explicit="true">ISODRUSUS, gen. nov. [Sharp]</TaxonHeadingBody>
+								<TaxonHeadingName>
+									<TaxonName InformalName="false">Isodrusus</TaxonName>
+									<GenusName Explicit="true">Isodrusus</GenusName>
+								</TaxonHeadingName>
+								<TaxonAuthor>
+									<TaxonAuthorString Explicit="false">Sharp ex Champion</TaxonAuthorString>
+									<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Champion</TaxonAuthorAtomised>
+									<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="CombinationMS">Sharp</TaxonAuthorAtomised>
+								</TaxonAuthor>
+								<NewNameDesignation Explicit="true">gen. nov.</NewNameDesignation>
+							</TaxonHeading>
+							<TaxonCitationGroup>
+								<AcceptedOrValidTaxonName>
+									<AcceptedTaxonName>
+										<TaxonName InformalName="false">Isodrusus</TaxonName>
+										<GenusName Explicit="true">Isodrusus</GenusName>
+									</AcceptedTaxonName>
+									<TaxonAuthor>
+										<TaxonAuthorString Explicit="false">Sharp ex Champion</TaxonAuthorString>
+										<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Champion</TaxonAuthorAtomised>
+										<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="CombinationMS">Sharp</TaxonAuthorAtomised>
+									</TaxonAuthor>
+									<NameYear>1911</NameYear>
+									<PrimaryCitation>
+										<CitationPublicationDetails>
+											<BookSeriesJournalTitle Explicit="false">Biol. Centrali-Amer.</BookSeriesJournalTitle>
+											<Volume Explicit="false">4 pt. 3</Volume>
+											<Pagination Explicit="false">207</Pagination>
+										</CitationPublicationDetails>
+									</PrimaryCitation>
+								</AcceptedOrValidTaxonName>
+							</TaxonCitationGroup>
+							<Descriptions>
+								<LatinDiagnosis>
+									<LatinDiagnosisParagraph ElementID="colv4p3-4302">Rostrum brevissimum, deflexum; cox&aelig; anteriores modice distantes.</LatinDiagnosisParagraph>
+								</LatinDiagnosis>
+								<SameLanguageDescription>
+									<SameLanguageDescriptonParagraphs>
+										<SameLanguageDescriptionParagraph ElementID="colv4p3-4303">Rostrum not so long as broad, strongly inflexed, narrower towards the tip; scrobes deep, slender, abruptly angulate, descending. Thorax elongate; front cox&aelig; distinctly separated, placed very near the front margin, at a considerable distance from the hind margin; vibriss&aelig; represented by two or three set&aelig;. Metasternum not elongate, as long as the first ventral plate. First and second ventral plates equal in length, third and fourth equal, short. Legs stout; tarsal claws small, connate.</SameLanguageDescriptionParagraph>
+									</SameLanguageDescriptonParagraphs>
+								</SameLanguageDescription>
+							</Descriptions>
+							<Discussions>
+								<GeneralDiscussion>
+									<DiscussionBody>
+										<DiscussionParagraph ElementID="colv4p3-4304">This genus resembles <hi rend="italic">Polydacrys</hi> and 
+<hi rend="italic">Pandeleteius</hi> in many respects, and still more <hi rend="italic">Isodacrys</hi> in the apterous series, but all these three genera have free claws. <hi rend="italic">Isodrusus</hi> is altogether a most anomalous little insect; the rostrum could scarcely be shorter, and I do not see any trace of a nasal plate at its apex. The wings (<ref target="coleoptera-v4p3-fig-t8f32b">Tab. VIII. fig. 32 <hi rend="italic">b</hi>
+											</ref>) are folded transversely, but have remarkably few veins. A similar rudimentary condition of the vibriss&aelig; occurs in <hi rend="italic">Pseudelissa</hi> and in <hi rend="italic">Isodacrys</hi>.<figure id="coleoptera-v4p3-fig-t8f32b"/>
+											<pb id="coleoptera-v4p3-208"/>
+										</DiscussionParagraph>
+									</DiscussionBody>
+								</GeneralDiscussion>
+							</Discussions>
+							<TaxonTreatment RecognizedInTreatment="true" TreatmentLanguage="" TaxonID="colv4p3-t519" ParentNodeID="colv4p3-t518">
+								<TreatmentAuthors>
+									<TreatmentAuthorString Explicit="true">Champion</TreatmentAuthorString>
+									<TreatmentAuthorAtomised OrderOfAuthors="1">Champion</TreatmentAuthorAtomised>
+								</TreatmentAuthors>
+								<TreatmentDate>May 1911</TreatmentDate>
+								<TaxonHeading>
+									<TaxonHeadingBody ElementID="colv4p3-4305" Explicit="true">Isodrusus debilis, sp. n. [Sharp]. (Tab. VIII. figg. 32, 32a; 32b, wing.)</TaxonHeadingBody>
+									<TaxonIdentifier>1</TaxonIdentifier>
+									<TaxonHeadingName>
+										<TaxonName InformalName="false">Isodrusus debilis</TaxonName>
+										<GenusName Explicit="true">Isodrusus</GenusName>
+										<SpeciesEpithet Explicit="true">debilis</SpeciesEpithet>
+									</TaxonHeadingName>
+									<NewNameDesignation Explicit="true">sp. n.</NewNameDesignation>
+									<ImageCrossReference TreatmentOrCitation="InCurrentTreatment" PositionOfImage="InVolume">
+										<ImageCrossReferenceString>Tab. VIII. figg. 32, 32a; 32b, wing.</ImageCrossReferenceString>
+										<TargetReference>coleoptera-v4p3-fig-t8f32</TargetReference>
+										<TargetReference>coleoptera-v4p3-fig-t8f32a</TargetReference>
+										<TargetReference>coleoptera-v4p3-fig-t8f32b</TargetReference>
+									</ImageCrossReference>
+									<TaxonAuthor>
+										<TaxonAuthorString Explicit="false">Sharp ex Champion</TaxonAuthorString>
+										<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Champion</TaxonAuthorAtomised>
+										<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="CombinationMS">Sharp</TaxonAuthorAtomised>
+									</TaxonAuthor>
+								</TaxonHeading>
+								<TaxonCitationGroup>
+									<AcceptedOrValidTaxonName>
+										<AcceptedTaxonName>
+											<TaxonName InformalName="false">Isodrusus debilis</TaxonName>
+											<GenusName Explicit="true">Isodrusus</GenusName>
+											<SpeciesEpithet Explicit="true">debilis</SpeciesEpithet>
+										</AcceptedTaxonName>
+										<NewNameDesignation Explicit="true">sp. n.</NewNameDesignation>
+										<NameYear>1911</NameYear>
+										<PrimaryCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="false">Biologia Centrali-Amer.</BookSeriesJournalTitle>
+												<Volume Explicit="false">vol. 4, pt. 3</Volume>
+												<Pagination Explicit="false">208</Pagination>
+											</CitationPublicationDetails>
+										</PrimaryCitation>
+									</AcceptedOrValidTaxonName>
+								</TaxonCitationGroup>
+								<Descriptions>
+									<LatinDiagnosis>
+										<LatinDiagnosisParagraph ElementID="colv4p3-4306">Subdepressus, ferrugineus, ....</LatinDiagnosisParagraph>
+										<LatinDiagnosisParagraph ElementID="colv4p3-4307">Long. ....</LatinDiagnosisParagraph>
+									</LatinDiagnosis>
+								</Descriptions>
+								<DistributionAndOrSpecimenCitations>
+									<DistributionAndOrSpecimenParagraph ElementID="colv4p3-4308">Hab. GUATEMALA, San Ger&oacute;nimo (Champion).</DistributionAndOrSpecimenParagraph>
+									<IndividualLocalities>
+										<Locality>
+											<Level1 Explicit="true">
+												<Level1Text>Guatemala</Level1Text>
+											</Level1>
+											<DetailedLocation Explicit="true">
+												<DetailedLocationText>San Ger&oacute;nimo</DetailedLocationText>
+											</DetailedLocation>
+										</Locality>
+										<Gathering>
+											<CollectorOrExpeditionName>
+												<ContributorString Explicit="true">Champion</ContributorString>
+												<ContributorAtomised OrderOfContributors="1">Champion</ContributorAtomised>
+											</CollectorOrExpeditionName>
+										</Gathering>
+									</IndividualLocalities>
+								</DistributionAndOrSpecimenCitations>
+								<Discussions>
+									<GeneralDiscussion>
+										<DiscussionBody>
+											<DiscussionParagraph ElementID="colv4p3-4309">Antenn&aelig; very short, joints....</DiscussionParagraph>
+											<DiscussionParagraph ElementID="colv4p3-4310">Four specimens...</DiscussionParagraph>
+										</DiscussionBody>
+									</GeneralDiscussion>
+								</Discussions>
+							</TaxonTreatment>
+						</TaxonTreatment>
+						<TaxonTreatment RecognizedInTreatment="true" TreatmentLanguage="" TaxonID="coleoptera-v4p3-t576">
+							<TreatmentAuthors>
+								<TreatmentAuthorString Explicit="false">Champion</TreatmentAuthorString>
+								<TreatmentAuthorAtomised OrderOfAuthors="1">Champion</TreatmentAuthorAtomised>
+							</TreatmentAuthors>
+							<TreatmentDate>May 1911</TreatmentDate>
+							<TaxonHeading>
+								<TaxonHeadingBody ElementID="colv4p3-4400" Explicit="true">4. <hi rend="bold">Naupactus (?) cinerascens</hi>.</TaxonHeadingBody>
+								<RankDesignation Explicit="false">species</RankDesignation>
+								<TaxonIdentifier>4</TaxonIdentifier>
+								<TaxonHeadingName>
+									<TaxonName InformalName="false">Naupactus cinerascens</TaxonName>
+									<GenusName Explicit="true">Naupactus</GenusName>
+									<SpeciesEpithet Explicit="true">cinerascens</SpeciesEpithet>
+								</TaxonHeadingName>
+								<NameComments>(?)</NameComments>
+							</TaxonHeading>
+							<TaxonCitationGroup>
+								<AcceptedOrValidTaxonName>
+									<AcceptedOrValidTaxonNameParagraph ElementID="colv4p3-4401">
+										<hi rend="italic">Naupactus cinerascens</hi>, Perroud, Ann. Soc. Linn. Lyon, (2) i. p. 454 (1853)<hi rend="superscript">1</hi>; M&eacute;langes Ent. ii. p. 70<hi rend="superscript">2</hi>.</AcceptedOrValidTaxonNameParagraph>
+									<AcceptedTaxonName>
+										<TaxonName InformalName="false">Naupactus cinerascens</TaxonName>
+										<GenusName Explicit="true">Naupactus</GenusName>
+										<SpeciesEpithet Explicit="true">cinerascens</SpeciesEpithet>
+									</AcceptedTaxonName>
+									<TaxonAuthor>
+										<TaxonAuthorString Explicit="true">Perroud</TaxonAuthorString>
+										<TaxonAuthorAtomised OrderOfAuthors="1" KindOfAuthor="Combination">Perroud</TaxonAuthorAtomised>
+									</TaxonAuthor>
+									<PrimaryCitation>
+										<CitationPublicationDetails>
+											<BookSeriesJournalTitle Explicit="true">Ann. Soc. Linn. Lyon</BookSeriesJournalTitle>
+											<Volume Explicit="true">(2) i</Volume>
+											<Pagination Explicit="true">p. 454</Pagination>
+										</CitationPublicationDetails>
+									</PrimaryCitation>
+									<OtherCitations>
+										<OtherCitationAuthors>
+											<OtherCitationAuthorString Explicit="true">M&eacute;langes</OtherCitationAuthorString>
+											<OtherCitationAuthorAtomised OrderOfAuthors="1" KindOfAuthor="other citation">M&eacute;langes</OtherCitationAuthorAtomised>
+										</OtherCitationAuthors>
+										<OtherCitation>
+											<CitationPublicationDetails>
+												<BookSeriesJournalTitle Explicit="true">Ent.</BookSeriesJournalTitle>
+												<Volume Explicit="true">ii</Volume>
+												<Pagination Explicit="true">p. 70</Pagination>
+											</CitationPublicationDetails>
+										</OtherCitation>
+									</OtherCitations>
+								</AcceptedOrValidTaxonName>
+							</TaxonCitationGroup>
+							<DistributionAndOrSpecimenCitations>
+								<DistributionAndOrSpecimenParagraph ElementID="colv4p3-4402">
+									<hi rend="italic">Hab.</hi> GUATEMALA<hi rend="superscript">1 2</hi>
+								</DistributionAndOrSpecimenParagraph>
+								<IndividualLocalities>
+									<Locality>
+										<Level1 Explicit="true">
+											<Level1Text>Guatemala</Level1Text>
+										</Level1>
+									</Locality>
+								</IndividualLocalities>
+							</DistributionAndOrSpecimenCitations>
+							<Discussions>
+								<GeneralDiscussion>
+									<DiscussionBody>
+										<DiscussionParagraph ElementID="colv4p3-4403">The insect is stated to be ....</DiscussionParagraph>
+									</DiscussionBody>
+								</GeneralDiscussion>
+							</Discussions>
+						</TaxonTreatment>
+					</TaxonTreatment>
+				</TaxonTreatment>
+			</TaxonTreatment>
+		</PublicationTaxonomicMatter>
+		<PublicationTaxonomicMatter>
+			<PublicationTaxonomicSubHead>
+				<SubHeadTitle ElementID="colv4p3-6000">Supplement to the Thecesternin&aelig; and Otiorhynchin&aelig;*.</SubHeadTitle>
+				<IntroductorySection>
+					<IntroductoryParagraph ElementID="colv4p3-6001">THIS Supplement to the subfamilies....</IntroductoryParagraph>
+				</IntroductorySection>
+			</PublicationTaxonomicSubHead>
+			<TaxonTreatment TaxonID="colv4p3s-t1" RecognizedInTreatment="true" TreatmentLanguage="">
+				<TreatmentAuthors>
+					<TreatmentAuthorString Explicit="true">Champion</TreatmentAuthorString>
+					<TreatmentAuthorAtomised OrderOfAuthors="1">Champion</TreatmentAuthorAtomised>
+				</TreatmentAuthors>
+				<TreatmentDate>Dec. 1911</TreatmentDate>
+				<TaxonHierarchyAbove>
+					<HierarchyBody ElementID="colv4p3-6002">THECESTERNIN&AElig;.</HierarchyBody>
+					<RankDesignation Explicit="false">Subfamily</RankDesignation>
+					<TaxonHeadingName>
+						<TaxonName InformalName="false">Thecesternin&aelig;</TaxonName>
+					</TaxonHeadingName>
+				</TaxonHierarchyAbove>
+				<TaxonHierarchyAbove>
+					<HierarchyBody ElementID="colv4p3-6003">THECESTERNUS (p. 86).<ref target="coleoptera-v4p3-86">p.86</ref>
+					</HierarchyBody>
+					<RankDesignation Explicit="false">genus</RankDesignation>
+					<TaxonHeadingName>
+						<TaxonName InformalName="false">Thecesternus</TaxonName>
+						<GenusName Explicit="true">Thecesternus</GenusName>
+					</TaxonHeadingName>
+				</TaxonHierarchyAbove>
+				<TaxonHeading>
+					<TaxonHeadingBody ElementID="colv4p3-6004" Explicit="true">Thecesternus humeralis (p. 86).<ref target="coleoptera-v4p3-86">p.86</ref>
+					</TaxonHeadingBody>
+					<RankDesignation Explicit="false">species</RankDesignation>
+					<TaxonHeadingName>
+						<TaxonName InformalName="false">Thecesternus humeralis</TaxonName>
+						<GenusName Explicit="true">Thecesternus</GenusName>
+						<SpeciesEpithet Explicit="true">humeralis</SpeciesEpithet>
+					</TaxonHeadingName>
+				</TaxonHeading>
+				<Discussions>
+					<GeneralDiscussion>
+						<DiscussionBody>
+							<DiscussionParagraph ElementID="colv4p3-6005">Mr Pierce, in his recent....</DiscussionParagraph>
+						</DiscussionBody>
+					</GeneralDiscussion>
+				</Discussions>
+			</TaxonTreatment>
+		</PublicationTaxonomicMatter>
+		<PublicationBackMatter>
+			<Index>
+				<IndexTitle ElementID="colv4p3-9000">INDEX.</IndexTitle>
+				<IndexIntroduction ElementID="colv4p3-9001">[Names in small capitals refer to Families, etc.; those in roman type to the chief reference to each species included in the work; those in italics to species incidentally mentioned, synonyms, etc.]</IndexIntroduction>
+				<IndexBody ElementID="colv4p3-9002">
+				</IndexBody>
+			</Index>
+			<Notes>
+				<NotesParagraph ElementID="colv4p3-9004">PRINTED BY TAYLOR AND FRANCIS, RED LION COURT, FLEET STREET.</NotesParagraph>
+			</Notes>
+		</PublicationBackMatter>
+	</IndividualPublication>
+</TaxonomicPublication>
